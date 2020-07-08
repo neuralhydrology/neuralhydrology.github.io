@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>paper on Neural Hydrology</title>
+    <link>/categories/paper/</link>
+    <description>Recent content in paper on Neural Hydrology</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 27 Jun 2020 20:23:59 +0530</lastBuildDate>
+    
+	<atom:link href="/categories/paper/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Post processing the U.S. National Water Model with a Long Short-Term Memory network</title>
+      <link>/post/research/frame2020postprocessing/</link>
+      <pubDate>Sat, 27 Jun 2020 20:23:59 +0530</pubDate>
+      
+      <guid>/post/research/frame2020postprocessing/</guid>
+      <description>&lt;p&gt;In this paper, we investigate the potential of using the LSTM as a post-processor for the US National Water Model.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>A Data Scientist&#39;s Guide to Streamflow Prediction</title>
+      <link>/post/research/gauch2020guide/</link>
+      <pubDate>Fri, 05 Jun 2020 20:23:59 +0530</pubDate>
+      
+      <guid>/post/research/gauch2020guide/</guid>
+      <description>&lt;p&gt;An introduction to hydrology and especially rainfall-runoff modeling, targeted at data scientists.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>A note on leveraging synergy in multiple meteorological datasets with deep learning for rainfall-runoff modeling</title>
+      <link>/post/research/kratzert2020multi/</link>
+      <pubDate>Thu, 14 May 2020 20:23:59 +0530</pubDate>
+      
+      <guid>/post/research/kratzert2020multi/</guid>
+      <description>&lt;p&gt;In this paper we show the benefits of using multiple meteorological forcing products at the same time in a single LSTM-based rainfall-runoff model over just using a single product.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>What Role Does Hydrological Science Play in the Age of Machine Learning?</title>
+      <link>/post/research/nearing2020opinion/</link>
+      <pubDate>Tue, 11 Feb 2020 20:23:59 +0530</pubDate>
+      
+      <guid>/post/research/nearing2020opinion/</guid>
+      <description>&lt;p&gt;Opinion paper discussing the future of Hydrology, especially in the context of recent developments in Machine Learning&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Toward Improved Predictions in Ungauged Basins: Exploiting the Power of Machine Learning</title>
+      <link>/post/research/kratzert2019pub/</link>
+      <pubDate>Sat, 23 Nov 2019 20:23:59 +0530</pubDate>
+      
+      <guid>/post/research/kratzert2019pub/</guid>
+      <description>&lt;p&gt;In this manuscript we test LSTM-based rainfall-runoff models on the task of prediction in ungauged basins and show, that a single LSTM-based model does better prediction in &lt;em&gt;ungauged&lt;/em&gt; basins than a traditional hydrological model that was specifically calibrated for each basin individually.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Proper Care and Feeding of CAMELS: How Limited Training Data Affects Streamflow Prediction</title>
+      <link>/post/research/gauch2020feeding/</link>
+      <pubDate>Sun, 17 Nov 2019 20:23:59 +0530</pubDate>
+      
+      <guid>/post/research/gauch2020feeding/</guid>
+      <description>&lt;p&gt;This paper investigates the influence of the number of training basins and the training period length on the model performance for the EA-LSTM and XGBoost&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Towards learning universal, regional, and local hydrological behaviors via machine learning applied to large-sample datasets</title>
+      <link>/post/research/kratzert2019regional/</link>
+      <pubDate>Fri, 02 Aug 2019 20:23:59 +0530</pubDate>
+      
+      <guid>/post/research/kratzert2019regional/</guid>
+      <description>&lt;p&gt;In this manuscript we show for the first time how to train a single LSTM-based neural network as general hydrology model for hundreds of basins. Furthermore, we proposed the Entity-Aware LSTM (EA-LSTM) in which static features are used explicitly to subset the model for a specific entity (here a catchment).&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Rainfall–runoff modelling using Long Short-Term Memory (LSTM) networks</title>
+      <link>/post/research/kratzert2018lstm/</link>
+      <pubDate>Thu, 22 Nov 2018 20:23:59 +0530</pubDate>
+      
+      <guid>/post/research/kratzert2018lstm/</guid>
+      <description>&lt;p&gt;First publication using LSTMs as rainfall-runoff model.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

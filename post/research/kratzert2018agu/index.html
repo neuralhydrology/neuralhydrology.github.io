@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@type" : "BlogPosting",
+        "mainEntityOfPage": {
+             "@type": "WebPage",
+             "@id": "\/"
+        },
+        "articleSection" : "post",
+        "name" : "Do internals of neural networks make sense in the context of hydrology?",
+        "headline" : "Do internals of neural networks make sense in the context of hydrology?",
+        "description" : "\u003cp\u003ePresentation at the AGU 2018 Fall Meeting on experiments regarding the interpretability of LSTM states.\u003c\/p\u003e",
+        "inLanguage" : "en",
+        "author" : "",
+        "creator" : "",
+        "publisher": "",
+        "accountablePerson" : "",
+        "copyrightHolder" : "",
+        "copyrightYear" : "2018",
+        "datePublished": "2018-12-10 20:23:59 \u002b0530 \u002b0530",
+        "dateModified" : "2018-12-10 20:23:59 \u002b0530 \u002b0530",
+        "url" : "\/post\/research\/kratzert2018agu\/",
+        "wordCount" : "382",
+        "image" : "/img/kratzert2018agu/hyd_model.png"",
+        "keywords" : [ "Blog" ]   
+    }
+    </script>
+
+
+ <title>Do internals of neural networks make sense in the context of hydrology? </title>
+
+
+<meta name="description" content="Research blog for machine learning applications in hydrology" />
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="all,follow">
+<meta name="googlebot" content="index,follow,snippet,archive">
+<link rel="stylesheet" id="ct-tracks-google-fonts-css" href="//fonts.googleapis.com/css?family=Raleway%3A400%2C700&amp;subset=latin%2Clatin-ext&amp;ver=4.7.2" type="text/css" media="all">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+<link href="/css/style.css?v=1594197741" rel="stylesheet" id="theme-stylesheet" type='text/css' media='all'>
+
+<link href="/css/custom.css?v=1594197741" rel="stylesheet" type='text/css' media='all'>
+<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+
+
+</head>
+
+
+<body
+  class="post-template-default single single-post single-format-standard ct-body singular singular-post not-front standard">
+  
+  <div id="overflow-container" class="overflow-container">
+    <a class="skip-content" href="#main">Skip to content</a>
+    <header id="site-header" class="site-header" role="banner">
+      <div class='top-navigation'>
+        <div class='container'>
+
+  <div id="menu-secondary" class="menu-container menu-secondary" role="navigation">
+    <button id="toggle-secondary-navigation" class="toggle-secondary-navigation"><i class="fas fa-plus"></i></button>
+
+    <div class="menu">
+
+      <ul id="menu-secondary-items" class="menu-secondary-items">
+        
+        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
+          <a href="/categories/book-chapter">book-chapter</a>
+        </li>
+        
+        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
+          <a href="/categories/code">code</a>
+        </li>
+        
+        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
+          <a href="/categories/conference">conference</a>
+        </li>
+        
+        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
+          <a href="/categories/paper">paper</a>
+        </li>
+        
+        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
+          <a href="/categories/video">video</a>
+        </li>
+        
+        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
+          <a href="/categories/workshops">workshops</a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+
+  </div>
+
+
+  <ul class="social-media-icons">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+    
+
+
+    
+
+    
+
+
+  </ul></div>
+
+      </div>
+
+      <div class="container">
+        <head>
+<style>
+.center {
+  margin: auto;
+  text-align: center;
+  width: 60%;
+  padding: 10px;
+}
+</style>
+</head>
+
+<div id="headerino" class = "left">
+  <a href="/">
+  <img src="/img/neural-hyd-head.png" width="240">
+  </a>
+  <br>
+</div>
+
+<div id="title-info" class="title-info">
+  <div id='site-title' class='site-title'>
+    
+    <a href="/"> Neural Hydrology </a>
+    </div>
+  </div>
+  <button id="toggle-navigation" class="toggle-navigation">
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <div id="menu-primary-tracks" class="menu-primary-tracks"></div>
+  <div id="menu-primary" class="menu-container menu-primary" role="navigation">
+    
+    <p class="site-description">Using Neural Networks in Hydrology</p>
+    
+
+    <div class="menu">
+      <ul id="menu-primary-items" class="menu-primary-items">
+        
+        
+        <li id="menu-item" class='menu-item menu-item-type-custom menu-item-object-custom '>
+          <a href="/">Home</a>
+          
+        </li>
+        
+        <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page '>
+          <a href="/about/">About</a>
+          
+        </li>
+        
+        <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page '>
+          <a href="/"></a>
+          
+        </li>
+        
+      </ul>
+    </div>
+
+  </div>
+
+      </div>
+    </header>
+
+    <div id="main" class="main" role="main">
+
+      
+
+  
+  
+  
+  
+  
+  <div id="loop-container2" class="loop-container2">
+    
+    <div
+      class="post type-post status-publish format-standard has-post-thumbnail hentry category-design tag-design tag-standard-2 tag-tagalicious tag-travel entry full-without-featured odd excerpt-1">
+
+      <div class='featured-image lazy lazy-bg-image'  data-background="/img/kratzert2018agu/hyd_model.png"
+        >
+      </div>
+      
+        <div class="entry-meta">
+          <span class="date">10 December</span> <span> / </span>
+
+          <span class="author">
+            <a href="https://kratzert.github.io" title="Posts by Frederik Kratzert"
+              rel="author">Frederik Kratzert</a>
+          </span>
+
+
+          
+          <span class="category">
+            <span> / </span>
+
+            <a href="/categories/conference">conference</a>
+          </span>
+          
+          <span class="category">
+            <span> / </span>
+
+            <a href="/categories/code">code</a>
+          </span>
+          
+
+
+        </div>
+        <div class='entry-header'>
+          <h1 class='entry-title'> Do internals of neural networks make sense in the context of hydrology?</h1>
+        </div>
+        <div class="entry-container">
+          <div class="entry-content">
+            <article>
+              <p>Presentation at the AGU 2018 Fall Meeting on experiments regarding the interpretability of LSTM states.</p>
+<h4 id="abstract"><strong>Abstract</strong></h4>
+<p>In recent years, neural networks gained a new wave of popularity in many application domains, such as computer vision or natural language processing. However in applied environmental sciences, like rainfall-runoff modelling in hydrology, neural networks tend to have a rather bad reputation. This can be attributed to their black-box-ness and the difficulty or impossibility to understand network internals leading to a prediction.</p>
+<p>In this study, we tackle this criticism and show how recent advances and methods in the area of interpretable machine learning allow for deeper analysis of network internals. As an example we use the Long Short-Term Memory network (LSTM) for the task of rainfall-runoff modelling. LSTMs are a special kind of recurrent neural network architecture and, as the name suggests, are able to learn short- and long-term dependencies between inputs and outputs due to special memory cells. This property is especially appreciable in hydrology, where outputs of the system tend to have a long memory. Kratzert et al. (2018) confirm this and have recently shown that LSTMs can achieve competitive results compared to the well established Sacramento Soil Moisture Accounting model, coupled with the Snow-17 snow module.</p>
+<p>In this study, we explore the internals of trained networks for different basins from the publicly available CAMELS data set, also utilizing remote sensing data of soil moisture, snow cover and evapotranspiration fluxes. We show that LSTMs internally learn to represent patterns that match our understandings of the hydrological system. In snow-driven catchments e.g. the network develops special memory cells that mimic conceptual snow storages with annual dynamics, as known from process-based catchment models.</p>
+<p>In general, we anticipate that our findings can increase the trust in the application of neural networks in environmental sciences. We however stress, that expert knowledge on the modeled system is inevitable and still remains an important quality against black-box-ness.</p>
+<h4 id="abstract-link"><strong>Abstract Link</strong></h4>
+<p><a href="http://adsabs.harvard.edu/abs/2018AGUFM.H13B..06K">Link</a></p>
+<h4 id="slides"><strong>Slides</strong></h4>
+<p><a href="https://github.com/kratzert/AGU2018/blob/master/Kratzert_et_al_AGU18_slides.pdf">Link</a></p>
+<h4 id="code"><strong>Code</strong></h4>
+<p>Code to reproduce all results presented in the talk can be found at <a href="https://github.com/kratzert/AGU2018">this</a> GitHub repository.</p>
+<h4 id="citation"><strong>Citation</strong></h4>
+<pre><code>@inproceedings{kratzert2018internals,
+  title={Do internals of neural networks make sense in the context of hydrology?},
+  author={Kratzert, Frederik and Herrnegger, Mathew and Klotz, Daniel and Hochreiter, Sepp and Klambauer, G{\&quot;u}nter},
+  booktitle={2018AGUFM.H13B..06K presented at 2018 AGU Fall Meeting},
+  venue={Washington, D.C.},
+  date={10-14 Dec},
+  year={2018}
+}
+</code></pre>
+            </article>
+          </div>
+          
+          <div class='entry-meta-bottom'>
+            
+
+            <div class="entry-categories">
+              <p><span>Categories</span>
+                
+                <a href="/categories/conference"
+                  title="View all posts in conference">conference</a>
+                <a href="/categories/code"
+                  title="View all posts in code">code</a>
+              </p>
+            </div>
+
+
+            
+            
+
+            <section id="comments" class="comments">
+              
+
+              
+
+              
+
+
+            </section>
+          </div>
+
+          
+          
+
+
+          
+    </div>
+
+
+  </div>
+  <footer id="site-footer" class="site-footer" role="contentinfo">
+    <h1>
+        
+        <a href=""> Neural Hydrology </a>
+        
+    </h1>
+
+    
+    <p class="site-description">Using Neural Networks in Hydrology</p>
+    
+
+    <div id="menu-footer" class="menu-container menu-footer" role="navigation">
+        <div class="menu">
+
+            <ul id="menu-footer-items" class="menu-footer-items">
+                
+            </ul>
+
+        </div>
+    </div>
+
+
+    <div class="design-credit">
+        
+        <p>© 2018 Göran Svensson</p>
+        
+        <p>Nederburg Hugo Theme by <a href="https://appernetic.io">Appernetic</a>.</p>
+        
+        <p>A port of Tracks by Compete Themes.</p>
+        
+    </div>
+</footer>
+  <script src="/js/jquery.min.js"></script>
+<script src="/js/jquerymigrate.js"></script>
+<script src="/js/production.min.js?v=1594197741"></script>
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+
+
+</body>
+</html>

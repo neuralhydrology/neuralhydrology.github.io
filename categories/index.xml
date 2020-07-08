@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Neural Hydrology</title>
+    <link>/categories/</link>
+    <description>Recent content in Categories on Neural Hydrology</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 27 Jun 2020 20:23:59 +0530</lastBuildDate>
+    
+	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>code</title>
+      <link>/categories/code/</link>
+      <pubDate>Sat, 27 Jun 2020 20:23:59 +0530</pubDate>
+      
+      <guid>/categories/code/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>paper</title>
+      <link>/categories/paper/</link>
+      <pubDate>Sat, 27 Jun 2020 20:23:59 +0530</pubDate>
+      
+      <guid>/categories/paper/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>conference</title>
+      <link>/categories/conference/</link>
+      <pubDate>Mon, 04 May 2020 20:23:59 +0530</pubDate>
+      
+      <guid>/categories/conference/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>workshops</title>
+      <link>/categories/workshops/</link>
+      <pubDate>Sun, 26 Apr 2020 20:23:59 +0530</pubDate>
+      
+      <guid>/categories/workshops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>video</title>
+      <link>/categories/video/</link>
+      <pubDate>Fri, 05 Apr 2019 20:23:59 +0530</pubDate>
+      
+      <guid>/categories/video/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>book chapter</title>
+      <link>/categories/book-chapter/</link>
+      <pubDate>Tue, 19 Mar 2019 20:23:59 +0530</pubDate>
+      
+      <guid>/categories/book-chapter/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

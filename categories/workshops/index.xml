@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>workshops on Neural Hydrology</title>
+    <link>/categories/workshops/</link>
+    <description>Recent content in workshops on Neural Hydrology</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 26 Apr 2020 20:23:59 +0530</lastBuildDate>
+    
+	<atom:link href="/categories/workshops/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>HydroNets: Leveraging River Structure for Hydrologic Modeling</title>
+      <link>/post/research/moshe2020iclr/</link>
+      <pubDate>Sun, 26 Apr 2020 20:23:59 +0530</pubDate>
+      
+      <guid>/post/research/moshe2020iclr/</guid>
+      <description>&lt;p&gt;Modeling entire nested river trees by integrating the river hierachy into the neural network architecture. This manuscripts proposes HydroNets, an architecture designed for modeling multiple nested gauge stations.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Streamflow Prediction with LimitedSpatially-Distributed Input Data</title>
+      <link>/post/research/gauch2019neurips/</link>
+      <pubDate>Wed, 11 Dec 2019 20:23:59 +0530</pubDate>
+      
+      <guid>/post/research/gauch2019neurips/</guid>
+      <description>&lt;p&gt;Workshop paper, investigating first ways of using LSTM-based models for climate change related questions in hydrology.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Using LSTMs for climate change assessment studies on droughts and floods</title>
+      <link>/post/research/kratzert2019neurips/</link>
+      <pubDate>Wed, 11 Dec 2019 20:23:59 +0530</pubDate>
+      
+      <guid>/post/research/kratzert2019neurips/</guid>
+      <description>&lt;p&gt;Workshop paper, investigating first ways of using LSTM-based models for climate change related questions in hydrology.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>A glimpse into the Unobserved: Runoff simulation for ungauged catchments with LSTMs</title>
+      <link>/post/research/kratzert2018glimpse/</link>
+      <pubDate>Fri, 07 Dec 2018 20:23:59 +0530</pubDate>
+      
+      <guid>/post/research/kratzert2018glimpse/</guid>
+      <description>&lt;p&gt;NeurIPS 2018 workshop paper, showing first results on using LSTMs for prediction in ungauged basins.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

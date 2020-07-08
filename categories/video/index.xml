@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>video on Neural Hydrology</title>
+    <link>/categories/video/</link>
+    <description>Recent content in video on Neural Hydrology</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 05 Apr 2019 20:23:59 +0530</lastBuildDate>
+    
+	<atom:link href="/categories/video/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Long Short-Term Memory (LSTM) networks for rainfall-runoff modeling</title>
+      <link>/post/research/kratzert2019cuahsi/</link>
+      <pubDate>Fri, 05 Apr 2019 20:23:59 +0530</pubDate>
+      
+      <guid>/post/research/kratzert2019cuahsi/</guid>
+      <description>&lt;p&gt;Video presentation in CUAHSI&amp;rsquo;s 2019 Spring Cyberseminar Series on Recent advances in big data machine learning in Hydrology.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
