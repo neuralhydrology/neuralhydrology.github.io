@@ -232,5 +232,15 @@
       <description>About NeuralHydrology Everything started with the idea of using LSTMs as a general rainfall-runoff model, back in 2016. Daniel and myself (Frederik) were self-studying machine learning and trying to keep up with the fast-paced developments of that field. At that time, both of us were still working at the Institute for Hydrology and Watermangement (former Institute of Water Management, Hydrology and Hydraulic Engineering), Daniel as PhD-student and I as a student assistant.</description>
     </item>
     
+    <item>
+      <title>Python Library: neuralHydrology</title>
+      <link>/library/</link>
+      <pubDate>Wed, 14 Aug 2019 21:05:33 +0530</pubDate>
+      
+      <guid>/library/</guid>
+      <description>Python library to train neural networks with a strong focus on hydrological applications.
+ GitHub: https://github.com/neuralhydrology/neuralhydrology Documentation: neuralhydrology.readthedocs.io Bug reports/Feature requests https://github.com/neuralhydrology/neuralhydrology/issues  This package has been used extensively in research over the last year and was used in various academic publications. The core idea of this package is modularity in all places to allow easy integration of new datasets, new model architectures or any training related aspects (e.g. loss functions, optimizer, regularization).</description>
+    </item>
+    
   </channel>
 </rss>
