@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Neural Hydrology</title>
@@ -6,11 +6,15 @@
     <description>Recent content in Categories on Neural Hydrology</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 16 Oct 2020 08:23:59 +0530</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 16 Dec 2020 15:23:59 +0530</lastBuildDate>
+    
+	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>code</title>
       <link>/categories/code/</link>
-      <pubDate>Fri, 16 Oct 2020 08:23:59 +0530</pubDate>
+      <pubDate>Wed, 16 Dec 2020 15:23:59 +0530</pubDate>
       
       <guid>/categories/code/</guid>
       <description></description>
@@ -19,7 +23,7 @@
     <item>
       <title>paper</title>
       <link>/categories/paper/</link>
-      <pubDate>Fri, 16 Oct 2020 08:23:59 +0530</pubDate>
+      <pubDate>Wed, 16 Dec 2020 15:23:59 +0530</pubDate>
       
       <guid>/categories/paper/</guid>
       <description></description>

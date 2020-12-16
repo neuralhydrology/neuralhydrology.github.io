@@ -11,9 +11,9 @@
              "@id": "\/"
         },
         "articleSection" : "post",
-        "name" : "Learning from mistakes: Online updating for deep learning models",
-        "headline" : "Learning from mistakes: Online updating for deep learning models",
-        "description" : "\x3cp\x3eVirtual presentation at the EGU General Assembly 2020 on data assimilation with LSTM-based models.\x3c\/p\x3e",
+        "name" : "Uncertainty Estimation with Deep Learning for Rainfall-Runoff Modelling",
+        "headline" : "Uncertainty Estimation with Deep Learning for Rainfall-Runoff Modelling",
+        "description" : "\x3cp\x3eDeep learning based uncertainty estimation techniques and benchmarking procedure for rainfall-runoff modeling.\x3c\/p\x3e",
         "inLanguage" : "en",
         "author" : "",
         "creator" : "",
@@ -21,17 +21,17 @@
         "accountablePerson" : "",
         "copyrightHolder" : "",
         "copyrightYear" : "2020",
-        "datePublished": "2020-05-04 20:23:59 \x2b0530 \x2b0530",
-        "dateModified" : "2020-05-04 20:23:59 \x2b0530 \x2b0530",
-        "url" : "\/post\/research\/klotz2020egu\/",
-        "wordCount" : "383",
-        "image" : "/img/klotz2020egu/header.png"",
+        "datePublished": "2020-12-16 15:23:59 \x2b0530 \x2b0530",
+        "dateModified" : "2020-12-16 15:23:59 \x2b0530 \x2b0530",
+        "url" : "\/post\/research\/klotz2020uncertainty\/",
+        "wordCount" : "220",
+        "image" : "/img/klotz2020uncertainty/mdn.png"",
         "keywords" : [ "Blog" ]   
     }
     </script>
 
 
- <title>Learning from mistakes: Online updating for deep learning models </title>
+ <title>Uncertainty Estimation with Deep Learning for Rainfall-Runoff Modelling </title>
 
 
 <meta name="description" content="Research blog for machine learning applications in hydrology" />
@@ -209,12 +209,12 @@
     <div
       class="post type-post status-publish format-standard has-post-thumbnail hentry category-design tag-design tag-standard-2 tag-tagalicious tag-travel entry full-without-featured odd excerpt-1">
 
-      <div class='featured-image lazy lazy-bg-image'  data-background="/img/klotz2020egu/header.png"
+      <div class='featured-image lazy lazy-bg-image'  data-background="/img/klotz2020uncertainty/mdn.png"
         >
       </div>
       
         <div class="entry-meta">
-          <span class="date">04 May</span> <span> / </span>
+          <span class="date">16 December</span> <span> / </span>
 
           <span class="author">
             <a href="https://kratzert.github.io" title="Posts by Frederik Kratzert"
@@ -226,43 +226,50 @@
           <span class="category">
             <span> / </span>
 
-            <a href="/categories/conference">conference</a>
+            <a href="/categories/paper">paper</a>
+          </span>
+          
+          <span class="category">
+            <span> / </span>
+
+            <a href="/categories/code">code</a>
           </span>
           
 
 
         </div>
         <div class='entry-header'>
-          <h1 class='entry-title'> Learning from mistakes: Online updating for deep learning models</h1>
+          <h1 class='entry-title'> Uncertainty Estimation with Deep Learning for Rainfall-Runoff Modelling</h1>
         </div>
         <div class="entry-container">
           <div class="entry-content">
             <article>
-              <p>Virtual presentation at the EGU General Assembly 2020 on data assimilation with LSTM-based models.</p>
+              <p>Deep learning based uncertainty estimation techniques and benchmarking procedure for rainfall-runoff modeling.</p>
 
 <h4 id="abstract"><strong>Abstract</strong></h4>
 
-<p>Accurate streamflow forecasts are important for many operational purposes, like hydropower operation or flood risk management. It is obvious that for data-driven models best prediction performance would be obtained if recent streamflow observations were used as an additional model input. Therefore, there exists a certain imperative which demands to use forecasting models that use discharge signals whenever available.</p>
+<p>Deep Learning is becoming an increasingly important way to produce accurate hydrological predictions across awide range of spatial and temporal scales.
+Uncertainty estimations are critical for actionable hydrological forecasting, andwhile standardized community benchmarks are becoming an increasingly important part of hydrological model developmentand research, similar tools for benchmarking uncertainty estimation are lacking.
+We establish an uncertainty estimation bench-marking procedure and present four Deep Learning baselines, out of which three are based on Mixture Density Networks and one is based on Monte Carlo dropout.
+Additionally, we provide a post-hoc model analysis to put forward some qualitativeunderstanding of the resulting models.
+Most importantly however, we show that accurate, precise, and reliable uncertaintyestimation can be achieved with Deep Learning</p>
 
-<p>Forecasting models are, however, not well suited when continuous measurement of discharge can not be guaranteed or for applications in ungauged settings. Regarding the former, missing data can have long lasting repercussions on data-driven models if large data-windows are used for the input. Regarding the latter, data-driven forecast models are not applicable at all. Additionally, we would like to point out that data-driven simulation models need to represent the underlying hydrological processes more closely since the setup explicitly reflects the rainfall-runoff relationship. To conclude, in many contexts, it is more appropriate to use process or simulation models, which do not use discharge as input.</p>
+<h4 id="paper"><strong>Paper</strong></h4>
 
-<p>Despite the above mentioned difficulties of forecasting models it would nevertheless be beneficial to integrate, whenever available, past runoff information in simulation models in order to improve their accuracy. To this end, multiple potential approaches and strategies are available. In the context of conceptual or physically based rainfall-runoff models, recent runoff information is usually exploited by data assimilation/updating approaches (e.g. input-, state-, parameter- or output-updating). In this contribution we concentrate on input-updating approaches, since it allows to adjust the system for a forecasting period even if no explicit process can be attached to the system states.</p>
+<p>Paper added soon.</p>
 
-<p>We propose and examine different input-updating techniques for DL-based runoff models that can be used as baselines for future studies on data-assimilation tasks and which can be used with arbitrary differentiable model. To test the proposed approaches, we perform a series of experiments on a large set of basins throughout the continental United States. The results show that even simple updating techniques can strongly improve the forecasting accuracy.</p>
+<p>[Daniel Klotz, Frederik Kratzert, Martin Gauch, Alden Keefe Sampson, Günter Klambauer,Sepp Hochreiter, and Grey Nearing “Uncertainty Estimation with Deep Learning for Rainfall-Runoff Modelling” in prep., 2020.]()</p>
 
-<h4 id="links"><strong>Links</strong></h4>
+<h4 id="code"><strong>Code</strong></h4>
 
-<p><a href="https://meetingorganizer.copernicus.org/EGU2020/EGU2020-8853.html">Abstract</a>
-<a href="https://presentations.copernicus.org/EGU2020/EGU2020-8853_presentation.pdf">Slides</a></p>
+<p>The results of this paper were produced with the <a href="https://github.com/neuralhydrology/neuralhydrology">neuralHydrology</a> Python package. All details to reproduce the results of this paper will be published soon.</p>
 
 <h4 id="citation"><strong>Citation</strong></h4>
 
-<pre><code>@inproceedings{{klotz2020learning,
-  title={Learning from mistakes: Online updating for deep learning models},
-  author={Klotz, D. and Kratzert, F. and Sampson, A. K. and Klambauer, G. and Hochreiter, S. and Nearing, G.},
-  booktitle={EGU General Assembly 2020},
-  venue={Vienna, Austria},
-  date={4-8 May},
+<pre><code>@article{klotz2020uncertainty,
+  title={Uncertainty Estimation with Deep Learning for Rainfall-Runoff Modelling},
+  author={Klotz, Daniel and Kratzert, Frederik and Gauch, Martin and Sampson, Alden Keefe and Klambauer, G\ünter and Hochreiter, Sepp and Nearing, Grey},
+  journal={in prep.},
   year={2020}
 }
 </code></pre>
@@ -275,8 +282,10 @@
             <div class="entry-categories">
               <p><span>Categories</span>
                 
-                <a href="/categories/conference"
-                  title="View all posts in conference">conference</a>
+                <a href="/categories/paper"
+                  title="View all posts in paper">paper</a>
+                <a href="/categories/code"
+                  title="View all posts in code">code</a>
               </p>
             </div>
 
