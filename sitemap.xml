@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
@@ -130,36 +130,43 @@
   <url>
     <loc>/categories/</loc>
     <lastmod>2020-12-16T15:23:59+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/code/</loc>
-    <lastmod>2020-12-16T15:23:59+05:30</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>/</loc>
     <lastmod>2020-12-16T15:23:59+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/paper/</loc>
-    <lastmod>2020-12-16T15:23:59+05:30</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>/post/</loc>
     <lastmod>2020-12-16T15:23:59+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/code/</loc>
+    <lastmod>2020-12-16T15:23:59+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/paper/</loc>
+    <lastmod>2020-12-16T15:23:59+05:30</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>/categories/conference/</loc>
     <lastmod>2020-05-04T20:23:59+05:30</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>/categories/workshops/</loc>
     <lastmod>2020-04-26T20:23:59+05:30</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -175,15 +182,18 @@
   <url>
     <loc>/categories/video/</loc>
     <lastmod>2019-04-05T20:23:59+05:30</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>/categories/book-chapter/</loc>
     <lastmod>2019-03-19T20:23:59+05:30</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/</loc>
+    <priority>0</priority>
   </url>
   
 </urlset>
