@@ -11,9 +11,9 @@
              "@id": "\/"
         },
         "articleSection" : "post",
-        "name" : "The performance of LSTM models from basin to continental scales",
-        "headline" : "The performance of LSTM models from basin to continental scales",
-        "description" : "\u003cp\u003eVirtual presentation at the EGU General Assembly 2020 comparing LSTMs trained for each basin individually with a single LSTM trained for all basins together.\u003c\/p\u003e",
+        "name" : "Examining the uncertainty estimation properties of LSTM based rainfall-runoff models",
+        "headline" : "Examining the uncertainty estimation properties of LSTM based rainfall-runoff models",
+        "description" : "\u003cp\u003eOral presentation at the virtual AGU Fall Meeting 2020 on uncertainty prediction with LSTMs in the context of rainfall-runoff modeling.\u003c\/p\u003e",
         "inLanguage" : "en",
         "author" : "",
         "creator" : "",
@@ -21,17 +21,17 @@
         "accountablePerson" : "",
         "copyrightHolder" : "",
         "copyrightYear" : "2020",
-        "datePublished": "2020-05-04 20:23:59 \u002b0530 \u002b0530",
-        "dateModified" : "2020-05-04 20:23:59 \u002b0530 \u002b0530",
-        "url" : "\/post\/research\/kratzert2020egu1\/",
-        "wordCount" : "484",
-        "image" : "/img/kratzert2020egu/header.png"",
+        "datePublished": "2020-12-17 20:23:59 \u002b0530 \u002b0530",
+        "dateModified" : "2020-12-17 20:23:59 \u002b0530 \u002b0530",
+        "url" : "\/post\/research\/klotz2020agu\/",
+        "wordCount" : "318",
+        "image" : "/img/klotz2020uncertainty/mdn.png"",
         "keywords" : [ "Blog" ]   
     }
     </script>
 
 
- <title>The performance of LSTM models from basin to continental scales </title>
+ <title>Examining the uncertainty estimation properties of LSTM based rainfall-runoff models </title>
 
 
 <meta name="description" content="Research blog for machine learning applications in hydrology" />
@@ -209,12 +209,12 @@
     <div
       class="post type-post status-publish format-standard has-post-thumbnail hentry category-design tag-design tag-standard-2 tag-tagalicious tag-travel entry full-without-featured odd excerpt-1">
 
-      <div class='featured-image lazy lazy-bg-image'  data-background="/img/kratzert2020egu/header.png"
+      <div class='featured-image lazy lazy-bg-image'  data-background="/img/klotz2020uncertainty/mdn.png"
         >
       </div>
       
         <div class="entry-meta">
-          <span class="date">04 May</span> <span> / </span>
+          <span class="date">17 December</span> <span> / </span>
 
           <span class="author">
             <a href="https://kratzert.github.io" title="Posts by Frederik Kratzert"
@@ -229,34 +229,37 @@
             <a href="/categories/conference">conference</a>
           </span>
           
+          <span class="category">
+            <span> / </span>
+
+            <a href="/categories/video">video</a>
+          </span>
+          
 
 
         </div>
         <div class='entry-header'>
-          <h1 class='entry-title'> The performance of LSTM models from basin to continental scales</h1>
+          <h1 class='entry-title'> Examining the uncertainty estimation properties of LSTM based rainfall-runoff models</h1>
         </div>
         <div class="entry-container">
           <div class="entry-content">
             <article>
-              <p>Virtual presentation at the EGU General Assembly 2020 comparing LSTMs trained for each basin individually with a single LSTM trained for all basins together.</p>
+              <p>Oral presentation at the virtual AGU Fall Meeting 2020 on uncertainty prediction with LSTMs in the context of rainfall-runoff modeling.</p>
 <h4 id="abstract"><strong>Abstract</strong></h4>
-<p>Simulation accuracy among traditional hydrological models usually degrades significantly when going from single basin to regional scale. Hydrological models perform best when calibrated for specific basins, and do worse when a regional calibration scheme is used.</p>
-<p>One reason for this is that these models do not (have to) learn hydrological processes from data. Rather, they have a predefined model structure and only a handful of parameters adapt to specific basins. This often yields less-than-optimal parameter values when the loss is not determined by a single basin, but by many through regional calibration.</p>
-<p>The opposite is true for data driven approaches where models tend to get better with more and diverse training data. We examine whether this holds true when modeling rainfall-runoff processes with deep learning, or if, like their process-based counterparts, data-driven hydrological models degrade when going from basin to regional scale.</p>
-<p>Recently, Kratzert et al. (2018) showed that the Long Short-Term Memory network (LSTM), a special type of recurrent neural network, achieves comparable performance to the SAC-SMA at basin scale. In follow up work Kratzert et al. (2019a) trained a single LSTM for hundreds of basins in the continental US, which outperformed a set of hydrological models significantly, even compared to basin-calibrated hydrological models. On average, a single LSTM is even better in out-of-sample predictions (ungauged) compared to the SAC-SMA in-sample (gauged) or US National Water Model (Kratzert et al. 2019b).</p>
-<p>LSTM-based approaches usually involve tuning a large number of hyperparameters, such as the number of neurons, number of layers, and learning rate, that are critical for the predictive performance. Therefore, large-scale hyperparameter search has to be performed to obtain a proficient LSTM network.</p>
-<p>However, in the abovementioned studies, hyperparameter optimization was not conducted at large scale and e.g. in Kratzert et al. (2018) the same network hyperparameters were used in all basins, instead of tuning hyperparameters for each basin separately. It is yet unclear whether LSTMs follow the same trend of traditional hydrological models to degrade performance from basin to regional scale.</p>
-<p>In the current study, we performed a computational expensive, basin-specific hyperparameter search to explore how site-specific LSTMs differ in performance compared to regionally calibrated LSTMs. We compared our results to the mHM and VIC models, once calibrated per-basin and once using an MPR regionalization scheme. These benchmark models were calibrated individual research groups, to eliminate bias in our study. We analyse whether differences in basin-specific vs regional model performance can be linked to basin attributes or data set characteristics.</p>
+<p>Existing studies on Long-Short Term Memory (LSTM) based rainfall-runoff modelling predominantly focus on the performance of point estimates (e.g. <a href="https://hess.copernicus.org/articles/23/5089/2019/">Kratzert et al. 2019</a>). These estimates are by their very nature imprecise, given the uncertainty in the available information, the forcing inputs and the streamflow observations used to train the model.</p>
+<p>To account for this imprecision, the uncertainty of a given prediction can be estimated. From a technical standpoint, one solution could be to adapt the output of an LSTM so that it provides uncertainty estimates (as opposed to point predictions). This is a native property of using a general approximation approach, such as the LSTM (they also have the advantage of not requiring a-priori sampling distribution). However, these uncertainty estimates are also forms of estimates, based on the same incomplete data as any model prediction. This property can be observed when comparing ensemble-uncertainty estimations with the ones provided by a single LSTM (e.g.: <a href="https://meetingorganizer.copernicus.org/EGU2019/EGU2019-10708-2.pdf">Klotz et al. 2019</a>; <a href="https://arxiv.org/abs/1912.02757">Fort, Hu &amp; Lakshminarayanan 2020</a>). The estimates of uncertainty are therefore in themselves uncertain and therefore need to be be empirically verified, as all uncertainty estimates.</p>
+<p>The goal of this contribution is thus twofold. First, we provide an intuitive exploration into how neural networks self-organize their uncertainty estimations in the context of rainfall-runoff models, so that we can leverage these principles for general hydrological uncertainty estimations. Second, we explore the role of higher-order uncertainties regarding the estimations of the uncertainties, so that we can begin to quantify the limits of this approach.</p>
 <h4 id="links"><strong>Links</strong></h4>
-<p><a href="https://meetingorganizer.copernicus.org/EGU2020/EGU2020-8855.html">Abstract</a></p>
-<p><a href="https://presentations.copernicus.org/EGU2020/EGU2020-8855_presentation.pdf">Slides</a></p>
+<p><a href="https://agu.confex.com/agu/fm20/webprogram/Paper740341.html">Abstract</a></p>
+<p><a href="https://www.youtube.com/watch?v=Nmz9ZzaJycE">Video of the presentation</a></p>
+<p><a href="https://eartharxiv.org/repository/view/1897/">Related preprint</a></p>
 <h4 id="citation"><strong>Citation</strong></h4>
-<pre><code>@inproceedings{kratzert2020basintocontinent,
-  title={The performance of LSTM models from basin to continental scales},
-  author={Kratzert, F. and Klotz, D. and Shalev, G. and Nevo, S. and Klambauer, G. and Nearing, G. and Hochreiter, S. },
-  booktitle={EGU General Assembly 2020},
-  venue={Vienna, Austria},
-  date={4-8 May},
+<pre><code>@inproceedings{klotz2020agu,
+  title={Examining the uncertainty estimation properties of LSTM based rainfall-runoff models},
+  author={Klotz, D. and Kratzert, F. and Gauch, M. and Sampson, A. K. and Hochreiter, S. and Nearing, G.},
+  booktitle={AGU Fall Meeting 2020},
+  venue={Online, Everywhere},
+  date={1-17 December},
   year={2020}
 }
 </code></pre>
@@ -271,6 +274,8 @@
                 
                 <a href="/categories/conference"
                   title="View all posts in conference">conference</a>
+                <a href="/categories/video"
+                  title="View all posts in video">video</a>
               </p>
             </div>
 

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Neural Hydrology</title>
@@ -6,10 +6,24 @@
     <description>Recent content in Categories on Neural Hydrology</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 16 Dec 2020 15:23:59 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 17 Dec 2020 20:23:59 +0530</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>conference</title>
+      <link>/categories/conference/</link>
+      <pubDate>Thu, 17 Dec 2020 20:23:59 +0530</pubDate>
+      
+      <guid>/categories/conference/</guid>
+      <description></description>
+    </item>
     
-	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
-    
+    <item>
+      <title>video</title>
+      <link>/categories/video/</link>
+      <pubDate>Thu, 17 Dec 2020 20:23:59 +0530</pubDate>
+      
+      <guid>/categories/video/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>code</title>
@@ -30,29 +44,11 @@
     </item>
     
     <item>
-      <title>conference</title>
-      <link>/categories/conference/</link>
-      <pubDate>Mon, 04 May 2020 20:23:59 +0530</pubDate>
-      
-      <guid>/categories/conference/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>workshops</title>
       <link>/categories/workshops/</link>
-      <pubDate>Sun, 26 Apr 2020 20:23:59 +0530</pubDate>
+      <pubDate>Sun, 06 Dec 2020 20:23:59 +0530</pubDate>
       
       <guid>/categories/workshops/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>video</title>
-      <link>/categories/video/</link>
-      <pubDate>Fri, 05 Apr 2019 20:23:59 +0530</pubDate>
-      
-      <guid>/categories/video/</guid>
       <description></description>
     </item>
     

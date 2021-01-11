@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>workshops on Neural Hydrology</title>
@@ -6,10 +6,24 @@
     <description>Recent content in workshops on Neural Hydrology</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 26 Apr 2020 20:23:59 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 06 Dec 2020 20:23:59 +0530</lastBuildDate><atom:link href="/categories/workshops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Deep Learning Architecture for Conservative Dynamical Systems: Application to Rainfall-Runoff Modeling</title>
+      <link>/post/research/nearing2020neurips/</link>
+      <pubDate>Sun, 06 Dec 2020 20:23:59 +0530</pubDate>
+      
+      <guid>/post/research/nearing2020neurips/</guid>
+      <description>&lt;p&gt;Spotlight talk at the AI for Earth Sciences workshop of the NeurIPS 2020, presenting  a first glimpse of a new LSTM-based model that conserves mass by design: the Mass-Conserving LSTM&lt;/p&gt;</description>
+    </item>
     
-	<atom:link href="/categories/workshops/index.xml" rel="self" type="application/rss+xml" />
-    
+    <item>
+      <title>A Machine Learner&#39;s Guide to Streamflow Prediction</title>
+      <link>/post/research/gauch2020neurips/</link>
+      <pubDate>Sun, 06 Dec 2020 20:23:59 +0530</pubDate>
+      
+      <guid>/post/research/gauch2020neurips/</guid>
+      <description>&lt;p&gt;Spotlight talk at the AI for Earth Sciences workshop of the NeurIPS 2020, presenting  introduction of the world and terminology of hydrology/streamflow prediction for data scientists.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>HydroNets: Leveraging River Structure for Hydrologic Modeling</title>
