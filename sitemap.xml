@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/post/research/hoedt2021mclstm/</loc>
+    <lastmod>2021-01-14T08:23:59+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>/post/research/klotz2020agu/</loc>
     <lastmod>2020-12-17T20:23:59+05:30</lastmod>
   </url>
@@ -149,7 +154,27 @@
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2020-12-17T20:23:59+05:30</lastmod>
+    <lastmod>2021-01-14T08:23:59+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/code/</loc>
+    <lastmod>2021-01-14T08:23:59+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2021-01-14T08:23:59+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/paper/</loc>
+    <lastmod>2021-01-14T08:23:59+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2021-01-14T08:23:59+05:30</lastmod>
   </url>
   
   <url>
@@ -158,28 +183,8 @@
   </url>
   
   <url>
-    <loc>/</loc>
-    <lastmod>2020-12-17T20:23:59+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
-    <lastmod>2020-12-17T20:23:59+05:30</lastmod>
-  </url>
-  
-  <url>
     <loc>/categories/video/</loc>
     <lastmod>2020-12-17T20:23:59+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/code/</loc>
-    <lastmod>2020-12-16T15:23:59+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/paper/</loc>
-    <lastmod>2020-12-16T15:23:59+05:30</lastmod>
   </url>
   
   <url>

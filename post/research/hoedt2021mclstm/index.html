@@ -11,27 +11,27 @@
              "@id": "\/"
         },
         "articleSection" : "post",
-        "name" : "Towards learning universal, regional, and local hydrological behaviors via machine learning applied to large-sample datasets",
-        "headline" : "Towards learning universal, regional, and local hydrological behaviors via machine learning applied to large-sample datasets",
-        "description" : "\u003cp\u003eIn this manuscript we show for the first time how to train a single LSTM-based neural network as general hydrology model for hundreds of basins. Furthermore, we proposed the Entity-Aware LSTM (EA-LSTM) in which static features are used explicitly to subset the model for a specific entity (here a catchment).\u003c\/p\u003e",
+        "name" : "MC-LSTM: Mass-Conserving LSTM",
+        "headline" : "MC-LSTM: Mass-Conserving LSTM",
+        "description" : "\u003cp\u003eIn this study, we present a mass-conserving variant of the LSTM and its application to arithmetic tasks, traffic forecasting, modeling a pendulum and rainfall-runoff modeling.\u003c\/p\u003e",
         "inLanguage" : "en",
         "author" : "",
         "creator" : "",
         "publisher": "",
         "accountablePerson" : "",
         "copyrightHolder" : "",
-        "copyrightYear" : "2019",
-        "datePublished": "2019-08-02 20:23:59 \u002b0530 \u002b0530",
-        "dateModified" : "2019-08-02 20:23:59 \u002b0530 \u002b0530",
-        "url" : "\/post\/research\/kratzert2019regional\/",
-        "wordCount" : "359",
-        "image" : "/img/kratzert2019ealstm/ealstm.png"",
+        "copyrightYear" : "2021",
+        "datePublished": "2021-01-14 08:23:59 \u002b0530 \u002b0530",
+        "dateModified" : "2021-01-14 08:23:59 \u002b0530 \u002b0530",
+        "url" : "\/post\/research\/hoedt2021mclstm\/",
+        "wordCount" : "266",
+        "image" : "/img/hoedt2021mclstm/mclstm.png"",
         "keywords" : [ "Blog" ]   
     }
     </script>
 
 
- <title>Towards learning universal, regional, and local hydrological behaviors via machine learning applied to large-sample datasets </title>
+ <title>MC-LSTM: Mass-Conserving LSTM </title>
 
 
 <meta name="description" content="Research blog for machine learning applications in hydrology" />
@@ -209,12 +209,12 @@
     <div
       class="post type-post status-publish format-standard has-post-thumbnail hentry category-design tag-design tag-standard-2 tag-tagalicious tag-travel entry full-without-featured odd excerpt-1">
 
-      <div class='featured-image lazy lazy-bg-image'  data-background="/img/kratzert2019ealstm/ealstm.png"
+      <div class='featured-image lazy lazy-bg-image'  data-background="/img/hoedt2021mclstm/mclstm.png"
         >
       </div>
       
         <div class="entry-meta">
-          <span class="date">02 August</span> <span> / </span>
+          <span class="date">14 January</span> <span> / </span>
 
           <span class="author">
             <a href="https://kratzert.github.io" title="Posts by Frederik Kratzert"
@@ -239,29 +239,26 @@
 
         </div>
         <div class='entry-header'>
-          <h1 class='entry-title'> Towards learning universal, regional, and local hydrological behaviors via machine learning applied to large-sample datasets</h1>
+          <h1 class='entry-title'> MC-LSTM: Mass-Conserving LSTM</h1>
         </div>
         <div class="entry-container">
           <div class="entry-content">
             <article>
-              <p>In this manuscript we show for the first time how to train a single LSTM-based neural network as general hydrology model for hundreds of basins. Furthermore, we proposed the Entity-Aware LSTM (EA-LSTM) in which static features are used explicitly to subset the model for a specific entity (here a catchment).</p>
+              <p>In this study, we present a mass-conserving variant of the LSTM and its application to arithmetic tasks, traffic forecasting, modeling a pendulum and rainfall-runoff modeling.</p>
 <h4 id="abstract"><strong>Abstract</strong></h4>
-<p>Regional rainfall-runoff modeling is an old but still mostly out-standing problem in Hydrological Sciences. The problem currently is that traditional hydrological models degrade significantly in performance when calibrated for multiple basins together instead of for a single basin alone. In this paper, we propose a novel, data-driven approach using Long Short-Term Memory networks (LSTMs), and demonstrate that under a &ldquo;big data&rdquo; paradigm, this is not necessarily the case. By training a single LSTM model on 531 basins from the CAMELS data set using meteorological time series data and static catchment attributes, we were able to significantly improve performance compared to a set of several different hydrological benchmark models. Our proposed approach not only significantly outperforms hydrological models that were calibrated regionally but also achieves better performance than hydrological models that were calibrated for each basin individually. Furthermore, we propose an adaption to the standard LSTM architecture, which we call an Entity-Aware-LSTM (EA-LSTM), that allows for learning, and embedding as a feature layer in a deep learning model, catchment similarities. We show that this learned catchment similarity corresponds well with what we would expect from prior hydrological understanding.</p>
+<p>The success of Convolutional Neural Networks (CNNs) in computer vision ismainly driven by their strong inductive bias, which is strong enough to allowCNNs to solve vision-related tasks with random weights, meaning without learning. Similarly, Long Short-Term Memory (LSTM) has a strong inductive bias towards storing information over time. However, many real-world systems are governed by conservation laws, which lead to the redistribution of particular quantities — e.g. in physical and economical systems. Our novel Mass-Conserving LSTM (MC-LSTM) adheres to these conservation laws by extending the inductive bias of LSTM to model the redistribution of those stored quantities. MC-LSTMs set a new state-of-the-art for neural arithmetic units at learning arithmetic operations, such as addition tasks, which have a strong conservation law, as the sum is constant overtime. Further,MC-LSTM is applied to traffic forecasting, modeling a pendulum, and a large benchmark dataset in hydrology, where it sets a new state-of-the-art for predicting peak flows. In the hydrology example, we show that MC-LSTM states correlate with real world processes and are therefore interpretable.</p>
 <h4 id="paper"><strong>Paper</strong></h4>
-<p><a href="https://www.hydrol-earth-syst-sci.net/23/5089/2019/hess-23-5089-2019.html">Kratzert, F., Klotz, D., Shalev, G., Klambauer, G., Hochreiter, S., and Nearing, G.: Towards learning universal, regional, and local hydrological behaviors via machine learning applied to large-sample datasets, Hydrol. Earth Syst. Sci., 23, 5089–5110, https://doi.org/10.5194/hess-23-5089-2019, 2019. </a></p>
+<p><a href="https://arxiv.org/abs/2101.05186">Hoedt, P.-J. and Kratzert, F. and Klotz, D. and Halmich, C. and Holzleitner, M. and Nearing, G. and Hochreiter, S. and Klambauer, G. &ldquo;MC-LSTM: Mass-Conserving LSTM&rdquo; arXiv preprint arXiv:2101.05186(2021).</a></p>
 <h4 id="code"><strong>Code</strong></h4>
-<p>Code, data and pre-trained models to reproduce every detail of this paper can be found in <a href="https://github.com/kratzert/ealstm_regional_modeling">this</a> GitHub repository.</p>
+<p>Code will be made available shortly.</p>
 <h4 id="citation"><strong>Citation</strong></h4>
-<pre><code>@article{kratzert2019ealstm,
-author = {Kratzert, F. and Klotz, D. and Shalev, G. and Klambauer, G. and Hochreiter, S. and Nearing, G.},
-title = {Towards learning universal, regional, and local hydrological behaviors via machine learning applied to large-sample datasets},
-journal = {Hydrology and Earth System Sciences},
-volume = {23},
-year = {2019},
-number = {12},
-pages = {5089--5110},
-url = {https://www.hydrol-earth-syst-sci.net/23/5089/2019/},
-doi = {10.5194/hess-23-5089-2019}
+<pre><code>@misc{hoedt2021mclstm,
+      title={MC-LSTM: Mass-Conserving LSTM}, 
+      author={Pieter-Jan Hoedt and Frederik Kratzert and Daniel Klotz and Christina Halmich and Markus Holzleitner and Grey Nearing and Sepp Hochreiter and Günter Klambauer},
+      year={2021},
+      eprint={2101.05186},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
 }
 </code></pre>
             </article>

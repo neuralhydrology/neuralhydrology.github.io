@@ -6,7 +6,16 @@
     <description>Recent content in paper on Neural Hydrology</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 16 Dec 2020 15:23:59 +0530</lastBuildDate><atom:link href="/categories/paper/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 14 Jan 2021 08:23:59 +0530</lastBuildDate><atom:link href="/categories/paper/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MC-LSTM: Mass-Conserving LSTM</title>
+      <link>/post/research/hoedt2021mclstm/</link>
+      <pubDate>Thu, 14 Jan 2021 08:23:59 +0530</pubDate>
+      
+      <guid>/post/research/hoedt2021mclstm/</guid>
+      <description>&lt;p&gt;In this study, we present a mass-conserving variant of the LSTM and its application to arithmetic tasks, traffic forecasting, modeling a pendulum and rainfall-runoff modeling.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Uncertainty Estimation with Deep Learning for Rainfall-Runoff Modelling</title>
       <link>/post/research/klotz2020uncertainty/</link>
