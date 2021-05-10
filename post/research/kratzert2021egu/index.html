@@ -11,27 +11,27 @@
              "@id": "\/"
         },
         "articleSection" : "post",
-        "name" : "Using large data sets towards generating a catchment aware hydrological model for global applications",
-        "headline" : "Using large data sets towards generating a catchment aware hydrological model for global applications",
-        "description" : "\u003cp\u003ePICO presentation at the EGU General Assembly 2019 on prediction in ungauged basins using LSTM based models.\u003c\/p\u003e",
+        "name" : "Large-scale river network modeling using Graph Neural Networks",
+        "headline" : "Large-scale river network modeling using Graph Neural Networks",
+        "description" : "\u003cp\u003eOral presentation at the virtual EGU General Assembly 2021 on rainfall–runoff prediction with Graph Neural Networks.\u003c\/p\u003e",
         "inLanguage" : "en",
         "author" : "",
         "creator" : "",
         "publisher": "",
         "accountablePerson" : "",
         "copyrightHolder" : "",
-        "copyrightYear" : "2019",
-        "datePublished": "2019-04-10 20:23:59 \u002b0530 \u002b0530",
-        "dateModified" : "2019-04-10 20:23:59 \u002b0530 \u002b0530",
-        "url" : "\/post\/research\/kratzert2019egu\/",
-        "wordCount" : "319",
-        "image" : "/img/kratzer2019egu/embedding.png"",
+        "copyrightYear" : "2021",
+        "datePublished": "2021-05-07 17:20:55 \u002b0530 \u002b0530",
+        "dateModified" : "2021-05-07 17:20:55 \u002b0530 \u002b0530",
+        "url" : "\/post\/research\/kratzert2021egu\/",
+        "wordCount" : "497",
+        "image" : "/img/kratzert2021egu/kratzert2021egu.png"",
         "keywords" : [ "Blog" ]   
     }
     </script>
 
 
- <title>Using large data sets towards generating a catchment aware hydrological model for global applications </title>
+ <title>Large-scale river network modeling using Graph Neural Networks </title>
 
 
 <meta name="description" content="Research blog for machine learning applications in hydrology" />
@@ -213,16 +213,16 @@
     <div
       class="post type-post status-publish format-standard has-post-thumbnail hentry category-design tag-design tag-standard-2 tag-tagalicious tag-travel entry full-without-featured odd excerpt-1">
 
-      <div class='featured-image lazy lazy-bg-image'  data-background="/img/kratzer2019egu/embedding.png"
+      <div class='featured-image lazy lazy-bg-image'  data-background="/img/kratzert2021egu/kratzert2021egu.png"
         >
       </div>
       
         <div class="entry-meta">
-          <span class="date">10 April</span> <span> / </span>
+          <span class="date">07 May</span> <span> / </span>
 
           <span class="author">
-            <a href="https://kratzert.github.io" title="Posts by Frederik Kratzert"
-              rel="author">Frederik Kratzert</a>
+            <a href="/" title="Posts by Martin Gauch"
+              rel="author">Martin Gauch</a>
           </span>
 
 
@@ -237,25 +237,29 @@
 
         </div>
         <div class='entry-header'>
-          <h1 class='entry-title'> Using large data sets towards generating a catchment aware hydrological model for global applications</h1>
+          <h1 class='entry-title'> Large-scale river network modeling using Graph Neural Networks</h1>
         </div>
         <div class="entry-container">
           <div class="entry-content">
             <article>
-              <p>PICO presentation at the EGU General Assembly 2019 on prediction in ungauged basins using LSTM based models.</p>
+              <p>Oral presentation at the virtual EGU General Assembly 2021 on rainfall–runoff prediction with Graph Neural Networks.</p>
 <h4 id="abstract"><strong>Abstract</strong></h4>
-<p>One reason for the success of deep learning across many applications (eg image classification or machine translation) are large and publicly available data sets. In Hydrology, more specifically in the area of rainfall-runoff modelling, such publicly available data sets are still rare but are increasingly emerging from the community (eg CAMELS [1, 2] and CAMELS-CL [3]). Having such data sets allows to test new data-driven approaches for old but still outstanding hydrological problems.</p>
-<p>In this study we build upon the idea of Kratzert et al.[4] using LSTM (Long Short-Term Memory) networks as a regional hydrological model. However, substantial changes are made:(a) We train a single model on hundreds of catchments across the USA, not only for a single HUC (hydrological unit) as in <a href="b">4</a> We do not only use meteorological time series as inputs but also static catchment characteristics through an adaption of the original LSTM architecture and therefore allow the LSTM to learn a catchment aware hydrological model. Here, we only use catchment characteristics of [2] that do not rely on discharge observation. With this setting we can therefore also investigate, if LSTMs can be used for prediction in ungauged basins. Concretely, we perform 6-fold cross-validation on 531 basins of the CAMELS data set. Out of the 6 splits, 5 are used for training and validation and a single split (approximately 89 basins) as test set for the final evaluation. This mimics an ungauged basin setting by not using any data from the basins in the test set during the entire training period.</p>
-<h4 id="abstract-link"><strong>Abstract Link</strong></h4>
-<p><a href="https://meetingorganizer.copernicus.org/EGU2019/EGU2019-13795.pdf">Link</a></p>
+<p>In the recent past, several studies have demonstrated the ability of deep learning (DL) models, especially based on Long Short-Term Memory (LSTM) networks, for rainfall-runoff modeling. However, almost all of these studies were limited to (multiple) individual catchments or small river networks, consisting of only a few connected catchments.</p>
+<p>In this study, we investigate large-scale, spatially distributed rainfall-runoff modeling using DL models. Our setup consists of two independent model components: One model for the runoff-generation process and one for the routing. The former is an LSTM-based model that predicts the discharge contribution of each sub-catchment in a river network. The latter is a Graph Neural Network (GNN) that routes the water along the river network network in hierarchical order. The first part is set up to simulate unimpaired runoff for every sub-catchment. Then, the GNN routes the water through the river network, incorporating human influences such as river regulations through hydropower plants. The main focus is to investigate different model architectures for the GNN that are able to learn the routing task, as well as potentially accounting for human influence. We consider models based on 1D-convolution, attention modules, as well as state-aware time series models.</p>
+<p>The decoupled approach with individual models for sub-catchment discharge prediction and routing has several benefits: a) We have an intermediate output of per-basin discharge contributions that we can inspect. b) We can leverage observed streamflow when available. That is, we can optionally substitute the discharge simulations of the first model with observed discharge, to make use of as much observed information as possible. c) We can train the model very efficiently. d) We can simulate any intermediate node in the river network, without requiring discharge observations.</p>
+<p>For the experiments, we use a new large-sample dataset called LamaH (Large-sample Data for Hydrology in Central Europe) that covers all of Austria and the foreign upstream areas of the Danube. We consider the entire Danube catchment upstream of Bratislava, a highly diverse region, including large parts of the Alps, that covers a total area of more than 130000km2. Within that area, LamaH contains hourly and daily discharge observations for more than 600 gauge stations. Thus, we investigate DL-based routing models not only for daily discharge, but also for hourly discharge.</p>
+<p>Our first results are promising, both daily and hourly discharge simulation. For example, the fully DL-based distributed models capture the dynamics as well as the timing of the devastating 2002 Danube flood. Building upon our work on learning universal, regional, and local hydrological behaviors with machine learning, we try to make the GNN-based routing as universal as possible, striving towards a globally applicable, spatially distributed, fully learned hydrological model.</p>
+<h4 id="links"><strong>Links</strong></h4>
+<p><a href="https://doi.org/10.5194/egusphere-egu21-13375">Abstract</a></p>
 <h4 id="citation"><strong>Citation</strong></h4>
-<pre><code>@inproceedings{kratzert2019using,
-  title={Using large data sets towards generating a catchment aware hydrologicalmodel for global applications},
-  author={Kratzert, Frederik and Klotz, Daniel and Herrnegger, Mathew and Hochreiter, Sepp and Klambauer, G{\&quot;u}nter},
-  booktitle={Geophysical Research Abstracts, Vol. 21, EGU2019-13795, EGU General Assembly},
-  venue={Vienna, Austria},
-  date={8-12 Apr},
-  year={2019}
+<pre><code>@inproceedings{kratzert2021egu,
+  title={Large-scale river network modeling using Graph Neural Networks},
+  author={Kratzert, Frederik and Klotz, Daniel and Gauch, Martin and Klingler, Christoph and Nearing, Grey and Hochreiter, Sepp},
+  booktitle={EGU General Assembly 2021},
+  venue={online},
+  date={19-30 April},
+  year={2021},
+  doi={10.5194/egusphere-egu21-13375}
 }
 </code></pre>
             </article>

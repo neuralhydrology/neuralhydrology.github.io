@@ -11,27 +11,27 @@
              "@id": "\/"
         },
         "articleSection" : "post",
-        "name" : "Using large data sets towards generating a catchment aware hydrological model for global applications",
-        "headline" : "Using large data sets towards generating a catchment aware hydrological model for global applications",
-        "description" : "\u003cp\u003ePICO presentation at the EGU General Assembly 2019 on prediction in ungauged basins using LSTM based models.\u003c\/p\u003e",
+        "name" : "Multi-Timescale LSTM for Rainfall–Runoff Forecasting",
+        "headline" : "Multi-Timescale LSTM for Rainfall–Runoff Forecasting",
+        "description" : "\u003cp\u003eOral presentation at the virtual EGU General Assembly 2021 on rainfall–runoff forecasting with Multi-Timescale LSTM.\u003c\/p\u003e",
         "inLanguage" : "en",
         "author" : "",
         "creator" : "",
         "publisher": "",
         "accountablePerson" : "",
         "copyrightHolder" : "",
-        "copyrightYear" : "2019",
-        "datePublished": "2019-04-10 20:23:59 \u002b0530 \u002b0530",
-        "dateModified" : "2019-04-10 20:23:59 \u002b0530 \u002b0530",
-        "url" : "\/post\/research\/kratzert2019egu\/",
-        "wordCount" : "319",
-        "image" : "/img/kratzer2019egu/embedding.png"",
+        "copyrightYear" : "2021",
+        "datePublished": "2021-05-07 17:23:59 \u002b0530 \u002b0530",
+        "dateModified" : "2021-05-07 17:23:59 \u002b0530 \u002b0530",
+        "url" : "\/post\/research\/gauch2021egu\/",
+        "wordCount" : "301",
+        "image" : "/img/gauch2021egu/gauch2021egu.png"",
         "keywords" : [ "Blog" ]   
     }
     </script>
 
 
- <title>Using large data sets towards generating a catchment aware hydrological model for global applications </title>
+ <title>Multi-Timescale LSTM for Rainfall–Runoff Forecasting </title>
 
 
 <meta name="description" content="Research blog for machine learning applications in hydrology" />
@@ -213,16 +213,16 @@
     <div
       class="post type-post status-publish format-standard has-post-thumbnail hentry category-design tag-design tag-standard-2 tag-tagalicious tag-travel entry full-without-featured odd excerpt-1">
 
-      <div class='featured-image lazy lazy-bg-image'  data-background="/img/kratzer2019egu/embedding.png"
+      <div class='featured-image lazy lazy-bg-image'  data-background="/img/gauch2021egu/gauch2021egu.png"
         >
       </div>
       
         <div class="entry-meta">
-          <span class="date">10 April</span> <span> / </span>
+          <span class="date">07 May</span> <span> / </span>
 
           <span class="author">
-            <a href="https://kratzert.github.io" title="Posts by Frederik Kratzert"
-              rel="author">Frederik Kratzert</a>
+            <a href="/" title="Posts by Martin Gauch"
+              rel="author">Martin Gauch</a>
           </span>
 
 
@@ -233,29 +233,38 @@
             <a href="/categories/conference">conference</a>
           </span>
           
+          <span class="category">
+            <span> / </span>
+
+            <a href="/categories/video">video</a>
+          </span>
+          
 
 
         </div>
         <div class='entry-header'>
-          <h1 class='entry-title'> Using large data sets towards generating a catchment aware hydrological model for global applications</h1>
+          <h1 class='entry-title'> Multi-Timescale LSTM for Rainfall–Runoff Forecasting</h1>
         </div>
         <div class="entry-container">
           <div class="entry-content">
             <article>
-              <p>PICO presentation at the EGU General Assembly 2019 on prediction in ungauged basins using LSTM based models.</p>
+              <p>Oral presentation at the virtual EGU General Assembly 2021 on rainfall–runoff forecasting with Multi-Timescale LSTM.</p>
 <h4 id="abstract"><strong>Abstract</strong></h4>
-<p>One reason for the success of deep learning across many applications (eg image classification or machine translation) are large and publicly available data sets. In Hydrology, more specifically in the area of rainfall-runoff modelling, such publicly available data sets are still rare but are increasingly emerging from the community (eg CAMELS [1, 2] and CAMELS-CL [3]). Having such data sets allows to test new data-driven approaches for old but still outstanding hydrological problems.</p>
-<p>In this study we build upon the idea of Kratzert et al.[4] using LSTM (Long Short-Term Memory) networks as a regional hydrological model. However, substantial changes are made:(a) We train a single model on hundreds of catchments across the USA, not only for a single HUC (hydrological unit) as in <a href="b">4</a> We do not only use meteorological time series as inputs but also static catchment characteristics through an adaption of the original LSTM architecture and therefore allow the LSTM to learn a catchment aware hydrological model. Here, we only use catchment characteristics of [2] that do not rely on discharge observation. With this setting we can therefore also investigate, if LSTMs can be used for prediction in ungauged basins. Concretely, we perform 6-fold cross-validation on 531 basins of the CAMELS data set. Out of the 6 splits, 5 are used for training and validation and a single split (approximately 89 basins) as test set for the final evaluation. This mimics an ungauged basin setting by not using any data from the basins in the test set during the entire training period.</p>
-<h4 id="abstract-link"><strong>Abstract Link</strong></h4>
-<p><a href="https://meetingorganizer.copernicus.org/EGU2019/EGU2019-13795.pdf">Link</a></p>
+<p>Rainfall–runoff predictions are generally evaluated on reanalysis datasets such as the DayMet, Maurer, or NLDAS forcings in the CAMELS dataset. While useful for benchmarking, this does not fully reflect real-world applications. There, meteorological information is much coarser, and fine-grained predictions are at best available until the present. For any prediction of future discharge, we must rely on forecasts, which introduce an additional layer of uncertainty. Thus, the model inputs need to switch from past data to forecast data at some point, which raises several questions: How can we design models that support this transition? How can we design tests that evaluate the performance of the model? Aggravating the challenge, the past and future data products may include different variables or have different temporal resolutions.</p>
+<p>We demonstrate how to seamlessly integrate past and future meteorological data in one deep learning model, using the recently proposed <a href="https://doi.org/10.5194/hess-25-2045-2021">Multi-Timescale LSTM</a> (MTS-LSTM). MTS-LSTMs are based on LSTMs but can generate rainfall–runoff predictions at multiple timescales more efficiently. One MTS-LSTM consists of several LSTMs that are organized in a branched structure. Each LSTM branch processes a part of the input time series at a certain temporal resolution. Then it passes its states to the next LSTM branch—thus sharing information across branches. We generalize this layout to handovers across data products (rather than just timescales) through an additional branch. This way, we can integrate past and future data in one prediction pipeline, yielding more accurate predictions.</p>
+<h4 id="links"><strong>Links</strong></h4>
+<p><a href="https://doi.org/10.5194/egusphere-egu21-9714">Abstract</a></p>
+<p><a href="https://youtu.be/BSBQup1Ciqo">Video of the presentation</a></p>
+<p><a href="https://doi.org/10.5194/hess-25-2045-2021">Related journal paper</a></p>
 <h4 id="citation"><strong>Citation</strong></h4>
-<pre><code>@inproceedings{kratzert2019using,
-  title={Using large data sets towards generating a catchment aware hydrologicalmodel for global applications},
-  author={Kratzert, Frederik and Klotz, Daniel and Herrnegger, Mathew and Hochreiter, Sepp and Klambauer, G{\&quot;u}nter},
-  booktitle={Geophysical Research Abstracts, Vol. 21, EGU2019-13795, EGU General Assembly},
-  venue={Vienna, Austria},
-  date={8-12 Apr},
-  year={2019}
+<pre><code>@inproceedings{gauch2021egu,
+  title={Multi-Timescale LSTM for Rainfall--Runoff Forecasting},
+  author={Gauch, Martin and Kratzert, Frederik and Nearing, Grey and Lin, Jimmy and Hochreiter, Sepp and Brandstetter, Johannes and Klotz, Daniel},
+  booktitle={EGU General Assembly 2021},
+  venue={online},
+  date={19-30 April},
+  year={2021},
+  doi={10.5194/hess-25-2045-2021}
 }
 </code></pre>
             </article>
@@ -269,6 +278,8 @@
                 
                 <a href="/categories/conference"
                   title="View all posts in conference">conference</a>
+                <a href="/categories/video"
+                  title="View all posts in video">video</a>
               </p>
             </div>
 

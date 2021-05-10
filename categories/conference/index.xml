@@ -6,7 +6,34 @@
     <description>Recent content in conference on Neural Hydrology</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 17 Dec 2020 20:23:59 +0530</lastBuildDate><atom:link href="/categories/conference/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 07 May 2021 17:23:59 +0530</lastBuildDate><atom:link href="/categories/conference/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Multi-Timescale LSTM for Rainfall–Runoff Forecasting</title>
+      <link>/post/research/gauch2021egu/</link>
+      <pubDate>Fri, 07 May 2021 17:23:59 +0530</pubDate>
+      
+      <guid>/post/research/gauch2021egu/</guid>
+      <description>&lt;p&gt;Oral presentation at the virtual EGU General Assembly 2021 on rainfall–runoff forecasting with Multi-Timescale LSTM.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Large-scale river network modeling using Graph Neural Networks</title>
+      <link>/post/research/kratzert2021egu/</link>
+      <pubDate>Fri, 07 May 2021 17:20:55 +0530</pubDate>
+      
+      <guid>/post/research/kratzert2021egu/</guid>
+      <description>&lt;p&gt;Oral presentation at the virtual EGU General Assembly 2021 on rainfall–runoff prediction with Graph Neural Networks.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Uncertainty estimation with LSTM based rainfall-runoff models</title>
+      <link>/post/research/klotz2021egu/</link>
+      <pubDate>Fri, 07 May 2021 17:10:51 +0530</pubDate>
+      
+      <guid>/post/research/klotz2021egu/</guid>
+      <description>&lt;p&gt;Oral presentation at the virtual EGU General Assembly 2021 on uncertainty prediction with LSTMs in the context of rainfall-runoff modeling.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Examining the uncertainty estimation properties of LSTM based rainfall-runoff models</title>
       <link>/post/research/klotz2020agu/</link>

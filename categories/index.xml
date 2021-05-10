@@ -6,7 +6,34 @@
     <description>Recent content in Categories on Neural Hydrology</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 14 Jan 2021 08:23:59 +0530</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 07 May 2021 17:23:59 +0530</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>conference</title>
+      <link>/categories/conference/</link>
+      <pubDate>Fri, 07 May 2021 17:23:59 +0530</pubDate>
+      
+      <guid>/categories/conference/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>video</title>
+      <link>/categories/video/</link>
+      <pubDate>Fri, 07 May 2021 17:23:59 +0530</pubDate>
+      
+      <guid>/categories/video/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dataset</title>
+      <link>/categories/dataset/</link>
+      <pubDate>Sat, 16 Jan 2021 20:23:59 +0530</pubDate>
+      
+      <guid>/categories/dataset/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>code</title>
       <link>/categories/code/</link>
@@ -22,24 +49,6 @@
       <pubDate>Thu, 14 Jan 2021 08:23:59 +0530</pubDate>
       
       <guid>/categories/paper/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>conference</title>
-      <link>/categories/conference/</link>
-      <pubDate>Thu, 17 Dec 2020 20:23:59 +0530</pubDate>
-      
-      <guid>/categories/conference/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>video</title>
-      <link>/categories/video/</link>
-      <pubDate>Thu, 17 Dec 2020 20:23:59 +0530</pubDate>
-      
-      <guid>/categories/video/</guid>
       <description></description>
     </item>
     

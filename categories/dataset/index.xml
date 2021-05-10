@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>dataset on Neural Hydrology</title>
+    <link>/categories/dataset/</link>
+    <description>Recent content in dataset on Neural Hydrology</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 16 Jan 2021 20:23:59 +0530</lastBuildDate><atom:link href="/categories/dataset/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CAMELS US: Hourly USGS discharge observations and NLDAS forcings</title>
+      <link>/post/datasets/camels-us-hourly-nldas-and-streamflow/</link>
+      <pubDate>Sat, 16 Jan 2021 20:23:59 +0530</pubDate>
+      
+      <guid>/post/datasets/camels-us-hourly-nldas-and-streamflow/</guid>
+      <description>&lt;p&gt;This dataset contains hourly discharge observations and NLDAS forcings for 516 CAMELS US basins.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
