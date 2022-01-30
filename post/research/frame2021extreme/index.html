@@ -11,27 +11,27 @@
              "@id": "\/"
         },
         "articleSection" : "post",
-        "name" : "Do internals of neural networks make sense in the context of hydrology?",
-        "headline" : "Do internals of neural networks make sense in the context of hydrology?",
-        "description" : "\x3cp\x3ePresentation at the AGU 2018 Fall Meeting on experiments regarding the interpretability of LSTM states.\x3c\/p\x3e",
+        "name" : "Deep learning rainfall-runoff predictions of extreme events",
+        "headline" : "Deep learning rainfall-runoff predictions of extreme events",
+        "description" : "\x3cp\x3eThis paper investigates the hypothesis that deep learning models may not be reliable in extrapolating extreme events.\x3c\/p\x3e",
         "inLanguage" : "en",
         "author" : "",
         "creator" : "",
         "publisher": "",
         "accountablePerson" : "",
         "copyrightHolder" : "",
-        "copyrightYear" : "2018",
-        "datePublished": "2018-12-10 20:23:59 \x2b0530 \x2b0530",
-        "dateModified" : "2018-12-10 20:23:59 \x2b0530 \x2b0530",
-        "url" : "\/post\/research\/kratzert2018agu\/",
-        "wordCount" : "382",
-        "image" : "/img/kratzert2018agu/hyd_model.png"",
+        "copyrightYear" : "2021",
+        "datePublished": "2021-08-18 20:23:59 \x2b0530 \x2b0530",
+        "dateModified" : "2021-08-18 20:23:59 \x2b0530 \x2b0530",
+        "url" : "\/post\/research\/frame2021extreme\/",
+        "wordCount" : "261",
+        "image" : "/img/frame2021extreme/header.png"",
         "keywords" : [ "Blog" ]   
     }
     </script>
 
 
- <title>Do internals of neural networks make sense in the context of hydrology? </title>
+ <title>Deep learning rainfall-runoff predictions of extreme events </title>
 
 
 <meta name="description" content="Research blog for machine learning applications in hydrology" />
@@ -213,12 +213,12 @@
     <div
       class="post type-post status-publish format-standard has-post-thumbnail hentry category-design tag-design tag-standard-2 tag-tagalicious tag-travel entry full-without-featured odd excerpt-1">
 
-      <div class='featured-image lazy lazy-bg-image'  data-background="/img/kratzert2018agu/hyd_model.png"
+      <div class='featured-image lazy lazy-bg-image'  data-background="/img/frame2021extreme/header.png"
         >
       </div>
       
         <div class="entry-meta">
-          <span class="date">10 December</span> <span> / </span>
+          <span class="date">18 August</span> <span> / </span>
 
           <span class="author">
             <a href="https://kratzert.github.io" title="Posts by Frederik Kratzert"
@@ -230,7 +230,7 @@
           <span class="category">
             <span> / </span>
 
-            <a href="/categories/conference">conference</a>
+            <a href="/categories/paper">paper</a>
           </span>
           
           <span class="category">
@@ -243,31 +243,27 @@
 
         </div>
         <div class='entry-header'>
-          <h1 class='entry-title'> Do internals of neural networks make sense in the context of hydrology?</h1>
+          <h1 class='entry-title'> Deep learning rainfall-runoff predictions of extreme events</h1>
         </div>
         <div class="entry-container">
           <div class="entry-content">
             <article>
-              <p>Presentation at the AGU 2018 Fall Meeting on experiments regarding the interpretability of LSTM states.</p>
+              <p>This paper investigates the hypothesis that deep learning models may not be reliable in extrapolating extreme events.</p>
 <h4 id="abstract"><strong>Abstract</strong></h4>
-<p>In recent years, neural networks gained a new wave of popularity in many application domains, such as computer vision or natural language processing. However in applied environmental sciences, like rainfall-runoff modelling in hydrology, neural networks tend to have a rather bad reputation. This can be attributed to their black-box-ness and the difficulty or impossibility to understand network internals leading to a prediction.</p>
-<p>In this study, we tackle this criticism and show how recent advances and methods in the area of interpretable machine learning allow for deeper analysis of network internals. As an example we use the Long Short-Term Memory network (LSTM) for the task of rainfall-runoff modelling. LSTMs are a special kind of recurrent neural network architecture and, as the name suggests, are able to learn short- and long-term dependencies between inputs and outputs due to special memory cells. This property is especially appreciable in hydrology, where outputs of the system tend to have a long memory. Kratzert et al. (2018) confirm this and have recently shown that LSTMs can achieve competitive results compared to the well established Sacramento Soil Moisture Accounting model, coupled with the Snow-17 snow module.</p>
-<p>In this study, we explore the internals of trained networks for different basins from the publicly available CAMELS data set, also utilizing remote sensing data of soil moisture, snow cover and evapotranspiration fluxes. We show that LSTMs internally learn to represent patterns that match our understandings of the hydrological system. In snow-driven catchments e.g. the network develops special memory cells that mimic conceptual snow storages with annual dynamics, as known from process-based catchment models.</p>
-<p>In general, we anticipate that our findings can increase the trust in the application of neural networks in environmental sciences. We however stress, that expert knowledge on the modeled system is inevitable and still remains an important quality against black-box-ness.</p>
-<h4 id="abstract-link"><strong>Abstract Link</strong></h4>
-<p><a href="http://adsabs.harvard.edu/abs/2018AGUFM.H13B..06K">Link</a></p>
-<h4 id="slides"><strong>Slides</strong></h4>
-<p><a href="https://github.com/kratzert/AGU2018/blob/master/Kratzert_et_al_AGU18_slides.pdf">Link</a></p>
-<h4 id="code"><strong>Code</strong></h4>
-<p>Code to reproduce all results presented in the talk can be found at <a href="https://github.com/kratzert/AGU2018">this</a> GitHub repository.</p>
+<p>The most accurate rainfall-runoff predictions are currently based on deep learning. There is a concern among hydrologists that data-driven models based on deep learning may not be reliable in extrapolation or for predicting extreme events. This study tests that hypothesis using Long Short-Term Memory networks (LSTMs) and an LSTM variant that is architecturally constrained to conserve mass. The LSTM (and the mass-conserving LSTM variant) remained relatively accurate in predicting extreme (high return-period) events compared to both a conceptual model (the Sacramento Model) and a process-based model (US National Water Model), even when extreme events were not included in the training period. Adding mass balance constraints to the data-driven model (LSTM) reduced model skill during extreme events.</p>
+<h4 id="paper"><strong>Paper</strong></h4>
+<p><a href="https://hess.copernicus.org/preprints/hess-2021-423/">Frame, J., Kratzert, F., Klotz, D., Gauch, M., Shelev, G., Gilon, O., Qualls, L. M., Gupta, H. V., and Nearing, G. S.: Deep learning rainfall-runoff predictions of extreme events, Hydrol. Earth Syst. Sci. Discuss. [preprint], https://doi.org/10.5194/hess-2021-423, in review, 2021. </a></p>
+<h3 id="code">Code</h3>
+<p>All experiments were made with the <a href="https://github.com/neuralhydrology/neuralhydrology">NeuralHydrology</a> Python library. The exact snapshot for reproducing the results can be found in <a href="ttps://github.com/jmframe/mclstm_2021_extrapolate/neuralhydrolog">this</a> GitHub repository.</p>
 <h4 id="citation"><strong>Citation</strong></h4>
-<pre><code>@inproceedings{kratzert2018internals,
-  title={Do internals of neural networks make sense in the context of hydrology?},
-  author={Kratzert, Frederik and Herrnegger, Mathew and Klotz, Daniel and Hochreiter, Sepp and Klambauer, G{\&quot;u}nter},
-  booktitle={2018AGUFM.H13B..06K presented at 2018 AGU Fall Meeting},
-  venue={Washington, D.C.},
-  date={10-14 Dec},
-  year={2018}
+<pre><code>@Article{frame2021extreme,
+author = {Frame, J. and Kratzert, F. and Klotz, D. and Gauch, M. and Shelev, G. and Gilon, O. and Qualls, L. M. and Gupta, H. V. and Nearing, G. S.},
+title = {Deep learning rainfall-runoff predictions of extreme events},
+journal = {Hydrology and Earth System Sciences Discussions},
+volume = {2021},
+year = {2021},
+pages = {1--20},
+doi = {10.5194/hess-2021-423}
 }
 </code></pre>
             </article>
@@ -279,8 +275,8 @@
             <div class="entry-categories">
               <p><span>Categories</span>
                 
-                <a href="/categories/conference"
-                  title="View all posts in conference">conference</a>
+                <a href="/categories/paper"
+                  title="View all posts in paper">paper</a>
                 <a href="/categories/code"
                   title="View all posts in code">code</a>
               </p>

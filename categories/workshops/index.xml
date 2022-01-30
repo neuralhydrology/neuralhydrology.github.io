@@ -6,7 +6,11 @@
     <description>Recent content in workshops on Neural Hydrology</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 06 Dec 2020 20:23:59 +0530</lastBuildDate><atom:link href="/categories/workshops/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 06 Dec 2020 20:23:59 +0530</lastBuildDate>
+    
+	<atom:link href="/categories/workshops/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>A Deep Learning Architecture for Conservative Dynamical Systems: Application to Rainfall-Runoff Modeling</title>
       <link>/post/research/nearing2020neurips/</link>

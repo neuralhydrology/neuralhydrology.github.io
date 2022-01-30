@@ -6,7 +6,83 @@
     <description>Recent content in code on Neural Hydrology</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 14 Jan 2021 08:23:59 +0530</lastBuildDate><atom:link href="/categories/code/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 20 Jan 2022 20:23:59 +0530</lastBuildDate>
+    
+	<atom:link href="/categories/code/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>On Strictly Enforced Mass Conservation Constraints for Modeling the Rainfall-Runoff Process</title>
+      <link>/post/research/frame2022mass/</link>
+      <pubDate>Thu, 20 Jan 2022 20:23:59 +0530</pubDate>
+      
+      <guid>/post/research/frame2022mass/</guid>
+      <description>&lt;p&gt;This paper investigates the hypothesis that the lack of enforced mass conservation is the main reason that deep learning models outperform traditional hydrology models.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hydrological Concept Formation inside Long Short-Term Memory (LSTM) networks </title>
+      <link>/post/research/lees2021concept/</link>
+      <pubDate>Tue, 23 Nov 2021 20:23:59 +0530</pubDate>
+      
+      <guid>/post/research/lees2021concept/</guid>
+      <description>&lt;p&gt;In this paper, we investigate what information the LSTM captures about the hydrological system.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Post processing the U.S. National Water Model with a Long Short-Term Memory network</title>
+      <link>/post/research/frame2020postprocessing/</link>
+      <pubDate>Mon, 15 Nov 2021 20:23:59 +0530</pubDate>
+      
+      <guid>/post/research/frame2020postprocessing/</guid>
+      <description>&lt;p&gt;In this paper, we investigate the potential of using the LSTM as a post-processor for the US National Water Model.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Technical Note: Data assimilation and autoregression for using near-real-time streamflow observations in long short-term memory networks</title>
+      <link>/post/research/nearing2021assimilation/</link>
+      <pubDate>Mon, 25 Oct 2021 20:23:59 +0530</pubDate>
+      
+      <guid>/post/research/nearing2021assimilation/</guid>
+      <description>&lt;p&gt;Technical note that compares autoregression to data assimilation for deep learning models and rainfall-runoff modeling.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Deep learning rainfall-runoff predictions of extreme events</title>
+      <link>/post/research/frame2021extreme/</link>
+      <pubDate>Wed, 18 Aug 2021 20:23:59 +0530</pubDate>
+      
+      <guid>/post/research/frame2021extreme/</guid>
+      <description>&lt;p&gt;This paper investigates the hypothesis that deep learning models may not be reliable in extrapolating extreme events.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>A note on leveraging synergy in multiple meteorological datasets with deep learning for rainfall-runoff modeling</title>
+      <link>/post/research/kratzert2020multi/</link>
+      <pubDate>Thu, 20 May 2021 20:23:59 +0530</pubDate>
+      
+      <guid>/post/research/kratzert2020multi/</guid>
+      <description>&lt;p&gt;In this paper we show the benefits of using multiple meteorological forcing products at the same time in a single LSTM-based rainfall-runoff model over just using a single product.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Rainfall-Runoff Prediction at Multiple Timescales with a Single Long Short-Term Memory Network</title>
+      <link>/post/research/gauch2020mtslstm/</link>
+      <pubDate>Mon, 19 Apr 2021 08:23:59 +0530</pubDate>
+      
+      <guid>/post/research/gauch2020mtslstm/</guid>
+      <description>&lt;p&gt;New LSTM-based architecture for predictions at multiple temporal time scales.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Uncertainty Estimation with Deep Learning for Rainfall-Runoff Modelling</title>
+      <link>/post/research/klotz2020uncertainty/</link>
+      <pubDate>Wed, 14 Apr 2021 15:23:59 +0530</pubDate>
+      
+      <guid>/post/research/klotz2020uncertainty/</guid>
+      <description>&lt;p&gt;Deep learning based uncertainty estimation techniques and benchmarking procedure for rainfall-runoff modeling.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>MC-LSTM: Mass-Conserving LSTM</title>
       <link>/post/research/hoedt2021mclstm/</link>
@@ -17,48 +93,12 @@
     </item>
     
     <item>
-      <title>Uncertainty Estimation with Deep Learning for Rainfall-Runoff Modelling</title>
-      <link>/post/research/klotz2020uncertainty/</link>
-      <pubDate>Wed, 16 Dec 2020 15:23:59 +0530</pubDate>
-      
-      <guid>/post/research/klotz2020uncertainty/</guid>
-      <description>&lt;p&gt;Deep learning based uncertainty estimation techniques and benchmarking procedure for rainfall-runoff modeling.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Rainfall-Runoff Prediction at Multiple Timescales with a Single Long Short-Term Memory Network</title>
-      <link>/post/research/gauch2020mtslstm/</link>
-      <pubDate>Fri, 16 Oct 2020 08:23:59 +0530</pubDate>
-      
-      <guid>/post/research/gauch2020mtslstm/</guid>
-      <description>&lt;p&gt;New LSTM-based architecture for predictions at multiple temporal time scales.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Post processing the U.S. National Water Model with a Long Short-Term Memory network</title>
-      <link>/post/research/frame2020postprocessing/</link>
-      <pubDate>Sat, 27 Jun 2020 20:23:59 +0530</pubDate>
-      
-      <guid>/post/research/frame2020postprocessing/</guid>
-      <description>&lt;p&gt;In this paper, we investigate the potential of using the LSTM as a post-processor for the US National Water Model.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>A Data Scientist&#39;s Guide to Streamflow Prediction</title>
       <link>/post/research/gauch2020guide/</link>
       <pubDate>Fri, 05 Jun 2020 20:23:59 +0530</pubDate>
       
       <guid>/post/research/gauch2020guide/</guid>
       <description>&lt;p&gt;An introduction to hydrology and especially rainfall-runoff modeling, targeted at data scientists.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>A note on leveraging synergy in multiple meteorological datasets with deep learning for rainfall-runoff modeling</title>
-      <link>/post/research/kratzert2020multi/</link>
-      <pubDate>Thu, 14 May 2020 20:23:59 +0530</pubDate>
-      
-      <guid>/post/research/kratzert2020multi/</guid>
-      <description>&lt;p&gt;In this paper we show the benefits of using multiple meteorological forcing products at the same time in a single LSTM-based rainfall-runoff model over just using a single product.&lt;/p&gt;</description>
     </item>
     
     <item>

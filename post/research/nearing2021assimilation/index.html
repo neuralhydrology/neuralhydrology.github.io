@@ -11,27 +11,27 @@
              "@id": "\/"
         },
         "articleSection" : "post",
-        "name" : "Do internals of neural networks make sense in the context of hydrology?",
-        "headline" : "Do internals of neural networks make sense in the context of hydrology?",
-        "description" : "\x3cp\x3ePresentation at the AGU 2018 Fall Meeting on experiments regarding the interpretability of LSTM states.\x3c\/p\x3e",
+        "name" : "Technical Note: Data assimilation and autoregression for using near-real-time streamflow observations in long short-term memory networks",
+        "headline" : "Technical Note: Data assimilation and autoregression for using near-real-time streamflow observations in long short-term memory networks",
+        "description" : "\x3cp\x3eTechnical note that compares autoregression to data assimilation for deep learning models and rainfall-runoff modeling.\x3c\/p\x3e",
         "inLanguage" : "en",
         "author" : "",
         "creator" : "",
         "publisher": "",
         "accountablePerson" : "",
         "copyrightHolder" : "",
-        "copyrightYear" : "2018",
-        "datePublished": "2018-12-10 20:23:59 \x2b0530 \x2b0530",
-        "dateModified" : "2018-12-10 20:23:59 \x2b0530 \x2b0530",
-        "url" : "\/post\/research\/kratzert2018agu\/",
-        "wordCount" : "382",
-        "image" : "/img/kratzert2018agu/hyd_model.png"",
+        "copyrightYear" : "2021",
+        "datePublished": "2021-10-25 20:23:59 \x2b0530 \x2b0530",
+        "dateModified" : "2021-10-25 20:23:59 \x2b0530 \x2b0530",
+        "url" : "\/post\/research\/nearing2021assimilation\/",
+        "wordCount" : "215",
+        "image" : "/img/hyd_model.png"",
         "keywords" : [ "Blog" ]   
     }
     </script>
 
 
- <title>Do internals of neural networks make sense in the context of hydrology? </title>
+ <title>Technical Note: Data assimilation and autoregression for using near-real-time streamflow observations in long short-term memory networks </title>
 
 
 <meta name="description" content="Research blog for machine learning applications in hydrology" />
@@ -213,12 +213,12 @@
     <div
       class="post type-post status-publish format-standard has-post-thumbnail hentry category-design tag-design tag-standard-2 tag-tagalicious tag-travel entry full-without-featured odd excerpt-1">
 
-      <div class='featured-image lazy lazy-bg-image'  data-background="/img/kratzert2018agu/hyd_model.png"
+      <div class='featured-image lazy lazy-bg-image'  data-background="/img/hyd_model.png"
         >
       </div>
       
         <div class="entry-meta">
-          <span class="date">10 December</span> <span> / </span>
+          <span class="date">25 October</span> <span> / </span>
 
           <span class="author">
             <a href="https://kratzert.github.io" title="Posts by Frederik Kratzert"
@@ -230,7 +230,7 @@
           <span class="category">
             <span> / </span>
 
-            <a href="/categories/conference">conference</a>
+            <a href="/categories/paper">paper</a>
           </span>
           
           <span class="category">
@@ -243,31 +243,27 @@
 
         </div>
         <div class='entry-header'>
-          <h1 class='entry-title'> Do internals of neural networks make sense in the context of hydrology?</h1>
+          <h1 class='entry-title'> Technical Note: Data assimilation and autoregression for using near-real-time streamflow observations in long short-term memory networks</h1>
         </div>
         <div class="entry-container">
           <div class="entry-content">
             <article>
-              <p>Presentation at the AGU 2018 Fall Meeting on experiments regarding the interpretability of LSTM states.</p>
+              <p>Technical note that compares autoregression to data assimilation for deep learning models and rainfall-runoff modeling.</p>
 <h4 id="abstract"><strong>Abstract</strong></h4>
-<p>In recent years, neural networks gained a new wave of popularity in many application domains, such as computer vision or natural language processing. However in applied environmental sciences, like rainfall-runoff modelling in hydrology, neural networks tend to have a rather bad reputation. This can be attributed to their black-box-ness and the difficulty or impossibility to understand network internals leading to a prediction.</p>
-<p>In this study, we tackle this criticism and show how recent advances and methods in the area of interpretable machine learning allow for deeper analysis of network internals. As an example we use the Long Short-Term Memory network (LSTM) for the task of rainfall-runoff modelling. LSTMs are a special kind of recurrent neural network architecture and, as the name suggests, are able to learn short- and long-term dependencies between inputs and outputs due to special memory cells. This property is especially appreciable in hydrology, where outputs of the system tend to have a long memory. Kratzert et al. (2018) confirm this and have recently shown that LSTMs can achieve competitive results compared to the well established Sacramento Soil Moisture Accounting model, coupled with the Snow-17 snow module.</p>
-<p>In this study, we explore the internals of trained networks for different basins from the publicly available CAMELS data set, also utilizing remote sensing data of soil moisture, snow cover and evapotranspiration fluxes. We show that LSTMs internally learn to represent patterns that match our understandings of the hydrological system. In snow-driven catchments e.g. the network develops special memory cells that mimic conceptual snow storages with annual dynamics, as known from process-based catchment models.</p>
-<p>In general, we anticipate that our findings can increase the trust in the application of neural networks in environmental sciences. We however stress, that expert knowledge on the modeled system is inevitable and still remains an important quality against black-box-ness.</p>
-<h4 id="abstract-link"><strong>Abstract Link</strong></h4>
-<p><a href="http://adsabs.harvard.edu/abs/2018AGUFM.H13B..06K">Link</a></p>
-<h4 id="slides"><strong>Slides</strong></h4>
-<p><a href="https://github.com/kratzert/AGU2018/blob/master/Kratzert_et_al_AGU18_slides.pdf">Link</a></p>
+<p>Ingesting near-real-time observation data is a critical component of many operational hydrological forecasting systems. In this paper we compare two strategies for ingesting near-real-time streamflow observations into Long Short-Term Memory (LSTM) rainfall-runoff models: autoregression (a forward method) and variational data assimilation. Autoregression is both more accurate and more computationally efficient than data assimilation. Autoregression is sensitive to missing data, however an appropriate (and simple) training strategy mitigates this problem.</p>
+<h4 id="paper"><strong>Paper</strong></h4>
+<p><a href="https://hess.copernicus.org/preprints/hess-2021-515/">Nearing, G. S., Klotz, D., Sampson, A. K., Kratzert, F., Gauch, M., Frame, J. M., Shalev, G., and Nevo, S.: Technical Note: Data assimilation and autoregression for using near-real-time streamflow observations in long short-term memory networks, Hydrol. Earth Syst. Sci. Discuss. [preprint], https://doi.org/10.5194/hess-2021-515, in review, 2021.</a></p>
 <h4 id="code"><strong>Code</strong></h4>
-<p>Code to reproduce all results presented in the talk can be found at <a href="https://github.com/kratzert/AGU2018">this</a> GitHub repository.</p>
+<p>All code to reproduce the results can be found in <a href="https://github.com/grey-nearing/lstm-data-assimilation">this</a> Github repository.</p>
 <h4 id="citation"><strong>Citation</strong></h4>
-<pre><code>@inproceedings{kratzert2018internals,
-  title={Do internals of neural networks make sense in the context of hydrology?},
-  author={Kratzert, Frederik and Herrnegger, Mathew and Klotz, Daniel and Hochreiter, Sepp and Klambauer, G{\&quot;u}nter},
-  booktitle={2018AGUFM.H13B..06K presented at 2018 AGU Fall Meeting},
-  venue={Washington, D.C.},
-  date={10-14 Dec},
-  year={2018}
+<pre><code>@Article{nearing2021assimilation,
+author = {Nearing, G. S. and Klotz, D. and Sampson, A. K. and Kratzert, F. and Gauch, M. and Frame, J. M. and Shalev, G. and Nevo, S.},
+title = {Technical Note: Data assimilation and autoregression for using near-real-time streamflow observations in long short-term memory networks},
+journal = {Hydrology and Earth System Sciences Discussions},
+volume = {2021},
+year = {2021},
+pages = {1--25},
+doi = {10.5194/hess-2021-515}
 }
 </code></pre>
             </article>
@@ -279,8 +275,8 @@
             <div class="entry-categories">
               <p><span>Categories</span>
                 
-                <a href="/categories/conference"
-                  title="View all posts in conference">conference</a>
+                <a href="/categories/paper"
+                  title="View all posts in paper">paper</a>
                 <a href="/categories/code"
                   title="View all posts in code">code</a>
               </p>

@@ -13,19 +13,19 @@
         "articleSection" : "post",
         "name" : "Post processing the U.S. National Water Model with a Long Short-Term Memory network",
         "headline" : "Post processing the U.S. National Water Model with a Long Short-Term Memory network",
-        "description" : "\u003cp\u003eIn this paper, we investigate the potential of using the LSTM as a post-processor for the US National Water Model.\u003c\/p\u003e",
+        "description" : "\x3cp\x3eIn this paper, we investigate the potential of using the LSTM as a post-processor for the US National Water Model.\x3c\/p\x3e",
         "inLanguage" : "en",
         "author" : "",
         "creator" : "",
         "publisher": "",
         "accountablePerson" : "",
         "copyrightHolder" : "",
-        "copyrightYear" : "2020",
-        "datePublished": "2020-06-27 20:23:59 \u002b0530 \u002b0530",
-        "dateModified" : "2020-06-27 20:23:59 \u002b0530 \u002b0530",
+        "copyrightYear" : "2021",
+        "datePublished": "2021-11-15 20:23:59 \x2b0530 \x2b0530",
+        "dateModified" : "2021-11-15 20:23:59 \x2b0530 \x2b0530",
         "url" : "\/post\/research\/frame2020postprocessing\/",
-        "wordCount" : "222",
-        "image" : "/img/frame2020postprocessing/header.png"",
+        "wordCount" : "348",
+        "image" : "/img/frame2021postprocessing/header.png"",
         "keywords" : [ "Blog" ]   
     }
     </script>
@@ -45,9 +45,9 @@
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
-<link href="/css/style.css?v=1620640236" rel="stylesheet" id="theme-stylesheet" type='text/css' media='all'>
+<link href="/css/style.css?v=1643580472" rel="stylesheet" id="theme-stylesheet" type='text/css' media='all'>
 
-<link href="/css/custom.css?v=1620640236" rel="stylesheet" type='text/css' media='all'>
+<link href="/css/custom.css?v=1643580472" rel="stylesheet" type='text/css' media='all'>
 <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
 <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
 
@@ -213,12 +213,12 @@
     <div
       class="post type-post status-publish format-standard has-post-thumbnail hentry category-design tag-design tag-standard-2 tag-tagalicious tag-travel entry full-without-featured odd excerpt-1">
 
-      <div class='featured-image lazy lazy-bg-image'  data-background="/img/frame2020postprocessing/header.png"
+      <div class='featured-image lazy lazy-bg-image'  data-background="/img/frame2021postprocessing/header.png"
         >
       </div>
       
         <div class="entry-meta">
-          <span class="date">27 June</span> <span> / </span>
+          <span class="date">15 November</span> <span> / </span>
 
           <span class="author">
             <a href="https://kratzert.github.io" title="Posts by Frederik Kratzert"
@@ -250,21 +250,22 @@
             <article>
               <p>In this paper, we investigate the potential of using the LSTM as a post-processor for the US National Water Model.</p>
 <h4 id="abstract"><strong>Abstract</strong></h4>
-<p>The U.S. National Water Model (NWM) is a large scale hydrology simulator. Although NWM achieves coupling of multi-scale hydrological processes, its predictability at individual catchments can be improved. Hydrologic post-processing is an approach to reduce systematic simulation errors with statistical models, and has been shown to improve forecast accuracy of both calibrated and uncalibrated models. In this experiment we trained a Long Short-Term Memory (LSTM) network to post-process the NWM output, and tested performance at 531 basins across the continental United States. The LSTM post-processor provided a significant benefit to nearly all aspects of NWM streamflow predictions. The LSTM also benefited from NWM input - in particular, representation of hydrologic signatures improved, which indicates better representation of physical flow patterns.</p>
+<p>We build three long short-term memory (LSTM) daily streamflow prediction models (deep learning networks) for 531 basins across the contiguous United States (CONUS), and compare their performance: (1) a LSTM post-processor trained on the United States National Water Model (NWM) outputs (LSTM_PP), (2) a LSTM post-processor trained on the NWM outputs and atmospheric forcings (LSTM_PPA), and (3) a LSTM model trained only on atmospheric forcing (LSTM_A). We trained the LSTMs for the period 2004–2014 and evaluated on 1994–2002, and compared several performance metrics to the NWM reanalysis. Overall performance of the three LSTMs is similar, with median NSE scores of 0.73 (LSTM_PP), 0.75 (LSTM_PPA), and 0.74 (LSTM_A), and all three LSTMs outperform the NWM validation scores of 0.62. Additionally, LSTM_A outperforms LSTM_PP and LSTM_PPA in ungauged basins. While LSTM as a post-processor improves NWM predictions substantially, we achieved comparable performance with the LSTM trained without the NWM outputs (LSTM_A). Finally, we performed a sensitivity analysis to diagnose the land surface component of the NWM as the source of mass bias error and the channel router as a source of simulation timing error. This indicates that the NWM channel routing scheme should be considered a priority for NWM improvement.</p>
 <h4 id="paper"><strong>Paper</strong></h4>
-<p><a href="https://eartharxiv.org/4xhac/">Frame, Jonathan, Grey Nearing, Frederik Kratzert, Austin Raney, and Mashrekur Rahman. 2020. “Post Processing the U.S. National Water Model with a Long Short-term Memory Network.” EarthArXiv. July 2. doi:10.31223/osf.io/4xhac.</a></p>
+<p><a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/1752-1688.12964">Frame, J.M., Kratzert, F., Raney, A., Rahman, M., Salas, F.R., and Nearing, G.S.. 2021. “ Post-Post-Processing the National Water Model with Long Short-Term Memory Networks for Streamflow Predictions and Model Diagnostics.” Journal of the American Water Resources Association 57( 6): 885– 905. https://doi.org/10.1111/1752-1688.12964. </a></p>
 <p>(submitted to WRR)</p>
 <h3 id="code">Code</h3>
 <p>Code for reproducing the results can be found in <a href="https://github.com/jmframe/nwm-post-processing-with-lstm">this</a> GitHub repository.</p>
 <h4 id="citation"><strong>Citation</strong></h4>
-<pre><code>@misc{frame2020postprocessing,
- title={Post processing the U.S. National Water Model with a Long Short-Term Memory network},
- url={eartharxiv.org/4xhac},
- DOI={10.31223/osf.io/4xhac},
- publisher={EarthArXiv},
- author={Frame, Jonathan and Nearing, Grey and Kratzert, Frederik and Raney, Austin and Rahman, Mashrekur},
- year={2020},
- month={Jul}
+<pre><code>@article{frame2021postprocessing,
+author = {Frame, J. M. and Kratzert, F. and Raney II, A. and Rahman, M. and Salas, F. R. and Nearing, G. S.},
+title = {Post-Processing the National Water Model with Long Short-Term Memory Networks for Streamflow Predictions and Model Diagnostics},
+journal = {JAWRA Journal of the American Water Resources Association},
+volume = {57},
+number = {6},
+pages = {885-905},
+doi = {https://doi.org/10.1111/1752-1688.12964},
+year = {2021}
 }
 </code></pre>
             </article>
@@ -341,7 +342,7 @@
 </footer>
   <script src="/js/jquery.min.js"></script>
 <script src="/js/jquerymigrate.js"></script>
-<script src="/js/production.min.js?v=1620640236"></script>
+<script src="/js/production.min.js?v=1643580472"></script>
 <script type="text/javascript" async
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
   MathJax.Hub.Config({
