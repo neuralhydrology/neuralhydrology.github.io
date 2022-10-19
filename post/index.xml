@@ -6,10 +6,60 @@
     <description>Recent content in Posts on Neural Hydrology</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 20 Jan 2022 20:23:59 +0530</lastBuildDate>
+    <lastBuildDate>Fri, 05 Aug 2022 20:23:59 +0530</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Flood forecasting with machine learning models in an operational framework </title>
+      <link>/post/research/nevo2021operational/</link>
+      <pubDate>Fri, 05 Aug 2022 20:23:59 +0530</pubDate>
+      
+      <guid>/post/research/nevo2021operational/</guid>
+      <description>&lt;p&gt;In this paper, we present the full operational framework used by the Flood Forecasting team at Google.&lt;/p&gt;</description>
+    </item>
     
-	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Great Lakes Runoff Intercomparison Project Phase 4: the Great Lakes (GRIP-GL)</title>
+      <link>/post/research/mai2022grip/</link>
+      <pubDate>Fri, 08 Jul 2022 20:23:59 +0530</pubDate>
+      
+      <guid>/post/research/mai2022grip/</guid>
+      <description>&lt;p&gt;This paper performs a rigorous benchmark of traditional hydrologic models and an LSTM-based model for rainfall-runoff modeling.&lt;/p&gt;</description>
+    </item>
     
+    <item>
+      <title>Hydrological Concept Formation inside Long Short-Term Memory (LSTM) networks </title>
+      <link>/post/research/lees2021concept/</link>
+      <pubDate>Mon, 20 Jun 2022 20:23:59 +0530</pubDate>
+      
+      <guid>/post/research/lees2021concept/</guid>
+      <description>&lt;p&gt;In this paper, we investigate what information the LSTM captures about the hydrological system.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Caravan - A global community dataset for large-sample hydrology</title>
+      <link>/post/research/kratzert2022caravan/</link>
+      <pubDate>Thu, 16 Jun 2022 20:23:59 +0530</pubDate>
+      
+      <guid>/post/research/kratzert2022caravan/</guid>
+      <description>&lt;p&gt;This paper introduces the &lt;a href=&#34;https://github.com/kratzert/Caravan/&#34;&gt;Caravan dataset&lt;/a&gt;, a global large-sample hydrology dataset that builds on cloud computing to be extensible by anyone.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Rate my Hydrograph: Evaluating the Conformity of Expert Judgment and Quantitative Metrics</title>
+      <link>/post/research/gauch2022egu/</link>
+      <pubDate>Mon, 23 May 2022 17:23:59 +0530</pubDate>
+      
+      <guid>/post/research/gauch2022egu/</guid>
+      <description>&lt;p&gt;Oral presentation at the EGU General Assembly 2022 on a social study to compare expert rankings of simulated hydrographs with quantitative metrics.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>NeuralHydrology — A Python library for Deep Learning research in hydrology</title>
+      <link>/post/research/kratzert2022joss/</link>
+      <pubDate>Fri, 04 Mar 2022 20:23:59 +0530</pubDate>
+      
+      <guid>/post/research/kratzert2022joss/</guid>
+      <description>&lt;p&gt;Accompanying paper to our open source Python library &lt;a href=&#34;https://github.com/neuralhydrology/neuralhydrology&#34;&gt;NeuralHydrology&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>On Strictly Enforced Mass Conservation Constraints for Modeling the Rainfall-Runoff Process</title>
@@ -21,12 +71,12 @@
     </item>
     
     <item>
-      <title>Hydrological Concept Formation inside Long Short-Term Memory (LSTM) networks </title>
-      <link>/post/research/lees2021concept/</link>
-      <pubDate>Tue, 23 Nov 2021 20:23:59 +0530</pubDate>
+      <title>Forward vs. Inverse Methods for Using Near-Real-Time Streamflow Observation Data in Long Short-Term Memory Networks</title>
+      <link>/post/research/nearing2022agu/</link>
+      <pubDate>Mon, 13 Dec 2021 20:23:59 +0530</pubDate>
       
-      <guid>/post/research/lees2021concept/</guid>
-      <description>&lt;p&gt;In this paper, we investigate what information the LSTM captures about the hydrological system.&lt;/p&gt;</description>
+      <guid>/post/research/nearing2022agu/</guid>
+      <description>&lt;p&gt;Presentation at the AGU 2021 Fall Meeting presenting approaches to improve LSTM streamflow predictions with near-real-time observation data.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -36,15 +86,6 @@
       
       <guid>/post/research/frame2020postprocessing/</guid>
       <description>&lt;p&gt;In this paper, we investigate the potential of using the LSTM as a post-processor for the US National Water Model.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Flood forecasting with machine learning models in an operational framework </title>
-      <link>/post/research/nevo2021operational/</link>
-      <pubDate>Fri, 12 Nov 2021 20:23:59 +0530</pubDate>
-      
-      <guid>/post/research/nevo2021operational/</guid>
-      <description>&lt;p&gt;In this paper, we present the full operational framework used by the Flood Forecasting team at Google.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -126,6 +167,15 @@
       
       <guid>/post/datasets/camels-us-hourly-nldas-and-streamflow/</guid>
       <description>&lt;p&gt;This dataset contains hourly discharge observations and NLDAS forcings for 516 CAMELS US basins.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>LamaH-CE: LArge-SaMple DAta for Hydrology and Environmental Sciences for Central Europe</title>
+      <link>/post/datasets/lamah-ce/</link>
+      <pubDate>Sat, 16 Jan 2021 20:23:59 +0530</pubDate>
+      
+      <guid>/post/datasets/lamah-ce/</guid>
+      <description>&lt;p&gt;LamaH-CE contains a collection of runoff and meteorological time series as well as various (catchment) attributes for 859 gauged basins in the upper Danube catchment and Austria.&lt;/p&gt;</description>
     </item>
     
     <item>

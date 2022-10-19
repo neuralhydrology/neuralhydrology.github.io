@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@type" : "BlogPosting",
+        "mainEntityOfPage": {
+             "@type": "WebPage",
+             "@id": "\/"
+        },
+        "articleSection" : "post",
+        "name" : "NeuralHydrology — A Python library for Deep Learning research in hydrology",
+        "headline" : "NeuralHydrology — A Python library for Deep Learning research in hydrology",
+        "description" : "\u003cp\u003eAccompanying paper to our open source Python library \u003ca href=\u0022https:\/\/github.com\/neuralhydrology\/neuralhydrology\u0022\u003eNeuralHydrology\u003c\/a\u003e.\u003c\/p\u003e",
+        "inLanguage" : "en",
+        "author" : "",
+        "creator" : "",
+        "publisher": "",
+        "accountablePerson" : "",
+        "copyrightHolder" : "",
+        "copyrightYear" : "2022",
+        "datePublished": "2022-03-04 20:23:59 \u002b0530 \u002b0530",
+        "dateModified" : "2022-03-04 20:23:59 \u002b0530 \u002b0530",
+        "url" : "\/post\/research\/kratzert2022joss\/",
+        "wordCount" : "342",
+        "image" : "/img/nh_logo.png"",
+        "keywords" : [ "Blog" ]   
+    }
+    </script>
+
+
+ <title>NeuralHydrology — A Python library for Deep Learning research in hydrology </title>
+
+
+<meta name="description" content="Research blog for machine learning applications in hydrology" />
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="all,follow">
+<meta name="googlebot" content="index,follow,snippet,archive">
+<link rel="stylesheet" id="ct-tracks-google-fonts-css" href="//fonts.googleapis.com/css?family=Raleway%3A400%2C700&amp;subset=latin%2Clatin-ext&amp;ver=4.7.2" type="text/css" media="all">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+<link href="/css/style.css?v=1666182176" rel="stylesheet" id="theme-stylesheet" type='text/css' media='all'>
+
+<link href="/css/custom.css?v=1666182176" rel="stylesheet" type='text/css' media='all'>
+<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+
+
+</head>
+
+
+<body
+  class="post-template-default single single-post single-format-standard ct-body singular singular-post not-front standard">
+  
+  <div id="overflow-container" class="overflow-container">
+    <a class="skip-content" href="#main">Skip to content</a>
+    <header id="site-header" class="site-header" role="banner">
+      <div class='top-navigation'>
+        <div class='container'>
+
+  <div id="menu-secondary" class="menu-container menu-secondary" role="navigation">
+    <button id="toggle-secondary-navigation" class="toggle-secondary-navigation"><i class="fas fa-plus"></i></button>
+
+    <div class="menu">
+
+      <ul id="menu-secondary-items" class="menu-secondary-items">
+        
+        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
+          <a href="/categories/book-chapter">book-chapter</a>
+        </li>
+        
+        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
+          <a href="/categories/code">code</a>
+        </li>
+        
+        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
+          <a href="/categories/conference">conference</a>
+        </li>
+        
+        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
+          <a href="/categories/dataset">dataset</a>
+        </li>
+        
+        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
+          <a href="/categories/paper">paper</a>
+        </li>
+        
+        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
+          <a href="/categories/video">video</a>
+        </li>
+        
+        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
+          <a href="/categories/workshops">workshops</a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+
+  </div>
+
+
+  <ul class="social-media-icons">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+    
+
+
+    
+
+    
+
+
+  </ul></div>
+
+      </div>
+
+      <div class="container">
+        <head>
+<style>
+.center {
+  margin: auto;
+  text-align: center;
+  width: 60%;
+  padding: 10px;
+}
+</style>
+</head>
+
+<div id="headerino" class = "left">
+  <a href="/">
+  <img src="/img/neural-hyd-head.png" width="240">
+  </a>
+  <br>
+</div>
+
+<div id="title-info" class="title-info">
+  <div id='site-title' class='site-title'>
+    
+    <a href="/"> Neural Hydrology </a>
+    </div>
+  </div>
+  <button id="toggle-navigation" class="toggle-navigation">
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <div id="menu-primary-tracks" class="menu-primary-tracks"></div>
+  <div id="menu-primary" class="menu-container menu-primary" role="navigation">
+    
+    <p class="site-description">Using Neural Networks in Hydrology</p>
+    
+
+    <div class="menu">
+      <ul id="menu-primary-items" class="menu-primary-items">
+        
+        
+        <li id="menu-item" class='menu-item menu-item-type-custom menu-item-object-custom '>
+          <a href="/">Home</a>
+          
+        </li>
+        
+        <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page '>
+          <a href="/about/">About</a>
+          
+        </li>
+        
+        <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page '>
+          <a href="/library/">Python Library</a>
+          
+        </li>
+        
+      </ul>
+    </div>
+
+  </div>
+
+      </div>
+    </header>
+
+    <div id="main" class="main" role="main">
+
+      
+
+  
+  
+  
+  
+  
+  <div id="loop-container2" class="loop-container2">
+    
+    <div
+      class="post type-post status-publish format-standard has-post-thumbnail hentry category-design tag-design tag-standard-2 tag-tagalicious tag-travel entry full-without-featured odd excerpt-1">
+
+      <div class='featured-image lazy lazy-bg-image'  data-background="/img/nh_logo.png"
+        >
+      </div>
+      
+        <div class="entry-meta">
+          <span class="date">04 March</span> <span> / </span>
+
+          <span class="author">
+            <a href="https://kratzert.github.io" title="Posts by Frederik Kratzert"
+              rel="author">Frederik Kratzert</a>
+          </span>
+
+
+          
+          <span class="category">
+            <span> / </span>
+
+            <a href="/categories/paper">paper</a>
+          </span>
+          
+          <span class="category">
+            <span> / </span>
+
+            <a href="/categories/code">code</a>
+          </span>
+          
+
+
+        </div>
+        <div class='entry-header'>
+          <h1 class='entry-title'> NeuralHydrology — A Python library for Deep Learning research in hydrology</h1>
+        </div>
+        <div class="entry-container">
+          <div class="entry-content">
+            <article>
+              <p>Accompanying paper to our open source Python library <a href="https://github.com/neuralhydrology/neuralhydrology">NeuralHydrology</a>.</p>
+<h4 id="abstract"><strong>Abstract</strong></h4>
+<p>Since ancient times humans have strived to describe environmental processes related to water. Throughout this history,
+hydrologists built various process-based prediction models that simulate processes from soil moisture to streamflow
+generation. More recently,  Deep Learning models have emerged as extremely powerful and more accurate alternatives
+to these traditional modeling approaches. For hydrologists, embracing this new data-driven paradigm is challenging: not
+only are the models conceptually different, but they are also built, optimized, and evaluated with different strategies
+and toolsets.</p>
+<p>NeuralHydrology is a Python library based on PyTorch that is designed to build, apply, and experiment with Deep Learning
+models with a strong focus on hydrological applications. Originally designed for our internal research needs, the
+library was generalized and open-sourced to allow anyone to experiment with Deep Learning models as easily as possible:
+pre-built models and data loaders allow for quick experiments, yet the framework is also easily extensible to new
+models, data sets, loss functions, or metrics to suit more advanced use-cases.</p>
+<p>NeuralHydrology is targeted towards students and researchers who want to experiment with Deep Learning models for
+rainfall-runoff modeling or other problems related to hydrology. As such, the library was designed to be picked up by
+beginners with little programming experience. For example, NeuralHydrology allows to train state-of-the-art
+rainfall-runoff models by only editing a config file and without touching a single line of code</p>
+<h4 id="paper"><strong>Paper</strong></h4>
+<p><a href="https://joss.theoj.org/papers/10.21105/joss.04050">Kratzert, F., and Gauch., M., and Nearing, G., and Klotz, D. (2022). NeuralHydrology &mdash; A Python library for Deep Learning research in hydrology. Journal of Open Source Software, 7(71), 4050, https://doi.org/10.21105/joss.04050</a></p>
+<h4 id="code"><strong>Code</strong></h4>
+<p>The library is available on <a href="https://github.com/neuralhydrology/neuralhydrology">GitHub</a> and the documentation, including some tutorials is available at <a href="neuralhydrology.readthedocs.io">neuralhydrology.readthedocs.io</a></p>
+<h4 id="citation"><strong>Citation</strong></h4>
+<pre tabindex="0"><code>@article{Kratzert2022joss,
+author = {Kratzert, F., and Gauch., M., and Nearing, G., and Klotz, D.},  
+title = {{NeuralHydrology} --- A Python library for Deep Learning research in hydrology},
+journal = {Journal of Open Source Software},
+doi = {10.21105/joss.04050}, 
+url = {https://doi.org/10.21105/joss.04050}, 
+year = {2022}, 
+publisher = {The Open Journal}, 
+volume = {7}, 
+number = {71}, 
+pages = {4050}} 
+</code></pre>
+            </article>
+          </div>
+          
+          <div class='entry-meta-bottom'>
+            
+
+            <div class="entry-categories">
+              <p><span>Categories</span>
+                
+                <a href="/categories/paper"
+                  title="View all posts in paper">paper</a>
+                <a href="/categories/code"
+                  title="View all posts in code">code</a>
+              </p>
+            </div>
+
+
+            
+            
+
+            <section id="comments" class="comments">
+              
+
+              
+
+              
+
+
+            </section>
+          </div>
+
+          
+          
+
+
+          
+    </div>
+
+
+  </div>
+  <footer id="site-footer" class="site-footer" role="contentinfo">
+    <h1>
+        
+        <a href=""> Neural Hydrology </a>
+        
+    </h1>
+
+    
+    <p class="site-description">Using Neural Networks in Hydrology</p>
+    
+
+    <div id="menu-footer" class="menu-container menu-footer" role="navigation">
+        <div class="menu">
+
+            <ul id="menu-footer-items" class="menu-footer-items">
+                
+            </ul>
+
+        </div>
+    </div>
+
+
+    <div class="design-credit">
+        
+        <p>© 2018 Göran Svensson</p>
+        
+        <p>Nederburg Hugo Theme by <a href="https://appernetic.io">Appernetic</a>.</p>
+        
+        <p>A port of Tracks by Compete Themes.</p>
+        
+    </div>
+</footer>
+  <script src="/js/jquery.min.js"></script>
+<script src="/js/jquerymigrate.js"></script>
+<script src="/js/production.min.js?v=1666182176"></script>
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+
+
+</body>
+</html>

@@ -13,18 +13,18 @@
         "articleSection" : "post",
         "name" : "Flood forecasting with machine learning models in an operational framework ",
         "headline" : "Flood forecasting with machine learning models in an operational framework ",
-        "description" : "\x3cp\x3eIn this paper, we present the full operational framework used by the Flood Forecasting team at Google.\x3c\/p\x3e",
+        "description" : "\u003cp\u003eIn this paper, we present the full operational framework used by the Flood Forecasting team at Google.\u003c\/p\u003e",
         "inLanguage" : "en",
         "author" : "",
         "creator" : "",
         "publisher": "",
         "accountablePerson" : "",
         "copyrightHolder" : "",
-        "copyrightYear" : "2021",
-        "datePublished": "2021-11-12 20:23:59 \x2b0530 \x2b0530",
-        "dateModified" : "2021-11-12 20:23:59 \x2b0530 \x2b0530",
+        "copyrightYear" : "2022",
+        "datePublished": "2022-08-05 20:23:59 \u002b0530 \u002b0530",
+        "dateModified" : "2022-08-05 20:23:59 \u002b0530 \u002b0530",
         "url" : "\/post\/research\/nevo2021operational\/",
-        "wordCount" : "304",
+        "wordCount" : "474",
         "image" : "/img/nevo2021operational/header.png"",
         "keywords" : [ "Blog" ]   
     }
@@ -45,9 +45,9 @@
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
-<link href="/css/style.css?v=1643743042" rel="stylesheet" id="theme-stylesheet" type='text/css' media='all'>
+<link href="/css/style.css?v=1666182176" rel="stylesheet" id="theme-stylesheet" type='text/css' media='all'>
 
-<link href="/css/custom.css?v=1643743042" rel="stylesheet" type='text/css' media='all'>
+<link href="/css/custom.css?v=1666182176" rel="stylesheet" type='text/css' media='all'>
 <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
 <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
 
@@ -218,7 +218,7 @@
       </div>
       
         <div class="entry-meta">
-          <span class="date">12 November</span> <span> / </span>
+          <span class="date">05 August</span> <span> / </span>
 
           <span class="author">
             <a href="https://kratzert.github.io" title="Posts by Frederik Kratzert"
@@ -244,18 +244,20 @@
             <article>
               <p>In this paper, we present the full operational framework used by the Flood Forecasting team at Google.</p>
 <h4 id="abstract"><strong>Abstract</strong></h4>
-<p>Ingesting near-real-time observation data is a critical component of many operational hydrological forecasting systems. In this paper we compare two strategies for ingesting near-real-time streamflow observations into Long Short-Term Memory (LSTM) rainfall-runoff models: autoregression (a forward method) and variational data assimilation. Autoregression is both more accurate and more computationally efficient than data assimilation. Autoregression is sensitive to missing data, however an appropriate (and simple) training strategy mitigates this problem.</p>
+<p>Google&rsquo;s operational flood forecasting system was developed to provide accurate real-time flood warnings to agencies and the public with a focus on riverine floods in large, gauged rivers. It became operational in 2018 and has since expanded geographically. This forecasting system consists of four subsystems: data validation, stage forecasting, inundation modeling, and alert distribution. Machine learning is used for two of the subsystems. Stage forecasting is modeled with the long short-term memory (LSTM) networks and the linear models. Flood inundation is computed with the thresholding and the manifold models, where the former computes inundation extent and the latter computes both inundation extent and depth. The manifold model, presented here for the first time, provides a machine-learning alternative to hydraulic modeling of flood inundation. When evaluated on historical data, all models achieve sufficiently high-performance metrics for operational use. The LSTM showed higher skills than the linear model, while the thresholding and manifold models achieved similar performance metrics for modeling inundation extent. During the 2021 monsoon season, the flood warning system was operational in India and Bangladesh, covering flood-prone regions around rivers with a total area close to 470 000 km2, home to more than 350 000 000 people. More than 100 000 000 flood alerts were sent to affected populations, to relevant authorities, and to emergency organizations. Current and future work on the system includes extending coverage to additional flood-prone locations and improving modeling capabilities and accuracy.</p>
 <h4 id="paper"><strong>Paper</strong></h4>
-<p><a href="https://hess.copernicus.org/preprints/hess-2021-554/">Nevo, S., Morin, E., Gerzi Rosenthal, A., Metzger, A., Barshai, C., Weitzner, D., Voloshin, D., Kratzert, F., Elidan, G., Dror, G., Begelman, G., Nearing, G., Shalev, G., Noga, H., Shavitt, I., Yuklea, L., Royz, M., Giladi, N., Peled Levi, N., Reich, O., Gilon, O., Maor, R., Timnat, S., Shechter, T., Anisimov, V., Gigi, Y., Levin, Y., Moshe, Z., Ben-Haim, Z., Hassidim, A., and Matias, Y.: Flood forecasting with machine learning models in an operational framework, Hydrol. Earth Syst. Sci. Discuss. [preprint], https://doi.org/10.5194/hess-2021-554, in review, 2021. </a></p>
+<p><a href="https://hess.copernicus.org/articles/26/4013/2022/hess-26-4013-2022.html">Nevo, S., Morin, E., Gerzi Rosenthal, A., Metzger, A., Barshai, C., Weitzner, D., Voloshin, D., Kratzert, F., Elidan, G., Dror, G., Begelman, G., Nearing, G., Shalev, G., Noga, H., Shavitt, I., Yuklea, L., Royz, M., Giladi, N., Peled Levi, N., Reich, O., Gilon, O., Maor, R., Timnat, S., Shechter, T., Anisimov, V., Gigi, Y., Levin, Y., Moshe, Z., Ben-Haim, Z., Hassidim, A., and Matias, Y.: Flood forecasting with machine learning models in an operational framework, Hydrol. Earth Syst. Sci., 26, 4013–4032, https://doi.org/10.5194/hess-26-4013-2022, 2022.</a></p>
 <h4 id="citation"><strong>Citation</strong></h4>
-<pre><code>@Article{nevo2021operational,
-author = {Nevo, S. and Morin, E. and Gerzi Rosenthal, A. and Metzger, A. and Barshai, C. and Weitzner, D. and Voloshin, D. and Kratzert, F. and Elidan, G. and Dror, G. and Begelman, G. and Nearing, G. and Shalev, G. and Noga, H. and Shavitt, I. and Yuklea, L. and Royz, M. and Giladi, N. and Peled Levi, N. and Reich, O. and Gilon, O. and Maor, R. and Timnat, S. and Shechter, T. and Anisimov, V. and Gigi, Y. and Levin, Y. and Moshe, Z. and Ben-Haim, Z. and Hassidim, A. and Matias, Y.},
+<pre tabindex="0"><code>@Article{nevo2022operational,
+AUTHOR = {Nevo, S. and Morin, E. and Gerzi Rosenthal, A. and Metzger, A. and Barshai, C. and Weitzner, D. and Voloshin, D. and Kratzert, F. and Elidan, G. and Dror, G. and Begelman, G. and Nearing, G. and Shalev, G. and Noga, H. and Shavitt, I. and Yuklea, L. and Royz, M. and Giladi, N. and Peled Levi, N. and Reich, O. and Gilon, O. and Maor, R. and Timnat, S. and Shechter, T. and Anisimov, V. and Gigi, Y. and Levin, Y. and Moshe, Z. and Ben-Haim, Z. and Hassidim, A. and Matias, Y.},
 title = {Flood forecasting with machine learning models in an operational framework},
-journal = {Hydrology and Earth System Sciences Discussions},
-volume = {2021},
-year = {2021},
-pages = {1--31},
-doi = {10.5194/hess-2021-554}
+journal = {Hydrology and Earth System Sciences},
+volume = {26},
+year = {2022},
+number = {15},
+pages = {4013--4032},
+url = {https://hess.copernicus.org/articles/26/4013/2022/},
+doi = {10.5194/hess-26-4013-2022}
 }
 </code></pre>
             </article>
@@ -330,7 +332,7 @@ doi = {10.5194/hess-2021-554}
 </footer>
   <script src="/js/jquery.min.js"></script>
 <script src="/js/jquerymigrate.js"></script>
-<script src="/js/production.min.js?v=1643743042"></script>
+<script src="/js/production.min.js?v=1666182176"></script>
 <script type="text/javascript" async
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
   MathJax.Hub.Config({

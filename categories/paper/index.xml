@@ -6,10 +6,51 @@
     <description>Recent content in paper on Neural Hydrology</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 20 Jan 2022 20:23:59 +0530</lastBuildDate>
+    <lastBuildDate>Fri, 05 Aug 2022 20:23:59 +0530</lastBuildDate><atom:link href="/categories/paper/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Flood forecasting with machine learning models in an operational framework </title>
+      <link>/post/research/nevo2021operational/</link>
+      <pubDate>Fri, 05 Aug 2022 20:23:59 +0530</pubDate>
+      
+      <guid>/post/research/nevo2021operational/</guid>
+      <description>&lt;p&gt;In this paper, we present the full operational framework used by the Flood Forecasting team at Google.&lt;/p&gt;</description>
+    </item>
     
-	<atom:link href="/categories/paper/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Great Lakes Runoff Intercomparison Project Phase 4: the Great Lakes (GRIP-GL)</title>
+      <link>/post/research/mai2022grip/</link>
+      <pubDate>Fri, 08 Jul 2022 20:23:59 +0530</pubDate>
+      
+      <guid>/post/research/mai2022grip/</guid>
+      <description>&lt;p&gt;This paper performs a rigorous benchmark of traditional hydrologic models and an LSTM-based model for rainfall-runoff modeling.&lt;/p&gt;</description>
+    </item>
     
+    <item>
+      <title>Hydrological Concept Formation inside Long Short-Term Memory (LSTM) networks </title>
+      <link>/post/research/lees2021concept/</link>
+      <pubDate>Mon, 20 Jun 2022 20:23:59 +0530</pubDate>
+      
+      <guid>/post/research/lees2021concept/</guid>
+      <description>&lt;p&gt;In this paper, we investigate what information the LSTM captures about the hydrological system.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Caravan - A global community dataset for large-sample hydrology</title>
+      <link>/post/research/kratzert2022caravan/</link>
+      <pubDate>Thu, 16 Jun 2022 20:23:59 +0530</pubDate>
+      
+      <guid>/post/research/kratzert2022caravan/</guid>
+      <description>&lt;p&gt;This paper introduces the &lt;a href=&#34;https://github.com/kratzert/Caravan/&#34;&gt;Caravan dataset&lt;/a&gt;, a global large-sample hydrology dataset that builds on cloud computing to be extensible by anyone.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>NeuralHydrology — A Python library for Deep Learning research in hydrology</title>
+      <link>/post/research/kratzert2022joss/</link>
+      <pubDate>Fri, 04 Mar 2022 20:23:59 +0530</pubDate>
+      
+      <guid>/post/research/kratzert2022joss/</guid>
+      <description>&lt;p&gt;Accompanying paper to our open source Python library &lt;a href=&#34;https://github.com/neuralhydrology/neuralhydrology&#34;&gt;NeuralHydrology&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>On Strictly Enforced Mass Conservation Constraints for Modeling the Rainfall-Runoff Process</title>
@@ -21,30 +62,12 @@
     </item>
     
     <item>
-      <title>Hydrological Concept Formation inside Long Short-Term Memory (LSTM) networks </title>
-      <link>/post/research/lees2021concept/</link>
-      <pubDate>Tue, 23 Nov 2021 20:23:59 +0530</pubDate>
-      
-      <guid>/post/research/lees2021concept/</guid>
-      <description>&lt;p&gt;In this paper, we investigate what information the LSTM captures about the hydrological system.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Post processing the U.S. National Water Model with a Long Short-Term Memory network</title>
       <link>/post/research/frame2020postprocessing/</link>
       <pubDate>Mon, 15 Nov 2021 20:23:59 +0530</pubDate>
       
       <guid>/post/research/frame2020postprocessing/</guid>
       <description>&lt;p&gt;In this paper, we investigate the potential of using the LSTM as a post-processor for the US National Water Model.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Flood forecasting with machine learning models in an operational framework </title>
-      <link>/post/research/nevo2021operational/</link>
-      <pubDate>Fri, 12 Nov 2021 20:23:59 +0530</pubDate>
-      
-      <guid>/post/research/nevo2021operational/</guid>
-      <description>&lt;p&gt;In this paper, we present the full operational framework used by the Flood Forecasting team at Google.&lt;/p&gt;</description>
     </item>
     
     <item>

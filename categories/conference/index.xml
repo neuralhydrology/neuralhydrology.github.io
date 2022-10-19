@@ -6,10 +6,24 @@
     <description>Recent content in conference on Neural Hydrology</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 May 2021 17:23:59 +0530</lastBuildDate>
+    <lastBuildDate>Mon, 23 May 2022 17:23:59 +0530</lastBuildDate><atom:link href="/categories/conference/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rate my Hydrograph: Evaluating the Conformity of Expert Judgment and Quantitative Metrics</title>
+      <link>/post/research/gauch2022egu/</link>
+      <pubDate>Mon, 23 May 2022 17:23:59 +0530</pubDate>
+      
+      <guid>/post/research/gauch2022egu/</guid>
+      <description>&lt;p&gt;Oral presentation at the EGU General Assembly 2022 on a social study to compare expert rankings of simulated hydrographs with quantitative metrics.&lt;/p&gt;</description>
+    </item>
     
-	<atom:link href="/categories/conference/index.xml" rel="self" type="application/rss+xml" />
-    
+    <item>
+      <title>Forward vs. Inverse Methods for Using Near-Real-Time Streamflow Observation Data in Long Short-Term Memory Networks</title>
+      <link>/post/research/nearing2022agu/</link>
+      <pubDate>Mon, 13 Dec 2021 20:23:59 +0530</pubDate>
+      
+      <guid>/post/research/nearing2022agu/</guid>
+      <description>&lt;p&gt;Presentation at the AGU 2021 Fall Meeting presenting approaches to improve LSTM streamflow predictions with near-real-time observation data.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Multi-Timescale LSTM for Rainfall–Runoff Forecasting</title>
@@ -36,6 +50,15 @@
       
       <guid>/post/research/klotz2021egu/</guid>
       <description>&lt;p&gt;Oral presentation at the virtual EGU General Assembly 2021 on uncertainty prediction with LSTMs in the context of rainfall-runoff modeling.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>LamaH-CE: LArge-SaMple DAta for Hydrology and Environmental Sciences for Central Europe</title>
+      <link>/post/datasets/lamah-ce/</link>
+      <pubDate>Sat, 16 Jan 2021 20:23:59 +0530</pubDate>
+      
+      <guid>/post/datasets/lamah-ce/</guid>
+      <description>&lt;p&gt;LamaH-CE contains a collection of runoff and meteorological time series as well as various (catchment) attributes for 859 gauged basins in the upper Danube catchment and Austria.&lt;/p&gt;</description>
     </item>
     
     <item>

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@type" : "BlogPosting",
+        "mainEntityOfPage": {
+             "@type": "WebPage",
+             "@id": "\/"
+        },
+        "articleSection" : "post",
+        "name" : "The Great Lakes Runoff Intercomparison Project Phase 4: the Great Lakes (GRIP-GL)",
+        "headline" : "The Great Lakes Runoff Intercomparison Project Phase 4: the Great Lakes (GRIP-GL)",
+        "description" : "\u003cp\u003eThis paper performs a rigorous benchmark of traditional hydrologic models and an LSTM-based model for rainfall-runoff modeling.\u003c\/p\u003e",
+        "inLanguage" : "en",
+        "author" : "",
+        "creator" : "",
+        "publisher": "",
+        "accountablePerson" : "",
+        "copyrightHolder" : "",
+        "copyrightYear" : "2022",
+        "datePublished": "2022-07-08 20:23:59 \u002b0530 \u002b0530",
+        "dateModified" : "2022-07-08 20:23:59 \u002b0530 \u002b0530",
+        "url" : "\/post\/research\/mai2022grip\/",
+        "wordCount" : "725",
+        "image" : "/img/mai2022grip/gripgl.png"",
+        "keywords" : [ "Blog" ]   
+    }
+    </script>
+
+
+ <title>The Great Lakes Runoff Intercomparison Project Phase 4: the Great Lakes (GRIP-GL) </title>
+
+
+<meta name="description" content="Research blog for machine learning applications in hydrology" />
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="all,follow">
+<meta name="googlebot" content="index,follow,snippet,archive">
+<link rel="stylesheet" id="ct-tracks-google-fonts-css" href="//fonts.googleapis.com/css?family=Raleway%3A400%2C700&amp;subset=latin%2Clatin-ext&amp;ver=4.7.2" type="text/css" media="all">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+<link href="/css/style.css?v=1666182176" rel="stylesheet" id="theme-stylesheet" type='text/css' media='all'>
+
+<link href="/css/custom.css?v=1666182176" rel="stylesheet" type='text/css' media='all'>
+<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+
+
+</head>
+
+
+<body
+  class="post-template-default single single-post single-format-standard ct-body singular singular-post not-front standard">
+  
+  <div id="overflow-container" class="overflow-container">
+    <a class="skip-content" href="#main">Skip to content</a>
+    <header id="site-header" class="site-header" role="banner">
+      <div class='top-navigation'>
+        <div class='container'>
+
+  <div id="menu-secondary" class="menu-container menu-secondary" role="navigation">
+    <button id="toggle-secondary-navigation" class="toggle-secondary-navigation"><i class="fas fa-plus"></i></button>
+
+    <div class="menu">
+
+      <ul id="menu-secondary-items" class="menu-secondary-items">
+        
+        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
+          <a href="/categories/book-chapter">book-chapter</a>
+        </li>
+        
+        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
+          <a href="/categories/code">code</a>
+        </li>
+        
+        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
+          <a href="/categories/conference">conference</a>
+        </li>
+        
+        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
+          <a href="/categories/dataset">dataset</a>
+        </li>
+        
+        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
+          <a href="/categories/paper">paper</a>
+        </li>
+        
+        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
+          <a href="/categories/video">video</a>
+        </li>
+        
+        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
+          <a href="/categories/workshops">workshops</a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+
+  </div>
+
+
+  <ul class="social-media-icons">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+    
+
+
+    
+
+    
+
+
+  </ul></div>
+
+      </div>
+
+      <div class="container">
+        <head>
+<style>
+.center {
+  margin: auto;
+  text-align: center;
+  width: 60%;
+  padding: 10px;
+}
+</style>
+</head>
+
+<div id="headerino" class = "left">
+  <a href="/">
+  <img src="/img/neural-hyd-head.png" width="240">
+  </a>
+  <br>
+</div>
+
+<div id="title-info" class="title-info">
+  <div id='site-title' class='site-title'>
+    
+    <a href="/"> Neural Hydrology </a>
+    </div>
+  </div>
+  <button id="toggle-navigation" class="toggle-navigation">
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <div id="menu-primary-tracks" class="menu-primary-tracks"></div>
+  <div id="menu-primary" class="menu-container menu-primary" role="navigation">
+    
+    <p class="site-description">Using Neural Networks in Hydrology</p>
+    
+
+    <div class="menu">
+      <ul id="menu-primary-items" class="menu-primary-items">
+        
+        
+        <li id="menu-item" class='menu-item menu-item-type-custom menu-item-object-custom '>
+          <a href="/">Home</a>
+          
+        </li>
+        
+        <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page '>
+          <a href="/about/">About</a>
+          
+        </li>
+        
+        <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page '>
+          <a href="/library/">Python Library</a>
+          
+        </li>
+        
+      </ul>
+    </div>
+
+  </div>
+
+      </div>
+    </header>
+
+    <div id="main" class="main" role="main">
+
+      
+
+  
+  
+  
+  
+  
+  <div id="loop-container2" class="loop-container2">
+    
+    <div
+      class="post type-post status-publish format-standard has-post-thumbnail hentry category-design tag-design tag-standard-2 tag-tagalicious tag-travel entry full-without-featured odd excerpt-1">
+
+      <div class='featured-image lazy lazy-bg-image'  data-background="/img/mai2022grip/gripgl.png"
+        >
+      </div>
+      
+        <div class="entry-meta">
+          <span class="date">08 July</span> <span> / </span>
+
+          <span class="author">
+            <a href="/" title="Posts by Martin Gauch"
+              rel="author">Martin Gauch</a>
+          </span>
+
+
+          
+          <span class="category">
+            <span> / </span>
+
+            <a href="/categories/paper">paper</a>
+          </span>
+          
+          <span class="category">
+            <span> / </span>
+
+            <a href="/categories/code">code</a>
+          </span>
+          
+
+
+        </div>
+        <div class='entry-header'>
+          <h1 class='entry-title'> The Great Lakes Runoff Intercomparison Project Phase 4: the Great Lakes (GRIP-GL)</h1>
+        </div>
+        <div class="entry-container">
+          <div class="entry-content">
+            <article>
+              <p>This paper performs a rigorous benchmark of traditional hydrologic models and an LSTM-based model for rainfall-runoff modeling.</p>
+<h4 id="abstract"><strong>Abstract</strong></h4>
+<p>Model intercomparison studies are carried out to test and compare the simulated outputs of various model setups over the same study domain. The Great Lakes region is such a domain of high public interest as it not only resembles a challenging region to model with its transboundary location, strong lake effects, and regions of strong human impact but is also one of the most densely populated areas in the USA and Canada. This study brought together a wide range of researchers setting up their models of choice in a highly standardized experimental setup using the same geophysical datasets, forcings, common routing product, and locations of performance evaluation across the 1×106 km² study domain. The study comprises 13 models covering a wide range of model types from machine-learning-based, basin-wise, subbasin-based, and gridded models that are either locally or globally calibrated or calibrated for one of each of the six predefined regions of the watershed. Unlike most hydrologically focused model intercomparisons, this study not only compares models regarding their capability to simulate streamflow (Q) but also evaluates the quality of simulated actual evapotranspiration (AET), surface soil moisture (SSM), and snow water equivalent (SWE). The latter three outputs are compared against gridded reference datasets. The comparisons are performed in two ways – either by aggregating model outputs and the reference to basin level or by regridding all model outputs to the reference grid and comparing the model simulations at each grid-cell.</p>
+<p>The main results of this study are as follows:</p>
+<ol>
+<li>The comparison of models regarding streamflow reveals the superior quality of the machine-learning-based model in the performance of all experiments; even for the most challenging spatiotemporal validation, the machine learning (ML) model outperforms any other physically based model.</li>
+<li>While the locally calibrated models lead to good performance in calibration and temporal validation (even outperforming several regionally calibrated models), they lose performance when they are transferred to locations that the model has not been calibrated on. This is likely to be improved with more advanced strategies to transfer these models in space.</li>
+<li>The regionally calibrated models – while losing less performance in spatial and spatiotemporal validation than locally calibrated models – exhibit low performances in highly regulated and urban areas and agricultural regions in the USA.</li>
+<li>Comparisons of additional model outputs (AET, SSM, and SWE) against gridded reference datasets show that aggregating model outputs and the reference dataset to the basin scale can lead to different conclusions than a comparison at the native grid scale. The latter is deemed preferable, especially for variables with large spatial variability such as SWE.</li>
+<li>A multi-objective-based analysis of the model performances across all variables (Q, AET, SSM, and SWE) reveals overall well-performing locally calibrated models (i.e., HYMOD2-lumped) and regionally calibrated models (i.e., MESH-SVS-Raven and GEM-Hydro-Watroute) due to varying reasons. The machine-learning-based model was not included here as it is not set up to simulate AET, SSM, and SWE.</li>
+<li>All basin-aggregated model outputs and observations for the model variables evaluated in this study are available on an interactive website that enables users to visualize results and download the data and model outputs.</li>
+</ol>
+<h4 id="paper"><strong>Paper</strong></h4>
+<p><a href="https://doi.org/10.5194/hess-26-3537-2022">Mai, J., Shen, H., Tolson, B. A., Gaborit, É., Arsenault, R., Craig, J. R., Fortin, V., Fry, L. M., Gauch, M., Klotz, D., Kratzert, F., O&rsquo;Brien, N., Princz, D. G., Rasiya Koya, S., Roy, T., Seglenieks, F., Shrestha, N. K., Temgoua, A. G. T., Vionnet, V., and Waddell, J. W.: The Great Lakes Runoff Intercomparison Project Phase 4: the Great Lakes (GRIP-GL), Hydrol. Earth Syst. Sci., 26, 3537–3572, https://doi.org/10.5194/hess-26-3537-2022, 2022.</a></p>
+<h4 id="resources"><strong>Resources</strong></h4>
+<p><a href="https://doi.org/10.20383/103.0598">Code and data on FRDR</a></p>
+<p><a href="http://www.hydrohub.org/mips_introduction.html#grip-gl">Basin-scale results of the study</a></p>
+<h4 id="citation"><strong>Citation</strong></h4>
+<pre tabindex="0"><code>@article{hess-26-3537-2022,
+    author = {Mai, J. and Shen, H. and Tolson, B. A. and Gaborit, \&#39;E. and Arsenault, R. and Craig, J. R. and Fortin, V. and Fry, L. M. and Gauch, M. and Klotz, D. and Kratzert, F. and O&#39;Brien, N. and Princz, D. G. and Rasiya Koya, S. and Roy, T. and Seglenieks, F. and Shrestha, N. K. and Temgoua, A. G. T. and Vionnet, V. and Waddell, J. W.},
+    title = {The Great Lakes Runoff Intercomparison Project Phase 4: the Great Lakes (GRIP-GL)},
+    journal = {Hydrology and Earth System Sciences},
+    volume = {26},
+    year = {2022},
+    number = {13},
+    pages = {3537--3572},
+    url = {https://hess.copernicus.org/articles/26/3537/2022/},
+    doi = {10.5194/hess-26-3537-2022}
+}
+</code></pre>
+            </article>
+          </div>
+          
+          <div class='entry-meta-bottom'>
+            
+
+            <div class="entry-categories">
+              <p><span>Categories</span>
+                
+                <a href="/categories/paper"
+                  title="View all posts in paper">paper</a>
+                <a href="/categories/code"
+                  title="View all posts in code">code</a>
+              </p>
+            </div>
+
+
+            
+            
+
+            <section id="comments" class="comments">
+              
+
+              
+
+              
+
+
+            </section>
+          </div>
+
+          
+          
+
+
+          
+    </div>
+
+
+  </div>
+  <footer id="site-footer" class="site-footer" role="contentinfo">
+    <h1>
+        
+        <a href=""> Neural Hydrology </a>
+        
+    </h1>
+
+    
+    <p class="site-description">Using Neural Networks in Hydrology</p>
+    
+
+    <div id="menu-footer" class="menu-container menu-footer" role="navigation">
+        <div class="menu">
+
+            <ul id="menu-footer-items" class="menu-footer-items">
+                
+            </ul>
+
+        </div>
+    </div>
+
+
+    <div class="design-credit">
+        
+        <p>© 2018 Göran Svensson</p>
+        
+        <p>Nederburg Hugo Theme by <a href="https://appernetic.io">Appernetic</a>.</p>
+        
+        <p>A port of Tracks by Compete Themes.</p>
+        
+    </div>
+</footer>
+  <script src="/js/jquery.min.js"></script>
+<script src="/js/jquerymigrate.js"></script>
+<script src="/js/production.min.js?v=1666182176"></script>
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+
+
+</body>
+</html>
