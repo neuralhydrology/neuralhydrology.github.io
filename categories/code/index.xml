@@ -6,7 +6,16 @@
     <description>Recent content in code on Neural Hydrology</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 08 Jul 2022 20:23:59 +0530</lastBuildDate><atom:link href="/categories/code/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 19 Oct 2022 17:23:59 +0530</lastBuildDate><atom:link href="/categories/code/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>In Defense of Metrics: Metrics Sufficiently Encode Typical Human Preferences Regarding Hydrological Model Performance</title>
+      <link>/post/research/gauch2022metrics/</link>
+      <pubDate>Wed, 19 Oct 2022 17:23:59 +0530</pubDate>
+      
+      <guid>/post/research/gauch2022metrics/</guid>
+      <description>&lt;p&gt;In this paper, we present the results of the &amp;ldquo;Rate My Hydrograph&amp;rdquo; study, where we compare expert ratings of simulated hydrographs with quantitative metrics.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>The Great Lakes Runoff Intercomparison Project Phase 4: the Great Lakes (GRIP-GL)</title>
       <link>/post/research/mai2022grip/</link>
