@@ -6,33 +6,28 @@
     <description>Recent content in dataset on Neural Hydrology</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 Jun 2022 20:23:59 +0530</lastBuildDate><atom:link href="/categories/dataset/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 16 Jun 2022 20:23:59 +0530</lastBuildDate>
+    <atom:link href="/categories/dataset/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Caravan - A global community dataset for large-sample hydrology</title>
       <link>/post/research/kratzert2022caravan/</link>
       <pubDate>Thu, 16 Jun 2022 20:23:59 +0530</pubDate>
-      
       <guid>/post/research/kratzert2022caravan/</guid>
       <description>&lt;p&gt;This paper introduces the &lt;a href=&#34;https://github.com/kratzert/Caravan/&#34;&gt;Caravan dataset&lt;/a&gt;, a global large-sample hydrology dataset that builds on cloud computing to be extensible by anyone.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>CAMELS US: Hourly USGS discharge observations and NLDAS forcings</title>
       <link>/post/datasets/camels-us-hourly-nldas-and-streamflow/</link>
       <pubDate>Sat, 16 Jan 2021 20:23:59 +0530</pubDate>
-      
       <guid>/post/datasets/camels-us-hourly-nldas-and-streamflow/</guid>
       <description>&lt;p&gt;This dataset contains hourly discharge observations and NLDAS forcings for 516 CAMELS US basins.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>LamaH-CE: LArge-SaMple DAta for Hydrology and Environmental Sciences for Central Europe</title>
       <link>/post/datasets/lamah-ce/</link>
       <pubDate>Sat, 16 Jan 2021 20:23:59 +0530</pubDate>
-      
       <guid>/post/datasets/lamah-ce/</guid>
       <description>&lt;p&gt;LamaH-CE contains a collection of runoff and meteorological time series as well as various (catchment) attributes for 859 gauged basins in the upper Danube catchment and Austria.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

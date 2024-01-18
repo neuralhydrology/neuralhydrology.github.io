@@ -6,420 +6,343 @@
     <description>Recent content in Posts on Neural Hydrology</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 19 Oct 2022 17:23:59 +0530</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 07 May 2023 17:10:51 +0530</lastBuildDate>
+    <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The persistence of errors: How evaluating models over data partitions relates to a global evaluation</title>
+      <link>/post/research/klotz2023egu/</link>
+      <pubDate>Sun, 07 May 2023 17:10:51 +0530</pubDate>
+      <guid>/post/research/klotz2023egu/</guid>
+      <description>&lt;p&gt;Oral presentation for EGU General Assembly 2023. This is one about a certain phenomena that appears when we evaluate a model over subsets of the data. Eventually the plan is to make a technical note out of it.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>In Defense of Metrics: Metrics Sufficiently Encode Typical Human Preferences Regarding Hydrological Model Performance</title>
       <link>/post/research/gauch2022metrics/</link>
       <pubDate>Wed, 19 Oct 2022 17:23:59 +0530</pubDate>
-      
       <guid>/post/research/gauch2022metrics/</guid>
       <description>&lt;p&gt;In this paper, we present the results of the &amp;ldquo;Rate My Hydrograph&amp;rdquo; study, where we compare expert ratings of simulated hydrographs with quantitative metrics.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Flood forecasting with machine learning models in an operational framework </title>
       <link>/post/research/nevo2021operational/</link>
       <pubDate>Fri, 05 Aug 2022 20:23:59 +0530</pubDate>
-      
       <guid>/post/research/nevo2021operational/</guid>
       <description>&lt;p&gt;In this paper, we present the full operational framework used by the Flood Forecasting team at Google.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>The Great Lakes Runoff Intercomparison Project Phase 4: the Great Lakes (GRIP-GL)</title>
       <link>/post/research/mai2022grip/</link>
       <pubDate>Fri, 08 Jul 2022 20:23:59 +0530</pubDate>
-      
       <guid>/post/research/mai2022grip/</guid>
       <description>&lt;p&gt;This paper performs a rigorous benchmark of traditional hydrologic models and an LSTM-based model for rainfall-runoff modeling.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Hydrological Concept Formation inside Long Short-Term Memory (LSTM) networks </title>
       <link>/post/research/lees2021concept/</link>
       <pubDate>Mon, 20 Jun 2022 20:23:59 +0530</pubDate>
-      
       <guid>/post/research/lees2021concept/</guid>
       <description>&lt;p&gt;In this paper, we investigate what information the LSTM captures about the hydrological system.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Caravan - A global community dataset for large-sample hydrology</title>
       <link>/post/research/kratzert2022caravan/</link>
       <pubDate>Thu, 16 Jun 2022 20:23:59 +0530</pubDate>
-      
       <guid>/post/research/kratzert2022caravan/</guid>
       <description>&lt;p&gt;This paper introduces the &lt;a href=&#34;https://github.com/kratzert/Caravan/&#34;&gt;Caravan dataset&lt;/a&gt;, a global large-sample hydrology dataset that builds on cloud computing to be extensible by anyone.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Rate my Hydrograph: Evaluating the Conformity of Expert Judgment and Quantitative Metrics</title>
       <link>/post/research/gauch2022egu/</link>
       <pubDate>Mon, 23 May 2022 17:23:59 +0530</pubDate>
-      
       <guid>/post/research/gauch2022egu/</guid>
       <description>&lt;p&gt;Oral presentation at the EGU General Assembly 2022 on a social study to compare expert rankings of simulated hydrographs with quantitative metrics.&lt;/p&gt;</description>
     </item>
-    
+    <item>
+      <title>Deficiencies in Hydrological Modelling Practices</title>
+      <link>/post/research/klotz2022egu/</link>
+      <pubDate>Sat, 07 May 2022 17:10:51 +0530</pubDate>
+      <guid>/post/research/klotz2022egu/</guid>
+      <description>&lt;p&gt;Oral presentation for EGU General Assembly 2022. This is where my model evaluation journey started.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>NeuralHydrology — A Python library for Deep Learning research in hydrology</title>
       <link>/post/research/kratzert2022joss/</link>
       <pubDate>Fri, 04 Mar 2022 20:23:59 +0530</pubDate>
-      
       <guid>/post/research/kratzert2022joss/</guid>
       <description>&lt;p&gt;Accompanying paper to our open source Python library &lt;a href=&#34;https://github.com/neuralhydrology/neuralhydrology&#34;&gt;NeuralHydrology&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>On Strictly Enforced Mass Conservation Constraints for Modeling the Rainfall-Runoff Process</title>
       <link>/post/research/frame2022mass/</link>
       <pubDate>Thu, 20 Jan 2022 20:23:59 +0530</pubDate>
-      
       <guid>/post/research/frame2022mass/</guid>
       <description>&lt;p&gt;This paper investigates the hypothesis that the lack of enforced mass conservation is the main reason that deep learning models outperform traditional hydrology models.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Forward vs. Inverse Methods for Using Near-Real-Time Streamflow Observation Data in Long Short-Term Memory Networks</title>
       <link>/post/research/nearing2022agu/</link>
       <pubDate>Mon, 13 Dec 2021 20:23:59 +0530</pubDate>
-      
       <guid>/post/research/nearing2022agu/</guid>
       <description>&lt;p&gt;Presentation at the AGU 2021 Fall Meeting presenting approaches to improve LSTM streamflow predictions with near-real-time observation data.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Post processing the U.S. National Water Model with a Long Short-Term Memory network</title>
       <link>/post/research/frame2020postprocessing/</link>
       <pubDate>Mon, 15 Nov 2021 20:23:59 +0530</pubDate>
-      
       <guid>/post/research/frame2020postprocessing/</guid>
       <description>&lt;p&gt;In this paper, we investigate the potential of using the LSTM as a post-processor for the US National Water Model.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Technical Note: Data assimilation and autoregression for using near-real-time streamflow observations in long short-term memory networks</title>
       <link>/post/research/nearing2021assimilation/</link>
       <pubDate>Mon, 25 Oct 2021 20:23:59 +0530</pubDate>
-      
       <guid>/post/research/nearing2021assimilation/</guid>
       <description>&lt;p&gt;Technical note that compares autoregression to data assimilation for deep learning models and rainfall-runoff modeling.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Deep learning rainfall-runoff predictions of extreme events</title>
       <link>/post/research/frame2021extreme/</link>
       <pubDate>Wed, 18 Aug 2021 20:23:59 +0530</pubDate>
-      
       <guid>/post/research/frame2021extreme/</guid>
       <description>&lt;p&gt;This paper investigates the hypothesis that deep learning models may not be reliable in extrapolating extreme events.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>A note on leveraging synergy in multiple meteorological datasets with deep learning for rainfall-runoff modeling</title>
       <link>/post/research/kratzert2020multi/</link>
       <pubDate>Thu, 20 May 2021 20:23:59 +0530</pubDate>
-      
       <guid>/post/research/kratzert2020multi/</guid>
       <description>&lt;p&gt;In this paper we show the benefits of using multiple meteorological forcing products at the same time in a single LSTM-based rainfall-runoff model over just using a single product.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Multi-Timescale LSTM for Rainfall–Runoff Forecasting</title>
       <link>/post/research/gauch2021egu/</link>
       <pubDate>Fri, 07 May 2021 17:23:59 +0530</pubDate>
-      
       <guid>/post/research/gauch2021egu/</guid>
       <description>&lt;p&gt;Oral presentation at the virtual EGU General Assembly 2021 on rainfall–runoff forecasting with Multi-Timescale LSTM.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Large-scale river network modeling using Graph Neural Networks</title>
       <link>/post/research/kratzert2021egu/</link>
       <pubDate>Fri, 07 May 2021 17:20:55 +0530</pubDate>
-      
       <guid>/post/research/kratzert2021egu/</guid>
       <description>&lt;p&gt;Oral presentation at the virtual EGU General Assembly 2021 on rainfall–runoff prediction with Graph Neural Networks.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Uncertainty estimation with LSTM based rainfall-runoff models</title>
       <link>/post/research/klotz2021egu/</link>
       <pubDate>Fri, 07 May 2021 17:10:51 +0530</pubDate>
-      
       <guid>/post/research/klotz2021egu/</guid>
       <description>&lt;p&gt;Oral presentation at the virtual EGU General Assembly 2021 on uncertainty prediction with LSTMs in the context of rainfall-runoff modeling.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Rainfall-Runoff Prediction at Multiple Timescales with a Single Long Short-Term Memory Network</title>
       <link>/post/research/gauch2020mtslstm/</link>
       <pubDate>Mon, 19 Apr 2021 08:23:59 +0530</pubDate>
-      
       <guid>/post/research/gauch2020mtslstm/</guid>
       <description>&lt;p&gt;New LSTM-based architecture for predictions at multiple temporal time scales.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Uncertainty Estimation with Deep Learning for Rainfall-Runoff Modelling</title>
       <link>/post/research/klotz2020uncertainty/</link>
       <pubDate>Wed, 14 Apr 2021 15:23:59 +0530</pubDate>
-      
       <guid>/post/research/klotz2020uncertainty/</guid>
       <description>&lt;p&gt;Deep learning based uncertainty estimation techniques and benchmarking procedure for rainfall-runoff modeling.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>CAMELS US: Hourly USGS discharge observations and NLDAS forcings</title>
       <link>/post/datasets/camels-us-hourly-nldas-and-streamflow/</link>
       <pubDate>Sat, 16 Jan 2021 20:23:59 +0530</pubDate>
-      
       <guid>/post/datasets/camels-us-hourly-nldas-and-streamflow/</guid>
       <description>&lt;p&gt;This dataset contains hourly discharge observations and NLDAS forcings for 516 CAMELS US basins.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>LamaH-CE: LArge-SaMple DAta for Hydrology and Environmental Sciences for Central Europe</title>
       <link>/post/datasets/lamah-ce/</link>
       <pubDate>Sat, 16 Jan 2021 20:23:59 +0530</pubDate>
-      
       <guid>/post/datasets/lamah-ce/</guid>
       <description>&lt;p&gt;LamaH-CE contains a collection of runoff and meteorological time series as well as various (catchment) attributes for 859 gauged basins in the upper Danube catchment and Austria.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>MC-LSTM: Mass-Conserving LSTM</title>
       <link>/post/research/hoedt2021mclstm/</link>
       <pubDate>Thu, 14 Jan 2021 08:23:59 +0530</pubDate>
-      
       <guid>/post/research/hoedt2021mclstm/</guid>
       <description>&lt;p&gt;In this study, we present a mass-conserving variant of the LSTM and its application to arithmetic tasks, traffic forecasting, modeling a pendulum and rainfall-runoff modeling.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Examining the uncertainty estimation properties of LSTM based rainfall-runoff models</title>
       <link>/post/research/klotz2020agu/</link>
       <pubDate>Thu, 17 Dec 2020 20:23:59 +0530</pubDate>
-      
       <guid>/post/research/klotz2020agu/</guid>
       <description>&lt;p&gt;Oral presentation at the virtual AGU Fall Meeting 2020 on uncertainty prediction with LSTMs in the context of rainfall-runoff modeling.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>LSTM-Based Rainfall–Runoff Modeling at Arbitrary Time Scales</title>
       <link>/post/research/gauch2020agu/</link>
       <pubDate>Thu, 17 Dec 2020 20:23:59 +0530</pubDate>
-      
       <guid>/post/research/gauch2020agu/</guid>
       <description>&lt;p&gt;Oral presentation at the virtual AGU Fall Meeting 2020 on streamflow prediction at arbitraty timescales with a single LSTM-based model.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>A Deep Learning Architecture for Conservative Dynamical Systems: Application to Rainfall-Runoff Modeling</title>
       <link>/post/research/nearing2020neurips/</link>
       <pubDate>Sun, 06 Dec 2020 20:23:59 +0530</pubDate>
-      
       <guid>/post/research/nearing2020neurips/</guid>
       <description>&lt;p&gt;Spotlight talk at the AI for Earth Sciences workshop of the NeurIPS 2020, presenting  a first glimpse of a new LSTM-based model that conserves mass by design: the Mass-Conserving LSTM&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>A Machine Learner&#39;s Guide to Streamflow Prediction</title>
       <link>/post/research/gauch2020neurips/</link>
       <pubDate>Sun, 06 Dec 2020 20:23:59 +0530</pubDate>
-      
       <guid>/post/research/gauch2020neurips/</guid>
       <description>&lt;p&gt;Spotlight talk at the AI for Earth Sciences workshop of the NeurIPS 2020, presenting  introduction of the world and terminology of hydrology/streamflow prediction for data scientists.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>What Role Does Hydrological Science Play in the Age of Machine Learning?</title>
       <link>/post/research/nearing2020opinion/</link>
       <pubDate>Fri, 13 Nov 2020 20:23:59 +0530</pubDate>
-      
       <guid>/post/research/nearing2020opinion/</guid>
       <description>&lt;p&gt;Opinion paper discussing the future of Hydrology, especially in the context of recent developments in Machine Learning&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>A Data Scientist&#39;s Guide to Streamflow Prediction</title>
       <link>/post/research/gauch2020guide/</link>
       <pubDate>Fri, 05 Jun 2020 20:23:59 +0530</pubDate>
-      
       <guid>/post/research/gauch2020guide/</guid>
       <description>&lt;p&gt;An introduction to hydrology and especially rainfall-runoff modeling, targeted at data scientists.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>HydroNets: Leveraging River Network Structure and Deep Neural Networks for Hydrologic Modeling</title>
       <link>/post/research/moshe2020egu/</link>
       <pubDate>Mon, 04 May 2020 20:23:59 +0530</pubDate>
-      
       <guid>/post/research/moshe2020egu/</guid>
       <description>&lt;p&gt;Virtual presentation at the EGU General Assembly 2020 presenting the HydroNets architecture for modeling entire river networks.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Learning from mistakes: Online updating for deep learning models</title>
       <link>/post/research/klotz2020egu/</link>
       <pubDate>Mon, 04 May 2020 20:23:59 +0530</pubDate>
-      
       <guid>/post/research/klotz2020egu/</guid>
       <description>&lt;p&gt;Virtual presentation at the EGU General Assembly 2020 on data assimilation with LSTM-based models.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>The performance of LSTM models from basin to continental scales</title>
       <link>/post/research/kratzert2020egu1/</link>
       <pubDate>Mon, 04 May 2020 20:23:59 +0530</pubDate>
-      
       <guid>/post/research/kratzert2020egu1/</guid>
       <description>&lt;p&gt;Virtual presentation at the EGU General Assembly 2020 comparing LSTMs trained for each basin individually with a single LSTM trained for all basins together.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Towards deep learning based flood forecasting for ungauged basins</title>
       <link>/post/research/kratzert2020egu2/</link>
       <pubDate>Mon, 04 May 2020 20:23:59 +0530</pubDate>
-      
       <guid>/post/research/kratzert2020egu2/</guid>
       <description>&lt;p&gt;Invited talk at the EGU General Assembly 2020 on using LSTMs for flood forecasting in ungauged basins.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>HydroNets: Leveraging River Structure for Hydrologic Modeling</title>
       <link>/post/research/moshe2020iclr/</link>
       <pubDate>Sun, 26 Apr 2020 20:23:59 +0530</pubDate>
-      
       <guid>/post/research/moshe2020iclr/</guid>
       <description>&lt;p&gt;Modeling entire nested river trees by integrating the river hierachy into the neural network architecture. This manuscripts proposes HydroNets, an architecture designed for modeling multiple nested gauge stations.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Streamflow Prediction with Limited Spatially-Distributed Input Data</title>
       <link>/post/research/gauch2019neurips/</link>
       <pubDate>Wed, 11 Dec 2019 20:23:59 +0530</pubDate>
-      
       <guid>/post/research/gauch2019neurips/</guid>
       <description>&lt;p&gt;Workshop paper, investigating first ways of using LSTM-based models for climate change related questions in hydrology.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Using LSTMs for climate change assessment studies on droughts and floods</title>
       <link>/post/research/kratzert2019neurips/</link>
       <pubDate>Wed, 11 Dec 2019 20:23:59 +0530</pubDate>
-      
       <guid>/post/research/kratzert2019neurips/</guid>
       <description>&lt;p&gt;Workshop paper, investigating first ways of using LSTM-based models for climate change related questions in hydrology.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Large-Scale Rainfall-Runoff Modeling using the Long Short-Term Memory Network</title>
       <link>/post/research/kratzert2019agu/</link>
       <pubDate>Tue, 10 Dec 2019 20:23:59 +0530</pubDate>
-      
       <guid>/post/research/kratzert2019agu/</guid>
       <description>&lt;p&gt;Presentation at the AGU 2019 Fall Meeting presenting our recent results on large-scale hydrological modeling using LSTMs.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Machine Learning for Streamflow Prediction: Current Status and Future Prospects</title>
       <link>/post/research/gauch2019agu/</link>
       <pubDate>Tue, 10 Dec 2019 20:23:59 +0530</pubDate>
-      
       <guid>/post/research/gauch2019agu/</guid>
       <description>&lt;p&gt;Poster at the AGU 2019 Fall Meeting presenting Martins work on a model comparison study for the Great Lakes/Lake Erie area.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Toward Improved Predictions in Ungauged Basins: Exploiting the Power of Machine Learning</title>
       <link>/post/research/kratzert2019pub/</link>
       <pubDate>Sat, 23 Nov 2019 20:23:59 +0530</pubDate>
-      
       <guid>/post/research/kratzert2019pub/</guid>
       <description>&lt;p&gt;In this manuscript we test LSTM-based rainfall-runoff models on the task of prediction in ungauged basins and show, that a single LSTM-based model does better prediction in &lt;em&gt;ungauged&lt;/em&gt; basins than a traditional hydrological model that was specifically calibrated for each basin individually.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>The Proper Care and Feeding of CAMELS: How Limited Training Data Affects Streamflow Prediction</title>
       <link>/post/research/gauch2020feeding/</link>
       <pubDate>Sun, 17 Nov 2019 20:23:59 +0530</pubDate>
-      
       <guid>/post/research/gauch2020feeding/</guid>
       <description>&lt;p&gt;This paper investigates the influence of the number of training basins and the training period length on the model performance for the EA-LSTM and XGBoost&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Towards learning universal, regional, and local hydrological behaviors via machine learning applied to large-sample datasets</title>
       <link>/post/research/kratzert2019regional/</link>
       <pubDate>Fri, 02 Aug 2019 20:23:59 +0530</pubDate>
-      
       <guid>/post/research/kratzert2019regional/</guid>
       <description>&lt;p&gt;In this manuscript we show for the first time how to train a single LSTM-based neural network as general hydrology model for hundreds of basins. Furthermore, we proposed the Entity-Aware LSTM (EA-LSTM) in which static features are used explicitly to subset the model for a specific entity (here a catchment).&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Using large data sets towards generating a catchment aware hydrological model for global applications</title>
       <link>/post/research/kratzert2019egu/</link>
       <pubDate>Wed, 10 Apr 2019 20:23:59 +0530</pubDate>
-      
       <guid>/post/research/kratzert2019egu/</guid>
       <description>&lt;p&gt;PICO presentation at the EGU General Assembly 2019 on prediction in ungauged basins using LSTM based models.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Towards the quantification of uncertainty for deep learning based rainfall-runoff models</title>
       <link>/post/research/klotz2019egu/</link>
       <pubDate>Mon, 08 Apr 2019 20:23:59 +0530</pubDate>
-      
       <guid>/post/research/klotz2019egu/</guid>
       <description>&lt;p&gt;Poster presentation at the EGU General Assembly 2019 on uncertainty estimation using MC-Dropout and LSTMs.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Long Short-Term Memory (LSTM) networks for rainfall-runoff modeling</title>
       <link>/post/research/kratzert2019cuahsi/</link>
       <pubDate>Fri, 05 Apr 2019 20:23:59 +0530</pubDate>
-      
       <guid>/post/research/kratzert2019cuahsi/</guid>
       <description>&lt;p&gt;Video presentation in CUAHSI&amp;rsquo;s 2019 Spring Cyberseminar Series on Recent advances in big data machine learning in Hydrology.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>NeuralHydrology-Interpreting LSTMs in Hydrology</title>
       <link>/post/research/kratzert2019interpretability/</link>
       <pubDate>Tue, 19 Mar 2019 20:23:59 +0530</pubDate>
-      
       <guid>/post/research/kratzert2019interpretability/</guid>
       <description>&lt;p&gt;Book chapter in the &lt;a href=&#34;https://link.springer.com/book/10.1007/978-3-030-28954-6&#34;&gt;Explainable AI: Interpreting, Explaining and Visualizing Deep Learning&lt;/a&gt; (Editors Wojciech SamekGrégoire MontavonAndrea VedaldiLars Kai HansenKlaus-Robert Müller).&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Do internals of neural networks make sense in the context of hydrology?</title>
       <link>/post/research/kratzert2018agu/</link>
       <pubDate>Mon, 10 Dec 2018 20:23:59 +0530</pubDate>
-      
       <guid>/post/research/kratzert2018agu/</guid>
       <description>&lt;p&gt;Presentation at the AGU 2018 Fall Meeting on experiments regarding the interpretability of LSTM states.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>A glimpse into the Unobserved: Runoff simulation for ungauged catchments with LSTMs</title>
       <link>/post/research/kratzert2018glimpse/</link>
       <pubDate>Fri, 07 Dec 2018 20:23:59 +0530</pubDate>
-      
       <guid>/post/research/kratzert2018glimpse/</guid>
       <description>&lt;p&gt;NeurIPS 2018 workshop paper, showing first results on using LSTMs for prediction in ungauged basins.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Rainfall–runoff modelling using Long Short-Term Memory (LSTM) networks</title>
       <link>/post/research/kratzert2018lstm/</link>
       <pubDate>Thu, 22 Nov 2018 20:23:59 +0530</pubDate>
-      
       <guid>/post/research/kratzert2018lstm/</guid>
       <description>&lt;p&gt;First publication using LSTMs as rainfall-runoff model.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

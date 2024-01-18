@@ -11,26 +11,26 @@
              "@id": "\/"
         },
         "articleSection" : "post",
-        "name" : "HydroNets: Leveraging River Structure for Hydrologic Modeling",
-        "headline" : "HydroNets: Leveraging River Structure for Hydrologic Modeling",
-        "description" : "\u003cp\u003eModeling entire nested river trees by integrating the river hierachy into the neural network architecture. This manuscripts proposes HydroNets, an architecture designed for modeling multiple nested gauge stations.\u003c\/p\u003e",
+        "name" : "Deficiencies in Hydrological Modelling Practices",
+        "headline" : "Deficiencies in Hydrological Modelling Practices",
+        "description" : "\u003cp\u003eOral presentation for EGU General Assembly 2022. This is where my model evaluation journey started.\u003c\/p\u003e",
         "inLanguage" : "en",
         "author" : "",
         "creator" : "",
         "publisher": "",
         "accountablePerson" : "",
         "copyrightHolder" : "",
-        "copyrightYear" : "2020",
-        "datePublished": "2020-04-26 20:23:59 \u002b0530 \u002b0530",
-        "dateModified" : "2020-04-26 20:23:59 \u002b0530 \u002b0530",
-        "url" : "\/post\/research\/moshe2020iclr\/",
-        "wordCount" : "273",
-        "image" : "\/img\/moshe2020egu\/header.png",
+        "copyrightYear" : "2022",
+        "datePublished": "2022-05-07 17:10:51 \u002b0530 \u002b0530",
+        "dateModified" : "2022-05-07 17:10:51 \u002b0530 \u002b0530",
+        "url" : "\/post\/research\/klotz2022egu\/",
+        "wordCount" : "526",
+        "image" : "\/img\/klotz2022egu\/evaluation.jpg",
         "keywords" : [ "Blog" ]   
     }
     </script>
 
- <title>HydroNets: Leveraging River Structure for Hydrologic Modeling </title>
+ <title>Deficiencies in Hydrological Modelling Practices </title>
 
 
 <meta name="description" content="Research blog for machine learning applications in hydrology" />
@@ -212,16 +212,16 @@
     <div
       class="post type-post status-publish format-standard has-post-thumbnail hentry category-design tag-design tag-standard-2 tag-tagalicious tag-travel entry full-without-featured odd excerpt-1">
 
-      <div class='featured-image lazy lazy-bg-image'  data-background="/img/moshe2020egu/header.png"
+      <div class='featured-image lazy lazy-bg-image'  data-background="/img/klotz2022egu/evaluation.jpg"
         >
       </div>
       
         <div class="entry-meta">
-          <span class="date">26 April</span> <span> / </span>
+          <span class="date">07 May</span> <span> / </span>
 
           <span class="author">
-            <a href="https://kratzert.github.io" title="Posts by Frederik Kratzert"
-              rel="author">Frederik Kratzert</a>
+            <a href="https://danklotz.github.io" title="Posts by Daniel Klotz"
+              rel="author">Daniel Klotz</a>
           </span>
 
 
@@ -229,33 +229,41 @@
           <span class="category">
             <span> / </span>
 
-            <a href="/categories/workshops">workshops</a>
+            <a href="/categories/conference">conference</a>
           </span>
           
 
 
         </div>
         <div class='entry-header'>
-          <h1 class='entry-title'> HydroNets: Leveraging River Structure for Hydrologic Modeling</h1>
+          <h1 class='entry-title'> Deficiencies in Hydrological Modelling Practices</h1>
         </div>
         <div class="entry-container">
           <div class="entry-content">
             <article>
-              <p>Modeling entire nested river trees by integrating the river hierachy into the neural network architecture. This manuscripts proposes HydroNets, an architecture designed for modeling multiple nested gauge stations.</p>
+              <p>Oral presentation for EGU General Assembly 2022. This is where my model evaluation journey started.</p>
 <h4 id="abstract"><strong>Abstract</strong></h4>
-<p>Accurate and scalable hydrologic models are essential building blocks of several important applications, from water resource management to timely flood warnings. However, as the climate changes, precipitation and rainfall-runoff pattern variations become more extreme, and accurate training data that can account for the resulting distributional shifts become more scarce. In this work we present a novel family of hydrologic models, called HydroNets, which leverages river network structure. HydroNets are deep neural network models designed to exploit both basin specific rainfall-runoff signals, and upstream network dynamics, which can lead to improved predictions at longer horizons. The injection of the river structure prior knowledge reduces sample complexity and allows for scalable and more accurate hydrologic modeling even with only a few years of data. We present an empirical study over two large basins in India that convincingly support the proposed model and its advantages.</p>
-<h4 id="paper"><strong>Paper</strong></h4>
-<p>Kratzert, F. and Klotz, D. and Brandstetter, J. and Hoedt, P.-J. and Nearing, G. and Hochreiter, S.: &ldquo;Using LSTMs for climate change assessment studies on droughts and floods&rdquo;. Workshop on Tackling Climate Change with Machine Learning 33rd Conference on Neural Information Process-ing Systems (NeurIPS 2019), Vancouver, Canada.</p>
-<p>ArXiv: <a href="https://arxiv.org/abs/2007.00595">https://arxiv.org/abs/2007.00595</a></p>
-<p>Slides: <a href="https://ai4earthscience.github.io/iclr-2020-workshop/papers/ai4earth04slides.pdf">PDF-Link</a></p>
+<p>The goal of this contribution is to demonstrate deficiencies that we observe in hydrological modelling studies. Our hope is that awareness of potential mistakes, errors, and habits will support accurate communication and analysis — and consequently lead to better modelling practises in our community.</p>
+<p>By deficiencies, we broadly mean wrong assumptions, false conclusions, and artificial limitations that impair our modelling efforts. To give some explicit examples:</p>
+<ul>
+<li>Model calibration: Often, only two data splits are used: one for model calibration and one for model validation. To provide a robust estimate of model quality on unseen data, one should, however, involve a three-way split: a calibration set used for parameter adaptation, a validation set used for hyperparameter tuning and intermediate model evaluations, and a test set used only once to derive the final, independent model accuracy.</li>
+<li>Artificial restrictions: Studies often restrict modelling setups to specific settings (e.g., model classes, input data, or objective functions) for comparative reasons. In general, one should use the best available data, inputs, and objective functions for each model, irrespective of the diagnostic metric used for evaluation and irrespective of what other models are (able to) use.</li>
+<li>(Missing) Model rejection: Although benchmarking efforts are not an entirely new concept in our community, we do observe that the results of model comparisons are seemingly without consequences. Models that repeatedly underperform on a specific task continue to be used for the same task they were just proven not to be good for. At some point, these models should be rejected and we as a community should move forward to improve the other models or develop new models.</li>
+<li>Interpretation of intermediate states: Many hydrologic models attempt to represent a variety of internal physical states that are not calibrated (e.g., soil moisture). Unfortunately, these states are often mistaken for true measurements and used as ground truth in downstream studies. We believe that (unless the quality of these states was evaluated successfully), using intermediate model outputs is of high risk, as it may distort subsequent analyses.</li>
+<li>Noise: Albeit it is commonly accepted that hydrological input variables are subject to large uncertainties and imprecisions, the influence of input perturbations is often not explicitly accounted for in models.</li>
+<li>Model complexity: We aim to model one of the most complex systems that exists, our nature. In practice, we will only be able to obtain a simplified representation of the system. However, we should not reduce complexity for the wrong reasons. While there is a tradeoff between simplicity and complexity, we should not tend towards the most simple models, such as two- or three-bucket models.</li>
+</ul>
+<p>Our belief is that modelling should be a community-wide effort, involving benchmarking, probing, model building, and examination. Being aware of deficiencies will hopefully bring forth a culture that adheres to best practises, rigorous testing, and probing for errors — ultimately benefiting us all by leading to more performant and reliable models.</p>
+<h4 id="links"><strong>Links</strong></h4>
+<p><a href="https://doi.org/10.5194/egusphere-egu22-12403">Abstract</a></p>
 <h4 id="citation"><strong>Citation</strong></h4>
-<pre tabindex="0"><code>@inproceedings{moshe2020hydronets,
-  title={HydroNets: Leveraging River Structure for Hydrologic Modeling},
-  author={Zach Moshe and Asher Metzger and Gal Elidan and Frederik Kratzert and Sella Nevo and Ran El-Yaniv},
-  booktitle={Workshop on AI for Earth Sciences 8th International Conference on Learning Representations (ICLR 2020)},
-  venue={Addis Ababa, Ethopia},
-  date={26 Apr - 1 May},
-  year={2020}
+<pre tabindex="0"><code>@inproceedings{klotz2022deficiencies,
+  title={Deficiencies in Hydrological Modelling Practices},
+  author={Klotz, Daniel and Gauch, Martin and Nearing, Grey and Hochreiter, Sepp and Kratzert, Frederik},
+  booktitle={EGU General Assembly 2023},
+  venue={online},
+  pages={EGU22--12403},
+  year={2022}
 }
 </code></pre>
             </article>
@@ -267,8 +275,8 @@
             <div class="entry-categories">
               <p><span>Categories</span>
                 
-                <a href="/categories/workshops"
-                  title="View all posts in workshops">workshops</a>
+                <a href="/categories/conference"
+                  title="View all posts in conference">conference</a>
               </p>
             </div>
 

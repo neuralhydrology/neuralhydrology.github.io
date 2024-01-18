@@ -6,69 +6,56 @@
     <description>Recent content in Categories on Neural Hydrology</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 19 Oct 2022 17:23:59 +0530</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 07 May 2023 17:10:51 +0530</lastBuildDate>
+    <atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>conference</title>
+      <link>/categories/conference/</link>
+      <pubDate>Sun, 07 May 2023 17:10:51 +0530</pubDate>
+      <guid>/categories/conference/</guid>
+      <description></description>
+    </item>
     <item>
       <title>code</title>
       <link>/categories/code/</link>
       <pubDate>Wed, 19 Oct 2022 17:23:59 +0530</pubDate>
-      
       <guid>/categories/code/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>paper</title>
       <link>/categories/paper/</link>
       <pubDate>Wed, 19 Oct 2022 17:23:59 +0530</pubDate>
-      
       <guid>/categories/paper/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>dataset</title>
       <link>/categories/dataset/</link>
       <pubDate>Thu, 16 Jun 2022 20:23:59 +0530</pubDate>
-      
       <guid>/categories/dataset/</guid>
       <description></description>
     </item>
-    
-    <item>
-      <title>conference</title>
-      <link>/categories/conference/</link>
-      <pubDate>Mon, 23 May 2022 17:23:59 +0530</pubDate>
-      
-      <guid>/categories/conference/</guid>
-      <description></description>
-    </item>
-    
     <item>
       <title>video</title>
       <link>/categories/video/</link>
       <pubDate>Fri, 07 May 2021 17:23:59 +0530</pubDate>
-      
       <guid>/categories/video/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>workshops</title>
       <link>/categories/workshops/</link>
       <pubDate>Sun, 06 Dec 2020 20:23:59 +0530</pubDate>
-      
       <guid>/categories/workshops/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>book chapter</title>
       <link>/categories/book-chapter/</link>
       <pubDate>Tue, 19 Mar 2019 20:23:59 +0530</pubDate>
-      
       <guid>/categories/book-chapter/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

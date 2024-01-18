@@ -6,69 +6,56 @@
     <description>Recent content in video on Neural Hydrology</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 May 2021 17:23:59 +0530</lastBuildDate><atom:link href="/categories/video/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 07 May 2021 17:23:59 +0530</lastBuildDate>
+    <atom:link href="/categories/video/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Multi-Timescale LSTM for Rainfall–Runoff Forecasting</title>
       <link>/post/research/gauch2021egu/</link>
       <pubDate>Fri, 07 May 2021 17:23:59 +0530</pubDate>
-      
       <guid>/post/research/gauch2021egu/</guid>
       <description>&lt;p&gt;Oral presentation at the virtual EGU General Assembly 2021 on rainfall–runoff forecasting with Multi-Timescale LSTM.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Uncertainty estimation with LSTM based rainfall-runoff models</title>
       <link>/post/research/klotz2021egu/</link>
       <pubDate>Fri, 07 May 2021 17:10:51 +0530</pubDate>
-      
       <guid>/post/research/klotz2021egu/</guid>
       <description>&lt;p&gt;Oral presentation at the virtual EGU General Assembly 2021 on uncertainty prediction with LSTMs in the context of rainfall-runoff modeling.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Examining the uncertainty estimation properties of LSTM based rainfall-runoff models</title>
       <link>/post/research/klotz2020agu/</link>
       <pubDate>Thu, 17 Dec 2020 20:23:59 +0530</pubDate>
-      
       <guid>/post/research/klotz2020agu/</guid>
       <description>&lt;p&gt;Oral presentation at the virtual AGU Fall Meeting 2020 on uncertainty prediction with LSTMs in the context of rainfall-runoff modeling.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>LSTM-Based Rainfall–Runoff Modeling at Arbitrary Time Scales</title>
       <link>/post/research/gauch2020agu/</link>
       <pubDate>Thu, 17 Dec 2020 20:23:59 +0530</pubDate>
-      
       <guid>/post/research/gauch2020agu/</guid>
       <description>&lt;p&gt;Oral presentation at the virtual AGU Fall Meeting 2020 on streamflow prediction at arbitraty timescales with a single LSTM-based model.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>A Deep Learning Architecture for Conservative Dynamical Systems: Application to Rainfall-Runoff Modeling</title>
       <link>/post/research/nearing2020neurips/</link>
       <pubDate>Sun, 06 Dec 2020 20:23:59 +0530</pubDate>
-      
       <guid>/post/research/nearing2020neurips/</guid>
       <description>&lt;p&gt;Spotlight talk at the AI for Earth Sciences workshop of the NeurIPS 2020, presenting  a first glimpse of a new LSTM-based model that conserves mass by design: the Mass-Conserving LSTM&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>A Machine Learner&#39;s Guide to Streamflow Prediction</title>
       <link>/post/research/gauch2020neurips/</link>
       <pubDate>Sun, 06 Dec 2020 20:23:59 +0530</pubDate>
-      
       <guid>/post/research/gauch2020neurips/</guid>
       <description>&lt;p&gt;Spotlight talk at the AI for Earth Sciences workshop of the NeurIPS 2020, presenting  introduction of the world and terminology of hydrology/streamflow prediction for data scientists.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Long Short-Term Memory (LSTM) networks for rainfall-runoff modeling</title>
       <link>/post/research/kratzert2019cuahsi/</link>
       <pubDate>Fri, 05 Apr 2019 20:23:59 +0530</pubDate>
-      
       <guid>/post/research/kratzert2019cuahsi/</guid>
       <description>&lt;p&gt;Video presentation in CUAHSI&amp;rsquo;s 2019 Spring Cyberseminar Series on Recent advances in big data machine learning in Hydrology.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

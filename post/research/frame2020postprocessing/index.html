@@ -24,12 +24,11 @@
         "datePublished": "2021-11-15 20:23:59 \u002b0530 \u002b0530",
         "dateModified" : "2021-11-15 20:23:59 \u002b0530 \u002b0530",
         "url" : "\/post\/research\/frame2020postprocessing\/",
-        "wordCount" : "348",
-        "image" : "/img/frame2021postprocessing/header.png"",
+        "wordCount" : "345",
+        "image" : "\/img\/frame2021postprocessing\/header.png",
         "keywords" : [ "Blog" ]   
     }
     </script>
-
 
  <title>Post processing the U.S. National Water Model with a Long Short-Term Memory network </title>
 
@@ -45,9 +44,9 @@
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
-<link href="/css/style.css?v=1666256182" rel="stylesheet" id="theme-stylesheet" type='text/css' media='all'>
+<link href="/css/style.css?v=1705618140" rel="stylesheet" id="theme-stylesheet" type='text/css' media='all'>
 
-<link href="/css/custom.css?v=1666256182" rel="stylesheet" type='text/css' media='all'>
+<link href="/css/custom.css?v=1705618140" rel="stylesheet" type='text/css' media='all'>
 <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
 <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
 
@@ -252,8 +251,7 @@
 <h4 id="abstract"><strong>Abstract</strong></h4>
 <p>We build three long short-term memory (LSTM) daily streamflow prediction models (deep learning networks) for 531 basins across the contiguous United States (CONUS), and compare their performance: (1) a LSTM post-processor trained on the United States National Water Model (NWM) outputs (LSTM_PP), (2) a LSTM post-processor trained on the NWM outputs and atmospheric forcings (LSTM_PPA), and (3) a LSTM model trained only on atmospheric forcing (LSTM_A). We trained the LSTMs for the period 2004–2014 and evaluated on 1994–2002, and compared several performance metrics to the NWM reanalysis. Overall performance of the three LSTMs is similar, with median NSE scores of 0.73 (LSTM_PP), 0.75 (LSTM_PPA), and 0.74 (LSTM_A), and all three LSTMs outperform the NWM validation scores of 0.62. Additionally, LSTM_A outperforms LSTM_PP and LSTM_PPA in ungauged basins. While LSTM as a post-processor improves NWM predictions substantially, we achieved comparable performance with the LSTM trained without the NWM outputs (LSTM_A). Finally, we performed a sensitivity analysis to diagnose the land surface component of the NWM as the source of mass bias error and the channel router as a source of simulation timing error. This indicates that the NWM channel routing scheme should be considered a priority for NWM improvement.</p>
 <h4 id="paper"><strong>Paper</strong></h4>
-<p><a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/1752-1688.12964">Frame, J.M., Kratzert, F., Raney, A., Rahman, M., Salas, F.R., and Nearing, G.S.. 2021. “ Post-Post-Processing the National Water Model with Long Short-Term Memory Networks for Streamflow Predictions and Model Diagnostics.” Journal of the American Water Resources Association 57( 6): 885– 905. https://doi.org/10.1111/1752-1688.12964. </a></p>
-<p>(submitted to WRR)</p>
+<p><a href="https://doi.org/10.1111/1752-1688.12964">Frame, J.M., Kratzert, F., Raney, A., Rahman, M., Salas, F.R., and Nearing, G.S.. 2021. “ Post-Post-Processing the National Water Model with Long Short-Term Memory Networks for Streamflow Predictions and Model Diagnostics.” Journal of the American Water Resources Association 57( 6): 885– 905. https://doi.org/10.1111/1752-1688.12964. </a></p>
 <h3 id="code">Code</h3>
 <p>Code for reproducing the results can be found in <a href="https://github.com/jmframe/nwm-post-processing-with-lstm">this</a> GitHub repository.</p>
 <h4 id="citation"><strong>Citation</strong></h4>
@@ -342,7 +340,7 @@ year = {2021}
 </footer>
   <script src="/js/jquery.min.js"></script>
 <script src="/js/jquerymigrate.js"></script>
-<script src="/js/production.min.js?v=1666256182"></script>
+<script src="/js/production.min.js?v=1705618140"></script>
 <script type="text/javascript" async
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
   MathJax.Hub.Config({
