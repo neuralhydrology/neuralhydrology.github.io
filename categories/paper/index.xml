@@ -1,17 +1,73 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>paper on Neural Hydrology</title>
+    <title>Paper on Neural Hydrology</title>
     <link>/categories/paper/</link>
-    <description>Recent content in paper on Neural Hydrology</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Paper on Neural Hydrology</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 19 Oct 2022 17:23:59 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 12 Dec 2024 17:23:59 +0530</lastBuildDate>
     <atom:link href="/categories/paper/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Technical note: An approach for handling multiple temporal frequencies with different input dimensions using a single LSTM cell</title>
+      <link>/post/research/espinoza2024multifreq/</link>
+      <pubDate>Thu, 12 Dec 2024 17:23:59 +0530</pubDate>
+      <guid>/post/research/espinoza2024multifreq/</guid>
+      <description>&lt;p&gt;Another approach for handling multiple frequencies in a single LSTM based model.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Caravan MultiMet: Extending Caravan with Multiple Weather Nowcasts and Forecasts</title>
+      <link>/post/datasets/shalev2024multimet/</link>
+      <pubDate>Thu, 14 Nov 2024 20:23:59 +0530</pubDate>
+      <guid>/post/datasets/shalev2024multimet/</guid>
+      <description>&lt;p&gt;Additional hindcast/nowcast and weather forecast features for all gauges in Caravan.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>A data-centric perspective on the information needed for hydrological uncertainty predictions</title>
+      <link>/post/research/auer2024hopcpt/</link>
+      <pubDate>Thu, 12 Sep 2024 17:23:59 +0530</pubDate>
+      <guid>/post/research/auer2024hopcpt/</guid>
+      <description>&lt;p&gt;We use the framework of conformal prediction to investigate the impact of temporal and spatial information on uncertainty estimates within hydrological predictions.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HESS Opinions: Never train a Long Short-Term Memory (LSTM) network on a single basin</title>
+      <link>/post/research/kratzert2024never/</link>
+      <pubDate>Thu, 12 Sep 2024 17:23:59 +0530</pubDate>
+      <guid>/post/research/kratzert2024never/</guid>
+      <description>&lt;p&gt;Never, never, (really never!?) train an LSTM on a single basin. Or should you?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Technical Note: The divide and measure nonconformity – how metrics can mislead when we evaluate on different data partitions</title>
+      <link>/post/research/klotz2024damn/</link>
+      <pubDate>Tue, 13 Aug 2024 17:23:59 +0530</pubDate>
+      <guid>/post/research/klotz2024damn/</guid>
+      <description>&lt;p&gt;The evaluation of model performance is an essential part of hydrological modeling. However &amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Analyzing the generalization capabilities of hybrid hydrological models for extrapolation to extreme events</title>
+      <link>/post/research/espinoza2024extreme/</link>
+      <pubDate>Tue, 30 Jul 2024 17:23:59 +0530</pubDate>
+      <guid>/post/research/espinoza2024extreme/</guid>
+      <description>&lt;p&gt;Comparing LSTMs to hybrid deep learning models on generalization capabilities during extreme events.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Generalizing Tree–Level Sap Flow Across the European Continent</title>
+      <link>/post/research/loritz2024sapflow/</link>
+      <pubDate>Sun, 14 Apr 2024 17:23:59 +0530</pubDate>
+      <guid>/post/research/loritz2024sapflow/</guid>
+      <description>&lt;p&gt;Research study investigating the regional LSTM approach for sap flow prediction.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Global prediction of extreme floods in ungauged watersheds</title>
+      <link>/post/research/nearing2024nature/</link>
+      <pubDate>Wed, 03 Apr 2024 17:23:59 +0530</pubDate>
+      <guid>/post/research/nearing2024nature/</guid>
+      <description>&lt;p&gt;Benchmarking study of Google&amp;rsquo;s operational Flood Forecasting model compared to GloFAS.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>In Defense of Metrics: Metrics Sufficiently Encode Typical Human Preferences Regarding Hydrological Model Performance</title>
       <link>/post/research/gauch2022metrics/</link>
-      <pubDate>Wed, 19 Oct 2022 17:23:59 +0530</pubDate>
+      <pubDate>Thu, 25 May 2023 17:23:59 +0530</pubDate>
       <guid>/post/research/gauch2022metrics/</guid>
       <description>&lt;p&gt;In this paper, we present the results of the &amp;ldquo;Rate My Hydrograph&amp;rdquo; study, where we compare expert ratings of simulated hydrographs with quantitative metrics.&lt;/p&gt;</description>
     </item>

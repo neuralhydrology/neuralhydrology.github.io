@@ -4,23 +4,79 @@
     <title>Neural Hydrology</title>
     <link>/</link>
     <description>Recent content on Neural Hydrology</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 May 2023 17:10:51 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 12 Dec 2024 17:23:59 +0530</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Technical note: An approach for handling multiple temporal frequencies with different input dimensions using a single LSTM cell</title>
+      <link>/post/research/espinoza2024multifreq/</link>
+      <pubDate>Thu, 12 Dec 2024 17:23:59 +0530</pubDate>
+      <guid>/post/research/espinoza2024multifreq/</guid>
+      <description>&lt;p&gt;Another approach for handling multiple frequencies in a single LSTM based model.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Caravan MultiMet: Extending Caravan with Multiple Weather Nowcasts and Forecasts</title>
+      <link>/post/datasets/shalev2024multimet/</link>
+      <pubDate>Thu, 14 Nov 2024 20:23:59 +0530</pubDate>
+      <guid>/post/datasets/shalev2024multimet/</guid>
+      <description>&lt;p&gt;Additional hindcast/nowcast and weather forecast features for all gauges in Caravan.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>A data-centric perspective on the information needed for hydrological uncertainty predictions</title>
+      <link>/post/research/auer2024hopcpt/</link>
+      <pubDate>Thu, 12 Sep 2024 17:23:59 +0530</pubDate>
+      <guid>/post/research/auer2024hopcpt/</guid>
+      <description>&lt;p&gt;We use the framework of conformal prediction to investigate the impact of temporal and spatial information on uncertainty estimates within hydrological predictions.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HESS Opinions: Never train a Long Short-Term Memory (LSTM) network on a single basin</title>
+      <link>/post/research/kratzert2024never/</link>
+      <pubDate>Thu, 12 Sep 2024 17:23:59 +0530</pubDate>
+      <guid>/post/research/kratzert2024never/</guid>
+      <description>&lt;p&gt;Never, never, (really never!?) train an LSTM on a single basin. Or should you?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Technical Note: The divide and measure nonconformity – how metrics can mislead when we evaluate on different data partitions</title>
+      <link>/post/research/klotz2024damn/</link>
+      <pubDate>Tue, 13 Aug 2024 17:23:59 +0530</pubDate>
+      <guid>/post/research/klotz2024damn/</guid>
+      <description>&lt;p&gt;The evaluation of model performance is an essential part of hydrological modeling. However &amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Analyzing the generalization capabilities of hybrid hydrological models for extrapolation to extreme events</title>
+      <link>/post/research/espinoza2024extreme/</link>
+      <pubDate>Tue, 30 Jul 2024 17:23:59 +0530</pubDate>
+      <guid>/post/research/espinoza2024extreme/</guid>
+      <description>&lt;p&gt;Comparing LSTMs to hybrid deep learning models on generalization capabilities during extreme events.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Generalizing Tree–Level Sap Flow Across the European Continent</title>
+      <link>/post/research/loritz2024sapflow/</link>
+      <pubDate>Sun, 14 Apr 2024 17:23:59 +0530</pubDate>
+      <guid>/post/research/loritz2024sapflow/</guid>
+      <description>&lt;p&gt;Research study investigating the regional LSTM approach for sap flow prediction.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Global prediction of extreme floods in ungauged watersheds</title>
+      <link>/post/research/nearing2024nature/</link>
+      <pubDate>Wed, 03 Apr 2024 17:23:59 +0530</pubDate>
+      <guid>/post/research/nearing2024nature/</guid>
+      <description>&lt;p&gt;Benchmarking study of Google&amp;rsquo;s operational Flood Forecasting model compared to GloFAS.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In Defense of Metrics: Metrics Sufficiently Encode Typical Human Preferences Regarding Hydrological Model Performance</title>
+      <link>/post/research/gauch2022metrics/</link>
+      <pubDate>Thu, 25 May 2023 17:23:59 +0530</pubDate>
+      <guid>/post/research/gauch2022metrics/</guid>
+      <description>&lt;p&gt;In this paper, we present the results of the &amp;ldquo;Rate My Hydrograph&amp;rdquo; study, where we compare expert ratings of simulated hydrographs with quantitative metrics.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>The persistence of errors: How evaluating models over data partitions relates to a global evaluation</title>
       <link>/post/research/klotz2023egu/</link>
       <pubDate>Sun, 07 May 2023 17:10:51 +0530</pubDate>
       <guid>/post/research/klotz2023egu/</guid>
       <description>&lt;p&gt;Oral presentation for EGU General Assembly 2023. This is one about a certain phenomena that appears when we evaluate a model over subsets of the data. Eventually the plan is to make a technical note out of it.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>In Defense of Metrics: Metrics Sufficiently Encode Typical Human Preferences Regarding Hydrological Model Performance</title>
-      <link>/post/research/gauch2022metrics/</link>
-      <pubDate>Wed, 19 Oct 2022 17:23:59 +0530</pubDate>
-      <guid>/post/research/gauch2022metrics/</guid>
-      <description>&lt;p&gt;In this paper, we present the results of the &amp;ldquo;Rate My Hydrograph&amp;rdquo; study, where we compare expert ratings of simulated hydrographs with quantitative metrics.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Flood forecasting with machine learning models in an operational framework </title>
@@ -349,14 +405,14 @@
       <link>/about/</link>
       <pubDate>Wed, 14 Aug 2019 21:05:33 +0530</pubDate>
       <guid>/about/</guid>
-      <description>About NeuralHydrology Everything started with the idea of using LSTMs as a general rainfall-runoff model, back in 2016. Daniel and myself (Frederik) were self-studying machine learning and trying to keep up with the fast-paced developments of that field. At that time, both of us were still working at the Institute for Hydrology and Watermangement (former Institute of Water Management, Hydrology and Hydraulic Engineering), Daniel as PhD-student and I as a student assistant.</description>
+      <description>&lt;h4 id=&#34;about-neuralhydrology&#34;&gt;&lt;strong&gt;About NeuralHydrology&lt;/strong&gt;&lt;/h4&gt;&#xA;&lt;p&gt;Everything started with the idea of using LSTMs as a general rainfall-runoff model, back in 2016. Daniel and myself (Frederik) were self-studying machine learning and trying to keep up with the fast-paced developments of that field. At that time, both of us were still working at the &lt;a href=&#34;https://boku.ac.at/wau/hywa&#34;&gt;Institute for Hydrology and Watermangement&lt;/a&gt; (former Institute of Water Management, Hydrology and Hydraulic Engineering), Daniel as PhD-student and I as a student assistant. A lot of our free-time went into designing and conducting first experiments, to see if the LSTM is able to model the rainfall-runoff relationship at all. By then, we jokingly referred to this idea as &lt;em&gt;neural hydrology&lt;/em&gt;, not knowing that &lt;a href=&#34;https://rgs-ibg.onlinelibrary.wiley.com/doi/10.1111/j.1475-4762.1999.tb00179.x&#34;&gt;Bob Abrahart (1999)&lt;/a&gt; coined a similar term (&lt;em&gt;NeuroHydrology&lt;/em&gt;) already 20 years ago. In his paper, Bob Abrahart advocates the use of neural networks in hydrology, while still referring to classical multi layer perceptrons and not recurrent neural networks.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Python Library: neuralHydrology</title>
       <link>/library/</link>
       <pubDate>Wed, 14 Aug 2019 21:05:33 +0530</pubDate>
       <guid>/library/</guid>
-      <description>Python library to train neural networks with a strong focus on hydrological applications.&#xA;GitHub: https://github.com/neuralhydrology/neuralhydrology Documentation: neuralhydrology.readthedocs.io Bug reports/Feature requests https://github.com/neuralhydrology/neuralhydrology/issues This package has been used extensively in research over the last year and was used in various academic publications. The core idea of this package is modularity in all places to allow easy integration of new datasets, new model architectures or any training related aspects (e.g. loss functions, optimizer, regularization).</description>
+      <description>&lt;p&gt;&lt;img src=&#34;/img/neural-hyd-logo.gif#center&#34; alt=&#34;Logo&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Python library to train neural networks with a strong focus on hydrological applications.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;GitHub: &lt;a href=&#34;https://github.com/neuralhydrology/neuralhydrology&#34;&gt;https://github.com/neuralhydrology/neuralhydrology&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Documentation: &lt;a href=&#34;https://neuralhydrology.readthedocs.io&#34;&gt;neuralhydrology.readthedocs.io&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Bug reports/Feature requests &lt;a href=&#34;https://github.com/neuralhydrology/neuralhydrology/issues&#34;&gt;https://github.com/neuralhydrology/neuralhydrology/issues&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;This package has been used extensively in research over the last year and was used in various academic publications.&#xA;The core idea of this package is modularity in all places to allow easy integration of new datasets, new model&#xA;architectures or any training related aspects (e.g. loss functions, optimizer, regularization).&#xA;One of the core concepts of this code base are configuration files, which lets anyone train neural networks without&#xA;touching the code itself. The &lt;code&gt;neuralHydrology&lt;/code&gt; package is build on top of the deep learning framework&#xA;&lt;a href=&#34;https://pytorch.org/&#34;&gt;Pytorch&lt;/a&gt;, since it has proven to be the most flexible and useful for research purposes.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

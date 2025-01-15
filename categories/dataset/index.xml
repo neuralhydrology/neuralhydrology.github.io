@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>dataset on Neural Hydrology</title>
+    <title>Dataset on Neural Hydrology</title>
     <link>/categories/dataset/</link>
-    <description>Recent content in dataset on Neural Hydrology</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Dataset on Neural Hydrology</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 Jun 2022 20:23:59 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 14 Nov 2024 20:23:59 +0530</lastBuildDate>
     <atom:link href="/categories/dataset/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Caravan MultiMet: Extending Caravan with Multiple Weather Nowcasts and Forecasts</title>
+      <link>/post/datasets/shalev2024multimet/</link>
+      <pubDate>Thu, 14 Nov 2024 20:23:59 +0530</pubDate>
+      <guid>/post/datasets/shalev2024multimet/</guid>
+      <description>&lt;p&gt;Additional hindcast/nowcast and weather forecast features for all gauges in Caravan.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Caravan - A global community dataset for large-sample hydrology</title>
       <link>/post/research/kratzert2022caravan/</link>

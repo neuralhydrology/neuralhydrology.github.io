@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@type" : "BlogPosting",
+        "mainEntityOfPage": {
+             "@type": "WebPage",
+             "@id": "\/"
+        },
+        "articleSection" : "post",
+        "name" : "HESS Opinions: Never train a Long Short-Term Memory (LSTM) network on a single basin",
+        "headline" : "HESS Opinions: Never train a Long Short-Term Memory (LSTM) network on a single basin",
+        "description" : "\u003cp\u003eNever, never, (really never!?) train an LSTM on a single basin. Or should you?\u003c\/p\u003e",
+        "inLanguage" : "en",
+        "author" : "",
+        "creator" : "",
+        "publisher": "",
+        "accountablePerson" : "",
+        "copyrightHolder" : "",
+        "copyrightYear" : "2024",
+        "datePublished": "2024-09-12 17:23:59 \u002b0530 \u002b0530",
+        "dateModified" : "2024-09-12 17:23:59 \u002b0530 \u002b0530",
+        "url" : "\/post\/research\/kratzert2024never\/",
+        "wordCount" : "234",
+        "image" : "\/img\/kratzert2024never\/never.png",
+        "keywords" : [ "Blog" ]   
+    }
+    </script>
+
+ <title>HESS Opinions: Never train a Long Short-Term Memory (LSTM) network on a single basin </title>
+
+
+<meta name="description" content="Research blog for machine learning applications in hydrology" />
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="all,follow">
+<meta name="googlebot" content="index,follow,snippet,archive">
+<link rel="stylesheet" id="ct-tracks-google-fonts-css" href="//fonts.googleapis.com/css?family=Raleway%3A400%2C700&amp;subset=latin%2Clatin-ext&amp;ver=4.7.2" type="text/css" media="all">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+<link href="/css/style.css?v=1736972666" rel="stylesheet" id="theme-stylesheet" type='text/css' media='all'>
+
+<link href="/css/custom.css?v=1736972666" rel="stylesheet" type='text/css' media='all'>
+<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+
+</head>
+
+
+<body
+  class="post-template-default single single-post single-format-standard ct-body singular singular-post not-front standard">
+  
+  <div id="overflow-container" class="overflow-container">
+    <a class="skip-content" href="#main">Skip to content</a>
+    <header id="site-header" class="site-header" role="banner">
+      <div class='top-navigation'>
+        <div class='container'>
+
+  <div id="menu-secondary" class="menu-container menu-secondary" role="navigation">
+    <button id="toggle-secondary-navigation" class="toggle-secondary-navigation"><i class="fas fa-plus"></i></button>
+
+    <div class="menu">
+
+      <ul id="menu-secondary-items" class="menu-secondary-items">
+        
+        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
+          <a href="/categories/book-chapter">book chapter</a>
+        </li>
+        
+        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
+          <a href="/categories/code">code</a>
+        </li>
+        
+        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
+          <a href="/categories/conference">conference</a>
+        </li>
+        
+        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
+          <a href="/categories/dataset">dataset</a>
+        </li>
+        
+        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
+          <a href="/categories/paper">paper</a>
+        </li>
+        
+        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
+          <a href="/categories/video">video</a>
+        </li>
+        
+        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
+          <a href="/categories/workshops">workshops</a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+
+  </div>
+
+
+  <ul class="social-media-icons">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+    
+
+
+    
+
+    
+
+
+  </ul></div>
+
+      </div>
+
+      <div class="container">
+        <head>
+<style>
+.center {
+  margin: auto;
+  text-align: center;
+  width: 60%;
+  padding: 10px;
+}
+</style>
+</head>
+
+<div id="headerino" class = "left">
+  <a href="/">
+  <img src="/img/neural-hyd-head.png" width="240">
+  </a>
+  <br>
+</div>
+
+<div id="title-info" class="title-info">
+  <div id='site-title' class='site-title'>
+    
+    <a href="/"> Neural Hydrology </a>
+    </div>
+  </div>
+  <button id="toggle-navigation" class="toggle-navigation">
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <div id="menu-primary-tracks" class="menu-primary-tracks"></div>
+  <div id="menu-primary" class="menu-container menu-primary" role="navigation">
+    
+    <p class="site-description">Using Neural Networks in Hydrology</p>
+    
+
+    <div class="menu">
+      <ul id="menu-primary-items" class="menu-primary-items">
+        
+        
+        <li id="menu-item" class='menu-item menu-item-type-custom menu-item-object-custom '>
+          <a href="/">Home</a>
+          
+        </li>
+        
+        <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page '>
+          <a href="/about/">About</a>
+          
+        </li>
+        
+        <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page '>
+          <a href="/library/">Python Library</a>
+          
+        </li>
+        
+      </ul>
+    </div>
+
+  </div>
+
+      </div>
+    </header>
+
+    <div id="main" class="main" role="main">
+
+      
+
+  
+  
+  
+  
+  
+  <div id="loop-container2" class="loop-container2">
+    
+    <div
+      class="post type-post status-publish format-standard has-post-thumbnail hentry category-design tag-design tag-standard-2 tag-tagalicious tag-travel entry full-without-featured odd excerpt-1">
+
+      <div class='featured-image lazy lazy-bg-image'  data-background="/img/kratzert2024never/never.png"
+        >
+      </div>
+      
+        <div class="entry-meta">
+          <span class="date">12 September 2024</span> <span> / </span>
+
+          <span class="author">
+            <a href="https://kratzert.github.io" title="Posts by Frederik Kratzert"
+              rel="author">Frederik Kratzert</a>
+          </span>
+
+
+          
+          <span class="category">
+            <span> / </span>
+
+            <a href="/categories/paper">paper</a>
+          </span>
+          
+          <span class="category">
+            <span> / </span>
+
+            <a href="/categories/code">code</a>
+          </span>
+          
+
+
+        </div>
+        <div class='entry-header'>
+          <h1 class='entry-title'> HESS Opinions: Never train a Long Short-Term Memory (LSTM) network on a single basin</h1>
+        </div>
+        <div class="entry-container">
+          <div class="entry-content">
+            <article>
+              <p>Never, never, (really never!?) train an LSTM on a single basin. Or should you?</p>
+<h4 id="abstract"><strong>Abstract</strong></h4>
+<p>Machine learning (ML) has played an increasing role in the hydrological sciences. In particular, Long Short-Term Memory (LSTM) networks are popular for rainfall–runoff modeling. A large majority of studies that use this type of model do not follow best practices, and there is one mistake in particular that is common: training deep learning models on small, homogeneous data sets, typically data from only a single hydrological basin. In this position paper, we show that LSTM rainfall–runoff models are best when trained with data from a large number of basins.</p>
+<h4 id="links"><strong>Links</strong></h4>
+<p>Paper: <a href="https://hess.copernicus.org/articles/28/4187/2024/hess-28-4187-2024.html">Kratzert, F., Gauch, M., Klotz, D., and Nearing, G.: HESS Opinions: Never train a Long Short-Term Memory (LSTM) network on a single basin, Hydrol. Earth Syst. Sci., 28, 4187–4201, https://doi.org/10.5194/hess-28-4187-2024, 2024.</a></p>
+<p>The run directories of all experiments, including model weights, simulations, and pre-computed metrics, are available at <a href="https://doi.org/10.5281/zenodo.10139248">https://doi.org/10.5281/zenodo.10139248</a>. The code that was used for analyzing all the experiments and to create all the figures, based on the run directories, can be found at <a href="https://doi.org/10.5281/zenodo.13691802">https://doi.org/10.5281/zenodo.13691802</a>.</p>
+<h4 id="citation"><strong>Citation</strong></h4>
+<pre tabindex="0"><code>@Article{kratzert2024never,
+author = {Kratzert, F. and Gauch, M. and Klotz, D. and Nearing, G.},
+title = {HESS Opinions: Never train a Long Short-Term Memory (LSTM) network on a single basin},
+journal = {Hydrology and Earth System Sciences},
+volume = {28},
+year = {2024},
+number = {17},
+pages = {4187--4201},
+doi = {10.5194/hess-28-4187-2024}
+}
+</code></pre>
+            </article>
+          </div>
+          
+          <div class='entry-meta-bottom'>
+            
+
+            <div class="entry-categories">
+              <p><span>Categories</span>
+                
+                <a href="/%20/categories/paper"
+                  title="View all posts in paper">paper</a>
+                <a href="/%20/categories/code"
+                  title="View all posts in code">code</a>
+              </p>
+            </div>
+
+
+            
+            
+
+            <section id="comments" class="comments">
+              
+
+              
+
+              
+
+
+            </section>
+          </div>
+
+          
+          
+
+
+          
+    </div>
+
+
+  </div>
+  <footer id="site-footer" class="site-footer" role="contentinfo">
+    <h1>
+        
+        <a href=""> Neural Hydrology </a>
+        
+    </h1>
+
+    
+    <p class="site-description">Using Neural Networks in Hydrology</p>
+    
+
+    <div id="menu-footer" class="menu-container menu-footer" role="navigation">
+        <div class="menu">
+
+            <ul id="menu-footer-items" class="menu-footer-items">
+                
+            </ul>
+
+        </div>
+    </div>
+
+
+    <div class="design-credit">
+        
+        <p>Modified design by Frederik Kratzert &amp; Daniel Klotz.</p>
+        
+        <p>Original design by Göran Svensson (2018):</p>
+        
+        <p><a href="https://github.com/appernetic/hugo-nederburg-theme">Nederburg Theme</a> by <a href="https://github.com/appernetic">Appernetic</a> (a port of <a href="https://www.competethemes.com/tracks/">Tracks</a>).</p>
+        
+    </div>
+</footer>
+  <script src="/js/jquery.min.js"></script>
+<script src="/js/jquerymigrate.js"></script>
+<script src="/js/production.min.js?v=1736972666"></script>
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+
+
+</body>
+</html>

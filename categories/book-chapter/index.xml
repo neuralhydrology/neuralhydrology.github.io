@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>book chapter on Neural Hydrology</title>
+    <title>Book Chapter on Neural Hydrology</title>
     <link>/categories/book-chapter/</link>
-    <description>Recent content in book chapter on Neural Hydrology</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Book Chapter on Neural Hydrology</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 19 Mar 2019 20:23:59 +0530</lastBuildDate>
     <atom:link href="/categories/book-chapter/index.xml" rel="self" type="application/rss+xml" />
